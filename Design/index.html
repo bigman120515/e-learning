@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Learnet-User-Search</title>
+
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="">
+    <meta name="description" content="Bootstrap based News, Magazine and Blog Theme">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/OverlayScrollbars-master/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/tiny-slider/dist/tiny-slider.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendor/glightbox-master/dist/css/glightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/dropzone/dist/dropzone.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendor/flatpickr/dist/flatpickr.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendor/plyr/plyr.css" />
+
+    <!-- Theme CSS -->
+    <link id="style-switch" rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/mycss/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/mycss/mediaquery.css">
+
+</head>
+
+<body>
+
+    <!-- Header START -->
+    <header class="navbar-light fixed-top header-static bg-mode">
+
+      <!-- Logo Nav START -->
+      <nav class="navbar navbar-expand-lg">
+          <div class="container">
+              <!-- Logo START -->
+              <a class="navbar-brand" href="user-home-nudge.html">
+                  <!-- <img class="light-mode-item navbar-brand-item" src="assets/images/logo/logo-icon.png" alt="logo">
+                  <img class="dark-mode-item navbar-brand-item" src="assets/images/logo/logo-icon.png" alt="logo"> -->
+                  ATSPL
+              </a>
+              <!-- Logo END -->
+
+              <!-- Responsive navbar toggler -->
+              <button class="navbar-toggler ms-auto icon-md btn btn-light p-0" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-animation">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </span>
+              </button>
+
+              <!-- Main navbar START -->
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                  <!-- Nav Search START -->
+                  <div class="nav mt-3 mt-lg-0 flex-nowrap align-items-center px-4 px-lg-0">
+                      <div class="nav-item ">
+                        <div class="input-group mysearchfiled">
+                            <input type="text" class="form-control" placeholder="What would you like to learn?">
+                            <div class="input-group-append">
+                              <button class="btn btn-secondary2" type="button"><i class="fa fa-search"></i></button>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Nav Search END -->
+
+
+                  <!-- Main navbar END -->
+
+                  <!-- Nav right START -->
+
+                  <ul class="nav flex-nowrap align-items-center ms-auto list-unstyled navbar_padd">
+                      <li class="nav-item ms-2">
+                          <a class="nav-link   p-0   d-block " href="user-home-nudge.html">
+                              <i class="bi bi-house-fill fs-6 mb-0 icon_size"></i>
+                              <p class="mb-0 haeder_haed"><small>Home</small> </p>
+                          </a>
+                      </li>
+                      <li class="nav-item ms-2">
+                          <a class="nav-link  p-0  d-block " href="session.html">
+                              <i class="bi bi-calendar-check-fill fs-6 icon_size"></i>
+                              <p class="mb-0 haeder_haed"><small>Sessions</small> </p>
+                          </a>
+                      </li>
+                      <li class="nav-item ms-2">
+                          <a class="nav-link  p-0  d-block " href="messaging.html">
+                              <i class="bi bi-chat-left-text-fill fs-6 icon_size"> </i>
+                              <p class="mb-0 haeder_haed"><small>Messaging</small> </p>
+                          </a>
+                      </li>
+
+                      <li class="nav-item dropdown ms-2">
+                          <a class="nav-link  p-0  d-block" href="#" id="notifDropdown"
+                              role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                              data-bs-auto-close="outside">
+                              <span class="badge-notif animation-blink"></span>
+                              <i class="bi bi-bell-fill fs-6 icon_size"> </i>
+                              <p class="mb-0 haeder_haed"><small>Notifications</small> </p>
+                          </a>
+                          <div class="dropdown-menu dropdown-animation dropdown-menu-end dropdown-menu-size-md p-0 shadow-lg border-0"
+                              aria-labelledby="notifDropdown">
+                              <div class="card">
+                                  <div class="card-header d-flex justify-content-between align-items-center">
+                                      <h6 class="m-0">
+                                          Notifications
+                                          <span class="badge bg-danger bg-opacity-10 text-danger ms-2">4 new</span>
+                                      </h6>
+                                      <a class="small" href="#">Clear all</a>
+                                  </div>
+                                  <div class="card-body p-0">
+                                      <ul class="list-group list-group-flush list-unstyled p-2">
+                                          <!-- Notif item -->
+                                          <li>
+                                              <div
+                                                  class="list-group-item list-group-item-action rounded badge-unread d-flex border-0 mb-1 p-3">
+                                                  <div class="avatar text-center d-none d-sm-inline-block">
+                                                      <img class="avatar-img rounded-circle"
+                                                          src="assets/images/avatar/01.jpg" alt="" />
+                                                  </div>
+                                                  <div class="ms-sm-3">
+                                                      <div class="d-flex">
+                                                          <p class="small mb-2">
+                                                              New Session has been booked by George
+                                                              <b>(AI/ML, 20th Sep)</b>
+                                                          </p>
+                                                          <p class="small ms-3 text-nowrap">Just now</p>
+                                                      </div>
+                                                      <div class="d-flex">
+                                                          <button class="btn btn-sm py-1 btn-primary me-2">
+                                                              Accept
+                                                          </button>
+                                                          <button class="btn btn-sm py-1 btn-danger-soft">
+                                                              Delete
+                                                          </button>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </li>
+                                          <!-- Notif item -->
+                                          <li>
+                                              <div
+                                                  class="list-group-item list-group-item-action rounded badge-unread d-flex border-0 mb-1 p-3 position-relative">
+                                                  <div class="avatar text-center d-none d-sm-inline-block">
+                                                      <img class="avatar-img rounded-circle"
+                                                          src="assets/images/avatar/02.jpg" alt="" />
+                                                  </div>
+                                                  <div class="ms-sm-3 d-flex">
+                                                      <div>
+                                                          <p class="small mb-2">
+                                                              Shah Alam has enrolled in group session
+                                                              <b>(Cloud Computing, 10th)</b>
+                                                          </p>
+                                                      </div>
+                                                      <p class="small ms-3">5min ago</p>
+                                                  </div>
+                                              </div>
+                                          </li>
+                                          <!-- Notif item -->
+                                          <li>
+                                              <a href="#"
+                                                  class="list-group-item list-group-item-action rounded d-flex border-0 mb-1 p-3">
+                                                  <div class="avatar text-center d-none d-sm-inline-block">
+                                                      <div class="avatar-img rounded-circle bg-success">
+                                                          <span
+                                                              class="text-white position-absolute top-50 start-50 translate-middle fw-bold">WB</span>
+                                                      </div>
+                                                  </div>
+                                                  <div class="ms-sm-3">
+                                                      <div class="d-flex">
+                                                          <p class="small mb-2">
+                                                              You have updated your profile
+                                                              <b>(Education details )</b>
+                                                          </p>
+                                                          <p class="small ms-3">2hr ago</p>
+                                                      </div>
+                                                  </div>
+                                              </a>
+                                          </li>
+                                          <!-- Notif item -->
+                                      </ul>
+                                  </div>
+                                  <div class="card-footer text-center">
+                                      <a href="#" class="btn btn-sm btn-primary-soft">See all incoming activity</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="nav-item ms-2">
+                          <a class="nav-link  p-0  d-block" href="settings.html">
+                              <i class="bi bi-gear-fill fs-6 icon_size"> </i>
+                              <p class="mb-0 haeder_haed"><small>Settings</small> </p>
+                          </a>
+                      </li>
+
+
+
+                      <!-- Notification dropdown END -->
+
+                      <li class="nav-item  dropdown mt-1">
+                          <a class="nav-link btn icon-md p-0" href="#" id="profileDropdown" role="button"
+                              data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <img class="avatar-img rounded-2" src="assets/images/avatar/07.jpg" alt="" />
+                          </a>
+                          <ul class="dropdown-menu dropdown-animation dropdown-menu-end pt-3 small me-md-n3"
+                              aria-labelledby="profileDropdown">
+                              <!-- Profile info -->
+                              <li class="px-3">
+                                  <div class="d-flex align-items-center position-relative">
+                                      <!-- Avatar -->
+                                      <div class="avatar me-3">
+                                          <img class="avatar-img rounded-circle" src="assets/images/avatar/07.jpg"
+                                              alt="avatar" />
+                                      </div>
+                                      <div>
+                                          <a class="h6 stretched-link" href="#">Sam Lanson</a>
+                                          <p class="small m-0">Web Developer</p>
+                                      </div>
+                                  </div>
+                                  <a class="dropdown-item btn btn-primary-soft btn-sm my-2 text-center"
+                                      href="my-profile.html">View profile</a>
+                              </li>
+                              <!-- Links -->
+                              <li>
+                                  <a class="dropdown-item" href="settings.html"><i
+                                          class="bi bi-gear fa-fw me-2"></i>Settings &
+                                      Privacy</a>
+                              </li>
+                              <li>
+                                  <a class="dropdown-item" href="!">
+                                      <i class="fa-fw bi bi-life-preserver me-2"></i>Support
+                                  </a>
+                              </li>
+                              <li>
+                                  <a class="dropdown-item" href="#!">
+                                      <i class="fa-fw bi bi-card-text me-2"></i>Documentation
+                                  </a>
+                              </li>
+                              <li class="dropdown-divider"></li>
+                              <li>
+                                  <a class="dropdown-item bg-danger-soft-hover" href="#!"><i
+                                          class="bi bi-power fa-fw me-2"></i>Sign Out</a>
+                              </li>
+                              <li>
+                                  <hr class="dropdown-divider" />
+                              </li>
+                              <!-- Dark mode switch START -->
+                              <li>
+                                  <div class="modeswitch-wrap" id="darkModeSwitch">
+                                      <div class="modeswitch-item">
+                                          <div class="modeswitch-icon"></div>
+                                      </div>
+                                      <span>Dark mode</span>
+                                  </div>
+                              </li>
+                              <!-- Dark mode switch END -->
+                          </ul>
+                      </li>
+                      <!-- Profile START -->
+                  </ul>
+              </div>
+              <!-- Nav right END -->
+          </div>
+      </nav>
+      <!-- Logo Nav END -->
+  </header>
+  <!-- Header END -->
+
+
+    <!-- **************** MAIN CONTENT START **************** -->
+    <main>
+
+
+        <!-- Container START -->
+
+
+
+        <!-- Container START -->
+        <div>
+            <div class="container usersearch_body">
+                <div class="row">
+
+                    <div class="col-lg-12 mx-auto">
+                        <div class="card">
+                            <div class="card-body">
+
+
+                                <div class="mx-auto  d-block   rounded ">
+                                    <!-- Form START -->
+                                    <form class="align-items-end  d-flex  d-block gap-4">
+                                       
+                                       
+                                        <!-- Date -->
+                                        <div class="mb-2 mt-2">
+
+                                            <select class="form-select js-choice choice-select-text-none" data-position="bottom" data-search-enabled="false">
+                                  
+												  <option value="comedy">1-on-1 Session</option>
+												  <option value="dance">Group Sessions</option>
+												
+												</select>
+                                        </div>                                     
+
+
+                                        <div class="mb-2 mt-2 input_range">                                                                                  
+                           
+                                <div class="min-max-slider" data-legendnum="2">
+                                    <label for="min">Minimum price</label>
+                                    <input id="min" class="min" name="min" type="range" step="1" min="0" max="10000" />
+                                    <label for="max">Maximum price</label>
+                                    <input id="max" class="max" name="max" type="range" step="1" min="0" max="10000" />
+                                </div>                                
+                                        </div>
+                                        <!-- Time -->
+                                        <div class="mb-2 mt-2">
+                                            <select class="form-select js-choice choice-select-text-none" data-position="bottom" data-search-enabled="false">
+                                  <option value="category">Time</option>
+                                  <option value="comedy">Morning (6 AM to 12 PM)</option>
+                                  <option value="dance">Afternoon (12PM - 5 PM)</option>
+                                  <option value="family">Evening (5PM - 10PM)</option>
+                                  
+                                
+                                </select>
+                                        </div>
+                                      
+                                        <div class="d-flex align-items-center mb-2 mt-2 ms-auto">
+                                            <div class="shortby">Sort By:</div>
+                                            <select class="form-select js-choice choice-select-text-none" data-position="bottom" data-search-enabled="false">
+                                  <option value="category">Recommended <i class="fa fa-filter ms-1"></i></option>
+                                  <option value="comedy">Rating</option>
+                                  <option value="dance">Experience</option>
+                                  <option value="dance">Sessions</option>
+                                <option value="dance">Price</option>
+                                </select>
+                                        </div>
+
+
+
+                                    </form>
+
+                                    <!-- Form END -->
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <h5 class="mt-5">5 Results</h5>
+                        <div class="card card-body mt-3 ">                           
+                            <div class="d-flex justify-content-between align-item-center d-block">
+                                <div>
+                                    <div class="d-flex">
+                                        <!-- Avatar -->
+                                        <div class="avatarimg me-3">
+                                            <a href="#!"> <img class="rounded-circle " src="assets/images/myimages/rovert.png" alt="#"> </a>
+                                        </div>
+                                        <!-- Info -->
+                                        <div>
+                                            <h6 class="card-title mb-2 d-flex gap-2"><a href="#!"> Robert Willsom</a>
+                                                <p class="btn-outline-free text-center mb-0"> <img src="assets/images/myimages/free.png" class="me-2" alt="">Free</p>
+                                            </h6>
+                                            <p class="small  mb-1"> <b>Cloud Architect, </b> 6+ yrs experience</p>
+  
+                                            <p class="small mb-0"><i class="fa fa-briefcase me-1 text-purple"></i>AWS, Azure, Cloud Computing </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="userlist_sect mb-0">
+                                            <p class="mb-0">
+                                                <ul class="d-flex list-unstyled">
+                                                    <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning text-muted"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning text-muted"></i></li>
+                                                    <span class="ms-2"> <b>3.1</b>  <small class="text-black">  (162)</small> </span>
+                                                </ul>
+                                            </p>
+
+
+                                        </div>
+                                        <a href="user-profile-mentor.html" class="btn btn-sm btn-outline-pur btn-purple-soft btn-radius ms-5">
+                                          View Profile 
+                                       </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-body mt-3">                           
+                            <div class="d-flex justify-content-between align-item-center  d-block">
+                                <div>
+                                    <div class="d-flex">
+                                        <!-- Avatar -->
+                                        <div class="avatarimg me-3">
+                                            <a href="#!"> <img class=" rounded-circle" src="assets/images/myimages/avantika.png" alt=""> </a>
+                                        </div>
+                                        <!-- Info -->
+                                        <div>
+                                            <h6 class="card-title mb-2 d-flex gap-2"><a href="#!"> Avantika Shinde</a>
+                                                <p class="btn-outline-free text-center mb-0"> $50/Hr.</p>
+                                            </h6>
+                                            <p class="small  mb-1"> <b>Cloud Architect, </b> 6+ yrs experience</p>
+                                            
+                                            <p class="small mb-0"><i class="fa fa-briefcase me-1 text-purple"></i>AWS, Azure, Cloud Computing </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="userlist_sect mb-0">
+                                            <p class="mb-0">
+                                                <ul class="d-flex list-unstyled">
+
+                                                    <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning text-muted"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning text-muted"></i></li>
+                                                    <span class="ms-2"> <b>3.1</b>  <small class="text-black">  (162)</small> </span>
+                                                </ul>
+                                            </p>
+
+
+                                        </div>
+                                        <a href="user-profile-mentor.html" class="btn btn-sm btn-outline-pur btn-purple-soft btn-radius ms-5">
+                                          View Profile 
+                                       </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-body mt-3 ">                           
+                            <div class="d-flex justify-content-between align-item-center d-block">
+                                <div>
+                                    <div class="d-flex">
+                                        <!-- Avatar -->
+                                        <div class="avatarimg me-3">
+                                            <a href="#!"> <img class="rounded-circle " src="assets/images/myimages/rovert.png" alt="#"> </a>
+                                        </div>
+                                        <!-- Info -->
+                                        <div>
+                                            <h6 class="card-title mb-2 d-flex gap-2"><a href="#!"> Robert Willsom</a>
+                                                <p class="btn-outline-free text-center mb-0"> <img src="assets/images/myimages/free.png" class="me-2" alt="">Free</p>
+                                            </h6>
+                                            <p class="small  mb-1"> <b>Cloud Architect, </b> 6+ yrs experience</p>
+  
+                                            <p class="small mb-0"><i class="fa fa-briefcase me-1 text-purple"></i>AWS, Azure, Cloud Computing </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="userlist_sect mb-0">
+                                            <p class="mb-0">
+                                                <ul class="d-flex list-unstyled">
+                                                    <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning text-muted"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning text-muted"></i></li>
+                                                    <span class="ms-2"> <b>3.1</b>  <small class="text-black">  (162)</small> </span>
+                                                </ul>
+                                            </p>
+
+
+                                        </div>
+                                        <a href="user-profile-mentor.html" class="btn btn-sm btn-outline-pur btn-purple-soft btn-radius ms-5">
+                                          View Profile 
+                                       </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-body mt-3">                           
+                            <div class="d-flex justify-content-between align-item-center  d-block">
+                                <div>
+                                    <div class="d-flex">
+                                        <!-- Avatar -->
+                                        <div class="avatarimg me-3">
+                                            <a href="#!"> <img class=" rounded-circle" src="assets/images/myimages/avantika.png" alt=""> </a>
+                                        </div>
+                                        <!-- Info -->
+                                        <div>
+                                            <h6 class="card-title mb-2 d-flex gap-2"><a href="#!"> Avantika Shinde</a>
+                                                <p class="btn-outline-free text-center mb-0"> $50/Hr.</p>
+                                            </h6>
+                                            <p class="small  mb-1"> <b>Cloud Architect, </b> 6+ yrs experience</p>
+                                            
+                                            <p class="small mb-0"><i class="fa fa-briefcase me-1 text-purple"></i>AWS, Azure, Cloud Computing </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="userlist_sect mb-0">
+                                            <p class="mb-0">
+                                                <ul class="d-flex list-unstyled">
+
+                                                    <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning text-muted"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning text-muted"></i></li>
+                                                    <span class="ms-2"> <b>3.1</b>  <small class="text-black">  (162)</small> </span>
+                                                </ul>
+                                            </p>
+
+
+                                        </div>
+                                        <a href="user-profile-mentor.html" class="btn btn-sm btn-outline-pur btn-purple-soft btn-radius ms-5">
+                                          View Profile 
+                                       </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-body mt-3 ">                           
+                            <div class="d-flex justify-content-between align-item-center d-block">
+                                <div>
+                                    <div class="d-flex">
+                                        <!-- Avatar -->
+                                        <div class="avatarimg me-3">
+                                            <a href="#!"> <img class="rounded-circle " src="assets/images/myimages/rovert.png" alt="#"> </a>
+                                        </div>
+                                        <!-- Info -->
+                                        <div>
+                                            <h6 class="card-title mb-2 d-flex gap-2"><a href="#!"> Robert Willsom</a>
+                                                <p class="btn-outline-free text-center mb-0"> <img src="assets/images/myimages/free.png" class="me-2" alt="">Free</p>
+                                            </h6>
+                                            <p class="small  mb-1"> <b>Cloud Architect, </b> 6+ yrs experience</p>
+  
+                                            <p class="small mb-0"><i class="fa fa-briefcase me-1 text-purple"></i>AWS, Azure, Cloud Computing </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="userlist_sect mb-0">
+                                            <p class="mb-0">
+                                                <ul class="d-flex list-unstyled">
+                                                    <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning text-muted"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning text-muted"></i></li>
+                                                    <span class="ms-2"> <b>3.1</b>  <small class="text-black">  (162)</small> </span>
+                                                </ul>
+                                            </p>
+
+
+                                        </div>
+                                        <a href="user-profile-mentor.html" class="btn btn-sm btn-outline-pur btn-purple-soft btn-radius ms-5">
+                                          View Profile 
+                                       </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-body mt-3">                           
+                            <div class="d-flex justify-content-between align-item-center  d-block">
+                                <div>
+                                    <div class="d-flex">
+                                        <!-- Avatar -->
+                                        <div class="avatarimg me-3">
+                                            <a href="#!"> <img class=" rounded-circle" src="assets/images/myimages/avantika.png" alt=""> </a>
+                                        </div>
+                                        <!-- Info -->
+                                        <div>
+                                            <h6 class="card-title mb-2 d-flex gap-2"><a href="#!"> Avantika Shinde</a>
+                                                <p class="btn-outline-free text-center mb-0"> $50/Hr.</p>
+                                            </h6>
+                                            <p class="small  mb-1"> <b>Cloud Architect, </b> 6+ yrs experience</p>
+                                            
+                                            <p class="small mb-0"><i class="fa fa-briefcase me-1 text-purple"></i>AWS, Azure, Cloud Computing </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="userlist_sect mb-0">
+                                            <p class="mb-0">
+                                                <ul class="d-flex list-unstyled">
+
+                                                    <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning text-muted"></i></li>
+                                                    <li><i class="fa-solid fa-star text-warning text-muted"></i></li>
+                                                    <span class="ms-2"> <b>3.1</b>  <small class="text-black">  (162)</small> </span>
+                                                </ul>
+                                            </p>
+
+
+                                        </div>
+                                        <a href="user-profile-mentor.html" class="btn btn-sm btn-outline-pur btn-purple-soft btn-radius ms-5">
+                                          View Profile 
+                                       </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Container END -->
+
+    </main>
+    <!-- **************** MAIN CONTENT END **************** -->
+
+    <!-- =======================
+JS libraries, plugins and custom scripts -->
+
+    <!-- Bootstrap JS -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Functions -->
+    <script src="assets/js/functions.js"></script>
+    <script>
+        var thumbsize = 14;
+      function draw(slider,splitvalue) {
+          /* set function vars */
+          var min = slider.querySelector('.min');
+          var max = slider.querySelector('.max');
+          var lower = slider.querySelector('.lower');
+          var upper = slider.querySelector('.upper');
+          var legend = slider.querySelector('.legend');
+          var thumbsize = parseInt(slider.getAttribute('data-thumbsize'));
+          var rangewidth = parseInt(slider.getAttribute('data-rangewidth'));
+          var rangemin = parseInt(slider.getAttribute('data-rangemin'));
+          var rangemax = parseInt(slider.getAttribute('data-rangemax'));
+          /* set min and max attributes */
+          min.setAttribute('max',splitvalue);
+          max.setAttribute('min',splitvalue);
+      
+          /* set css */
+          min.style.width = parseInt(thumbsize + ((splitvalue - rangemin)/(rangemax - rangemin))*(rangewidth - (2*thumbsize)))+'px';
+          max.style.width = parseInt(thumbsize + ((rangemax - splitvalue)/(rangemax - rangemin))*(rangewidth - (2*thumbsize)))+'px';
+          min.style.left = '0px';
+          max.style.left = parseInt(min.style.width)+'px';
+          min.style.top = lower.offsetHeight+'px';
+          max.style.top = lower.offsetHeight+'px';
+          legend.style.marginTop = min.offsetHeight+'px';
+          slider.style.height = (lower.offsetHeight + min.offsetHeight + legend.offsetHeight)+'px';    
+          /* correct for 1 off at the end */
+          if(max.value>(rangemax - 1)) max.setAttribute('data-value',rangemax);
+          /* write value and labels */
+          max.value = max.getAttribute('data-value'); 
+          min.value = min.getAttribute('data-value');
+          lower.innerHTML = min.getAttribute('data-value');
+          upper.innerHTML = max.getAttribute('data-value');
+      }
+      
+      function init(slider) {
+          /* set function vars */
+          var min = slider.querySelector('.min');
+          var max = slider.querySelector('.max');
+          var rangemin = parseInt(min.getAttribute('min'));
+          var rangemax = parseInt(max.getAttribute('max'));
+          var avgvalue = (rangemin + rangemax)/2;
+          var legendnum = slider.getAttribute('data-legendnum');
+      
+          /* set data-values */
+          min.setAttribute('data-value',rangemin);
+          max.setAttribute('data-value',rangemax);
+          
+          /* set data vars */
+          slider.setAttribute('data-rangemin',rangemin); 
+          slider.setAttribute('data-rangemax',rangemax); 
+          slider.setAttribute('data-thumbsize',thumbsize); 
+          slider.setAttribute('data-rangewidth',slider.offsetWidth);
+      
+          /* write labels */
+          var lower = document.createElement('span');
+          var upper = document.createElement('span');
+          lower.classList.add('lower','value');
+          upper.classList.add('upper','value');
+          lower.appendChild(document.createTextNode(rangemin));
+          upper.appendChild(document.createTextNode(rangemax));
+          slider.insertBefore(lower,min.previousElementSibling);
+          slider.insertBefore(upper,min.previousElementSibling);
+          
+          /* write legend */
+          var legend = document.createElement('div');
+          legend.classList.add('legend');
+          var legendvalues = [];
+          for (var i = 0; i < legendnum; i++) {
+              legendvalues[i] = document.createElement('div');
+              var val = Math.round(rangemin+(i/(legendnum-1))*(rangemax - rangemin));
+              legendvalues[i].appendChild(document.createTextNode(val));
+              legend.appendChild(legendvalues[i]);
+      
+          } 
+          slider.appendChild(legend);
+          draw(slider,avgvalue);
+          min.addEventListener("input", function() {update(min);});
+          max.addEventListener("input", function() {update(max);});
+      }
+      
+      function update(el){  
+          var slider = el.parentElement;
+          var min = slider.querySelector('#min');
+          var max = slider.querySelector('#max');
+          var minvalue = Math.floor(min.value);
+          var maxvalue = Math.floor(max.value);
+          
+          /* set inactive values before draw */
+          min.setAttribute('data-value',minvalue);
+          max.setAttribute('data-value',maxvalue);
+          var avgvalue = (minvalue + maxvalue)/2;
+          /* draw */
+          draw(slider,avgvalue);
+      }
+      var sliders = document.querySelectorAll('.min-max-slider');
+      sliders.forEach( function(slider) {
+          init(slider);
+      });
+      
+      </script>
+
+</body>
+
+</html>

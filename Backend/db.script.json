@@ -1,0 +1,9 @@
+{
+    "development": {
+        "username": "admin",
+        "password": "admin",
+        "database": "Learnet",
+        "host": "localhost",
+        "port": "3000"
+    }
+}

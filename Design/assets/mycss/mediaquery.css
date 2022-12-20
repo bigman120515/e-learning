@@ -1,0 +1,338 @@
+
+
+
+/*  -------******** big device ********---------- */
+@media (min-width: 1920px) and (max-width: 2560px) {
+
+/*Public pages*/
+.hero_heading h1{font-size:70px;line-height:76px}
+.hero_section{padding-top:180px}
+.hero_text_section{padding-left:60px;padding-top:90px}
+.hero_section .input-group{margin-top:50px;width:80%}
+.comman_heading h2{font-size:50px}
+.tabbing_section ul{margin:60px}
+.comman_padding{padding:80px 150px}
+.join_learnet .card{padding:40px}
+.join_learnet .card_body h4{font-size:30px;font-weight:500;margin-bottom:20px}
+.join_learnet .card_body p{margin-bottom:0}
+.btn-button{padding:12px 30px;font-size:20px}
+.booking_workflow_padding{padding-top:150px}
+.booking_workflow_padding-top{padding-top:100px}
+.footer_padding,.header_section-home{padding-left:150px;padding-right:150px}
+.footer_section a{font-size:16px}
+.privacy_section a{margin-right:50px}
+.hero_section .input-group i{color:#fff}
+.hero_section .input-group input[type=text]{height:70px;border-radius:230px;font-size:20px}
+.btn-secondary{height:70px;width:70px;border-radius:0 230px 230px 0}
+.navbar-nav li .nav-items{width:143px;padding:19px 10px;margin-top:-15px}
+.bg-slider .owl-carousel__prev{left:125px}
+.bg-slider .owl-carousel__next{right:125px}
+.card-text-body h4{font-size:20px;line-height:28px;font-weight:600;margin-top:10px}
+.slider_section .card-text-body{padding:30px}
+.heart_icon i{font-size:20px}
+.card-text-body .duration_text h6{font-size:16px}
+.bottom_block p{font-size:20px!important}
+.bg-slider .owl-carousel__next,.bg-slider .owl-carousel__prev{height:45px;width:45px;line-height:45px}
+.fewclick_section .nav-pills .nav-link.active,.nav-pills .show>.nav-link{width:180px;height:60px}
+.fewclick_section button{width:180px;height:60px;border-radius:54px!important}
+.fewclick_section_items ul li{list-style:none;margin-bottom:18px}
+.fewclick_section_items ul li a{font-size:21px;line-height:50px}
+.faqsection .accordion-header button{font-size:30px;padding:40px 0}
+.footer-brand{font-size:30px!important}
+.footer_section h5{font-size:30px}
+.privacytext a{font-size:16px}
+.underline_view::after{left:136px}
+/*Public pages End*/
+
+
+
+
+
+
+}
+
+@media screen and (min-width:1441px) and (max-width:1919px) {
+.hero_section .hero_content h1{font-size:65px}
+.header{padding:12px 0}
+.hero_img img{width:400px}
+.main_body .content .welcome{font-size:60px}
+.footer{padding:17px 0}
+.ob_title{font-size:30px}
+.profile_box .profile_img{width:100px;height:100px;margin:-90px auto 20px}
+.profile_box .profile_name{font-size:20px}
+.input_form .form-control{height:40px}
+.btn-primary{font-size:20px;padding:10px 30px}
+.header .nav_header .top_menu a{font-size:20px}
+.copy{margin-bottom:0;font-size:14px}
+.footer .bottom_menu a{font-size:14px}
+.ob_para{font-size:18px;line-height:28px}
+.input_form .form-group{margin-bottom:20px}
+.input_form label{font-size:14px}
+.linkbtn{font-size:16px;line-height:24px}
+.otpinput .form-control{width:40px}
+.otp_wrap{padding-top:30px}
+.Agreecheck h3{font-size:18px}
+.otp_wrap p{font-size:14px;line-height:24px;color:#65735B}
+.form_box{margin:24px auto 0}
+.mentor_container .mentor_card .photo{width:100px;height:100px}
+.mentor_container .mentor_card h4{font-size:16px}
+.mentor_container .mentor_card p{font-size:14px;line-height:16px}
+.addbtn{font-size:14px;padding:6px 30px}
+.mentor_container{gap:26px}
+.btnsm{font-size:16px!important;padding:6px 20px!important}
+
+/*Public pages*/
+.hero-section-privacy {height: 300px; }
+/*Public pages End*/
+
+
+
+
+}
+
+@media screen and (min-width:1025px) and (max-width:1440px) {
+h5, .h5 { font-size: 1rem; }
+.hero_section .hero_content h1 {font-size: 65px;}
+.our_team_list .team_container { gap: 50px;}
+.hero_section .hero_right_img .hero_img img { width: 280px;}
+.hero_section .hero_content { margin-right: 0;}
+.help_card { padding: 25px;}
+.help_card ul li {font-size: 16px;}
+.help_card p { font-size: 18px; line-height: 30px;}
+.help_card h4 { font-size: 26px;}
+.right_getimg .get_imgflex .gimg1 { width: 350px;}
+.right_getimg .get_imgflex .gimg2 { width: 230px;}
+.right_getimg .get_imgflex .gimg3 { width: 300px;}
+.right_getimg:after { width: 400px;height: 400px;}
+.news_card .news_title { font-size: 18px; line-height: 30px; margin-top: 20px;}
+.card_container {  width: 90%; margin: 0 auto 20%;}
+.mentor_container .mentor_card { width: 296px;   }
+.ob_title {font-size: 42px; }
+
+
+
+}
+
+
+
+
+/*  ----------******** End of laptop device ********-------------- */
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+.hero_img img{width:100%;}
+.main_body .content .welcome {font-size: 46px; }
+
+.title_wrap {  width: 80%; }
+.ob_title { font-size: 30px; }
+
+.card_container {  width: 95%; margin: 0 auto 20%;}
+.mentor_container .mentor_card { width: 30%;   }
+}
+
+@media screen and (min-width: 651px) and (max-width: 900px) {	
+ .main_body {margin-top: 30px;}
+.hero_img img{width:100%;}
+.main_body .content .welcome {font-size: 46px; }
+.btnlg { min-width: 100%;}
+
+.title_wrap {  width: 100%; }
+.ob_title { font-size: 30px; }
+.ob_para { font-size: 18px; line-height: 26px;}
+
+.otp_wrap { width: 90%;}
+
+.card_container { width: 90%;    margin: 0 auto 20%;}
+.mentor_container { }
+.mentor_container .mentor_card { width: 47%;}
+
+/*Public pages*/
+.footer_padding{padding:30px 50px}
+.faqsection{max-width:600px;margin:30px}
+.header_section-home{padding-left:50px;padding-right:50px;padding-bottom:10px}
+.comman_padding{padding:50px}
+.join_learnet .card{min-height:270px}
+.hero_section{padding-left:42px}
+.hero_heading h1{font-size:50px}
+.fewclick_section{padding-left:30px;padding-right:30px}
+.selectbox_section{padding-left:30px;padding-right:30px;margin-top:90px}
+.join_learnet .card_body p{margin-bottom:0}
+.session_section{width:313px;padding:22px 20px}
+.session_section::after{content:url(../images/herodatetime.png);position:absolute;top:-83px;transform:scale(.72)}
+.times_icon_flex p{font-size:11px;padding:3px 6px}
+.side_confirm{margin-right:6px}
+.monthdate{margin-top:-66px}
+.faqsection .accordion-header button{font-size:17px!important;line-height:53px}
+.duration_text h6{font-size:11px}
+.bg-slider .owl-carousel__prev{left:35px}
+.bg-slider .owl-carousel__next{right:35px}
+.fewclick_section_items ul li a{font-size:13px!important}
+.hero-section-privacy{height:300px}
+.privacy_heading{font-size:34px}
+
+/*Public pages End*/
+
+
+}
+
+@media screen and (min-width: 651px) and (max-width: 900px) {
+/*Public pages */
+.header_section-home{padding-left:30px;padding-right:30px}
+.faq_padd{padding:30px 20px}
+.hero-section-privacy{height:300px}
+.privacy_heading{font-size:34px}
+.home_header{align-items:center;justify-content:space-between;width:100%}
+.mynavbar.navbar-nav{align-items:unset;background:#fff;padding:20px}
+.mynavbar .nav-item+.nav-item{margin-left:0!important}
+.navbar-light .navbar-nav.mynavbar .nav-item .nav-link.btnnav{display:inline-block;margin-top:10px}
+.comman_padding{padding:50px 30px}
+.header_section{padding-left:60px;padding-right:60px}
+.faq_section-padd{padding-top:180px}
+.footer_padding{padding:30px}
+.hero_text_section{padding-top:3px;padding-left:60px;padding-right:60px}
+.comman_heading h2{font-size:35px;line-height:40px}
+.hero_sub_position img{width:90%;margin-top:30px;display:flex;margin-left:auto}
+.hero_heading h1{font-size:45px}
+.hero_section{padding-left:0}
+.hero_text_section .input-group{padding-right:25px}
+.join_learnet .card{padding:15px}
+.fewclick_section_items{margin-left:60px}
+.fewclick_section_items ul li a{font-size:14px!important;line-height:14px!important}
+.fewclick_section_items ul li{margin-bottom:0}
+.faqsection{max-width:630px;margin-top:30px}
+.faqsection .accordion-header button{font-size:15px!important;line-height:50px}
+.selectbox_section{padding-left:32px;padding-right:32px}
+.result_section .table tr td h6{font-size:15px}
+.result_section .table tr td p{font-size:13px!important}
+.result_section .table tr td .span1{font-size:14px!important}
+.result_section h4{font-size:21px}
+.monthdate{margin-top:16px;padding:17px 13px}
+.side_time{width:97px}
+.side_time p{font-size:13px!important}
+.result_section1{margin-left:-77px}
+.times_icon_flex p{padding:3px 24px;font-size:12px!important}
+.result_section2{width:100%;margin-top:30px}
+.bg-slider .owl-carousel__prev{left:15px}
+.bg-slider .owl-carousel__next{right:15px}
+.faq_section h1{text-align:center}
+.privacy_padd{max-width:550px}
+.search input{width:550px}
+/*Public pages End*/
+
+
+
+
+}
+
+
+
+
+
+/*  ----------***** Mobile device *****--------- */
+@media screen and (max-width: 650px) {
+/* Onboarding CSS */
+.skill_sec{display:block!important;margin:7px auto;padding:0}
+.skill_sec .skill_btn{margin-left:0;margin-top:6px!important}
+.user_search{padding-top:20px;width:100%}
+.usersearch_body .card-body{padding:10px}
+.userlist_sect ul{padding-left:55px}
+.userstarlist ul{padding-left:0}
+.month{margin-left:0;padding:20px 12px}
+.days,.weekdays{padding:10px 12px}
+.navbar_padd{padding:10px}
+.d-flex-prop,.d-flex-prop1{display:block}
+	
+/* Booking Flow CSS */
+.main_body .text_rapper {display: block;    }
+.main_body .content .welcome br{display:none;}
+.hero_img img{width:100%;}
+.header .nav_header .top_menu a + a {margin-left: 15px;}
+.header .nav_header .top_menu a { font-size: 20px;  }
+.btnlg {min-width: 100%;}
+.main_body .content .welcome {font-size: 46px; }
+.footer .bottom_menu a + a {margin-left: 15px;}
+.footer .bottom_menu a {  font-size: 14px;  }
+.header .nav_header .logo img{width: 130px;}
+.main_body {margin-top: 30px;}
+
+.title_wrap {  width: 100%; }
+.ob_title { font-size: 26px; }
+.ob_para { font-size: 16px; line-height: 24px;}
+
+.otp_wrap { width: 100%;margin-bottom: 50px;}
+.otpinput .form-control { margin: 0 4px; }
+.navbar-fixed-bottom, .navbar-fixed-top {  position: unset;   }
+.otp_wrap p { font-size: 16px; line-height: 20px;}
+
+.form_skills { margin: 40px auto 110px;}
+.card_container { width: 90%;}
+.mentor_container { display: block; }
+.mentor_container .mentor_card { width: 100%;margin-bottom: 30px;}
+
+/*Public pages */
+.mynavbar.navbar-nav{align-items:unset;background:#fff;padding:20px}
+.mynavbar .nav-item+.nav-item{margin-left:0!important}
+.navbar-light .navbar-nav.mynavbar .nav-item .nav-link.btnnav{display:inline-block;margin-top:10px}
+.bg-slider{margin-top:0}
+.card-text-body h4{font-size:20px;color:#1B1B1B;line-height:26px}
+.search input{width:300px}
+.privacy_padd{max-width:90%}
+.hero-section-privacy{margin-top:88px;height:250px}
+.term_condition_bg{height:auto;padding:60px 0}
+.btn-button{margin-top:20px}
+.comman_padding{padding:50px 10px 0}
+.comman_heading h2{font-size:24px;line-height:30px}
+.hero_section{padding-left:15px}
+.header_section{padding-left:15px;padding-right:0}
+.header_section-home{padding-left:15px;padding-right:15px;padding-bottom:10px}
+.hero_sub_position img{width:100%}
+.hero_text_section .input-group{width:100%;display:flex}
+.hero_text_section .input-group input[type=text]{padding-left:16px;height:50px;font-size:16px}
+.btn-secondary{background-color:#AF65D5;height:50px;width:50px;border-radius:0 250px 250px 0;border:unset}
+.navbar-light .navbar-toggler{color:rgba(0,0,0,.55);border:unset}
+.navbar-brand img{width:50%!important}
+.hero_heading h1{font-size:36px;color:#001E00}
+.hero_text_section{padding-top:30px;padding-right:25px}
+.hero_sub_position img{margin-top:40px;padding-right:15px;padding-bottom:40px}
+#mobleview{display:block}
+#desktop_view{display:none!important}
+.btn-btn-join{margin-top:0}
+.tabbing_section ul li{display:flex!important}
+.tabbing_section .nav-pills{flex-wrap:nowrap;flex-direction:row!important}
+.nav-pills-items{flex-direction:row!important;flex-wrap:nowrap}
+.join_learnet .card{height:auto}
+.mt3{margin-top:0}
+.footer_section h5{font-size:15px}
+.fewclick_section_items{margin-left:10px;margin-top:20px;display:block}
+.fewclick_section .nav-pills .nav-link.active,.fewclick_section button{font-size:18px;width:130px;height:45px}
+.ulitemssecond ul{margin-left:0;margin-top:10px}
+.nav-pills-items1{display:block!important}
+.footer-brand img{width:120px}
+.footer_padding{padding:30px}
+.bg-slider .owl-carousel__prev{left:1px}
+.bg-slider .owl-carousel__next{right:1px}
+.heart_icon i{font-size:16px}
+.footer-brand img{display:flex;margin:0 auto}
+.footer_icon li{padding:0 7px;margin-left:5px}
+.footer_section_second{margin-top:0}
+.footer_section_second a{text-align:center;margin-top:10px}
+.privacy_section a{margin-right:20px}
+.d-block{display:block!important}
+.privacy_heading{font-size:35px}
+.privacy_heading5{font-size:16px}
+.acc__title{font-size:17px;line-height:30px;padding:0}
+.acc__panel{font-size:13px;line-height:25px;padding-left:0}
+.faq_padd{width:100%!important;padding:30px 20px}
+.acc__card::after{left:0}
+.acc__title::after{right:-31px}
+/*Public pages End*/
+
+
+}
+
+
+
+/*  ---------***** End of Mobile device *****--------*/
+@media screen and (max-width:767px) {}
+
+@media screen and (max-width: 320px) {}
+
+

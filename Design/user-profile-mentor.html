@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Learnet-User-Profile-Mentor</title>
+
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="">
+    <meta name="description" content="Bootstrap 5 based Social Media Network and Community Theme">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/OverlayScrollbars-master/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/tiny-slider/dist/tiny-slider.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendor/glightbox-master/dist/css/glightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/dropzone/dist/dropzone.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendor/flatpickr/dist/flatpickr.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendor/plyr/plyr.css" />
+
+    <!-- Theme CSS -->
+    <link id="style-switch" rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/mycss/style.css">
+    <link rel="stylesheet" href="assets/mycss/mediaquery.css">
+
+
+</head>
+
+<body>
+
+    <!-- Header START -->
+    <header class="navbar-light fixed-top header-static bg-mode">
+        <!-- Logo Nav START -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Logo START -->
+                <a class="navbar-brand" href="user-home-nudge.html">                   
+                    ATSPL
+                </a>
+                <!-- Logo END -->
+
+                <!-- Responsive navbar toggler -->
+                <button class="navbar-toggler ms-auto icon-md btn btn-light p-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-animation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+                <!-- Main navbar START -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                    <!-- Nav Search START -->
+                    <div class="nav mt-3 mt-lg-0 flex-nowrap align-items-center px-4 px-lg-0">
+                        <div class="nav-item ">
+                            <div class="input-group mysearchfiled">
+                                <input type="text" class="form-control" placeholder="What would you like to learn?">
+                                <div class="input-group-append">
+                                  <button class="btn btn-secondary2" type="button"><i class="fa fa-search"></i></button>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <!-- Nav Search END -->
+
+
+                    <!-- Main navbar END -->
+
+                    <!-- Nav right START -->
+
+                    <ul class="nav flex-nowrap align-items-center ms-auto list-unstyled navbar_padd">
+                        <li class="nav-item ms-2 active">
+                            <a class="nav-link   p-0   d-block " href="user-home-nudge.html">
+                                <i class="bi bi-house-fill fs-6 mb-0 icon_size"></i>
+                                <p class="mb-0 haeder_haed"><small>Home</small> </p>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link  p-0  d-block " href="session.html">
+                                <i class="bi bi-calendar-check-fill fs-6 icon_size"></i>
+                                <p class="mb-0 haeder_haed"><small>Sessions</small> </p>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link  p-0  d-block " href="messaging.html">
+                                <i class="bi bi-chat-left-text-fill fs-6 icon_size"> </i>
+                                <p class="mb-0 haeder_haed"><small>Messaging</small> </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown ms-2">
+                            <a class="nav-link  p-0  d-block" href="#" id="notifDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                <span class="badge-notif animation-blink"></span>
+                                <i class="bi bi-bell-fill fs-6 icon_size"> </i>
+                                <p class="mb-0 haeder_haed"><small>Notifications</small> </p>
+                            </a>
+                            <div class="dropdown-menu dropdown-animation dropdown-menu-end dropdown-menu-size-md p-0 shadow-lg border-0"
+                                aria-labelledby="notifDropdown">
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between align-items-center">
+                                        <h6 class="m-0">
+                                            Notifications
+                                            <span class="badge bg-danger bg-opacity-10 text-danger ms-2">4 new</span>
+                                        </h6>
+                                        <a class="small" href="#">Clear all</a>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <ul class="list-group list-group-flush list-unstyled p-2">
+                                            <!-- Notif item -->
+                                            <li>
+                                                <div
+                                                    class="list-group-item list-group-item-action rounded badge-unread d-flex border-0 mb-1 p-3">
+                                                    <div class="avatar text-center d-none d-sm-inline-block">
+                                                        <img class="avatar-img rounded-circle"
+                                                            src="assets/images/avatar/01.jpg" alt="" />
+                                                    </div>
+                                                    <div class="ms-sm-3">
+                                                        <div class="d-flex">
+                                                            <p class="small mb-2">
+                                                                New Session has been booked by George
+                                                                <b>(AI/ML, 20th Sep)</b>
+                                                            </p>
+                                                            <p class="small ms-3 text-nowrap">Just now</p>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <button class="btn btn-sm py-1 btn-primary me-2">
+                                                                Accept
+                                                            </button>
+                                                            <button class="btn btn-sm py-1 btn-danger-soft">
+                                                                Delete
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- Notif item -->
+                                            <li>
+                                                <div
+                                                    class="list-group-item list-group-item-action rounded badge-unread d-flex border-0 mb-1 p-3 position-relative">
+                                                    <div class="avatar text-center d-none d-sm-inline-block">
+                                                        <img class="avatar-img rounded-circle"
+                                                            src="assets/images/avatar/02.jpg" alt="" />
+                                                    </div>
+                                                    <div class="ms-sm-3 d-flex">
+                                                        <div>
+                                                            <p class="small mb-2">
+                                                                Shah Alam has enrolled in group session
+                                                                <b>(Cloud Computing, 10th)</b>
+                                                            </p>
+                                                        </div>
+                                                        <p class="small ms-3">5min ago</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- Notif item -->
+                                            <li>
+                                                <a href="#"
+                                                    class="list-group-item list-group-item-action rounded d-flex border-0 mb-1 p-3">
+                                                    <div class="avatar text-center d-none d-sm-inline-block">
+                                                        <div class="avatar-img rounded-circle bg-success">
+                                                            <span
+                                                                class="text-white position-absolute top-50 start-50 translate-middle fw-bold">WB</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ms-sm-3">
+                                                        <div class="d-flex">
+                                                            <p class="small mb-2">
+                                                                You have updated your profile
+                                                                <b>(Education details )</b>
+                                                            </p>
+                                                            <p class="small ms-3">2hr ago</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <!-- Notif item -->
+                                        </ul>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="#" class="btn btn-sm btn-primary-soft">See all incoming activity</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link  p-0  d-block" href="settings.html">
+                                <i class="bi bi-gear-fill fs-6 icon_size"> </i>
+                                <p class="mb-0 haeder_haed"><small>Settings</small> </p>
+                            </a>
+                        </li>
+
+
+
+                        <!-- Notification dropdown END -->
+
+                        <li class="nav-item  dropdown mt-1">
+                            <a class="nav-link btn icon-md p-0" href="#" id="profileDropdown" role="button"
+                                data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img class="avatar-img rounded-2" src="assets/images/avatar/07.jpg" alt="" />
+                            </a>
+                            <ul class="dropdown-menu dropdown-animation dropdown-menu-end pt-3 small me-md-n3"
+                                aria-labelledby="profileDropdown">
+                                <!-- Profile info -->
+                                <li class="px-3">
+                                    <div class="d-flex align-items-center position-relative">
+                                        <!-- Avatar -->
+                                        <div class="avatar me-3">
+                                            <img class="avatar-img rounded-circle" src="assets/images/avatar/07.jpg"
+                                                alt="avatar" />
+                                        </div>
+                                        <div>
+                                            <a class="h6 stretched-link" href="#">Sam Lanson</a>
+                                            <p class="small m-0">Web Developer</p>
+                                        </div>
+                                    </div>
+                                    <a class="dropdown-item btn btn-primary-soft btn-sm my-2 text-center"
+                                        href="my-profile.html">View profile</a>
+                                </li>
+                                <!-- Links -->
+                                <li>
+                                    <a class="dropdown-item" href="settings.html"><i
+                                            class="bi bi-gear fa-fw me-2"></i>Settings &
+                                        Privacy</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="!">
+                                        <i class="fa-fw bi bi-life-preserver me-2"></i>Support
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#!">
+                                        <i class="fa-fw bi bi-card-text me-2"></i>Documentation
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item bg-danger-soft-hover" href="#!"><i
+                                            class="bi bi-power fa-fw me-2"></i>Sign Out</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <!-- Dark mode switch START -->
+                                <li>
+                                    <div class="modeswitch-wrap" id="darkModeSwitch">
+                                        <div class="modeswitch-item">
+                                            <div class="modeswitch-icon"></div>
+                                        </div>
+                                        <span>Dark mode</span>
+                                    </div>
+                                </li>
+                                <!-- Dark mode switch END -->
+                            </ul>
+                        </li>
+                        <!-- Profile START -->
+                    </ul>
+                </div>
+                <!-- Nav right END -->
+            </div>
+        </nav>
+        <!-- Logo Nav END -->
+    </header>
+    <!-- Header END -->
+
+    <!-- **************** MAIN CONTENT START **************** -->
+    <main>
+
+        <!-- Container START -->
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Main content START -->
+                <div class="col-lg-8 vstack gap-4">
+                    <!-- My profile START -->
+                    <div class="card">
+                        <!-- Cover image -->
+                        <div class="h-200px rounded-top"
+                            style="background-image:url(assets/images/bg/05.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                        </div>
+                        <!-- Card body START -->
+                        <div class="card-body py-0">
+                            <div class="d-sm-flex align-items-start text-center text-sm-start">
+                                <div>
+                                    <!-- Avatar -->
+                                    <div class="avatar avatar-xxl mt-n5 mb-3">
+                                        <img class="avatar-img rounded-circle border border-white border-3"
+                                            src="assets/images/avatar/07.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="ms-sm-4 mt-sm-3">
+                                    <!-- Info -->
+                                    <h1 class="mb-0 h5">Sam Lanson </h1>
+                                    <p class="small mb-0">Cloud Architect, 6+ yrs experience</p>
+                                    <p class="small mb-0"><i class="fa fa-briefcase me-1 text-purple"></i>AWS, Azure, Cloud Computing </p>
+                                </div>
+                                <!-- Button -->
+                                <div class="d-flex mt-3 justify-content-center ms-sm-auto">
+
+                                    <div class="dropdown">
+                                        <!-- Card share action menu -->
+
+                                        <!-- Card share action dropdown menu -->
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileAction2">
+                                            <li>
+                                                <a class="dropdown-item" href="#"> <i
+                                                        class="bi bi-bookmark fa-fw pe-2"></i>Share profile in a
+                                                    message</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#"> <i
+                                                        class="bi bi-file-earmark-pdf fa-fw pe-2"></i>Save your profile
+                                                    to PDF</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#"> <i
+                                                        class="bi bi-lock fa-fw pe-2"></i>Lock profile</a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#"> <i
+                                                        class="bi bi-gear fa-fw pe-2"></i>Profile settings</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- List profile -->
+                            <ul class="list-inline mb-0 text-center text-sm-start mt-3 mt-sm-0">
+                                <!-- <li class="list-inline-item"><i class="bi bi-briefcase me-1"></i> Lead Developer</li> -->
+                                <li class="list-inline-item"><i class="bi bi-geo-alt me-1"></i> New Hampshire</li>
+                                <li class="list-inline-item"><i class="bi bi-calendar2-plus me-1"></i> Joined on Nov 2019</li>
+                            </ul>
+                        </div>
+                        <h5 class="card-title ms-4 mt-3">Profile info</h5>
+                        <!-- Card body END -->
+                        <div class="card-body">
+                            <div class="rounded border px-3 py-2 mb-3">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5>Overview</h5>
+
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A faucibus nec, nec sit ut
+                                    blandit non scelerisque aliquam. Pellentesque feugiat et accumsan odio duis ipsum,
+                                    duis platea. Sapien ultrices amet ridiculus fermentum
+                                    ullamcorper at purus netus. Ornare tortor sed donec vitae ut sed. Lacinia purus
+                                    scelerisque sed molestie. In convallis id aliquam ut sed condimentum. </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- My profile END -->
+                    <!-- skills section start here  -->
+                    <div class="col-sm-6 col-lg-12">
+                        <div class="card">
+
+                            <div class="card-header d-flex justify-content-between border-0">
+                                <h5 class="card-title">I can mentor</h5>
+
+                            </div>
+
+                            <div class="card-body position-relative pt-0">
+                                <!-- Experience item START -->
+                                <div class="d-flex justify-content-between">
+
+                                    <!-- Info -->
+                                    <div>
+                                        <h6 class="card-title mb-0"><a href="#!">Cloud Architect</a></h6>
+
+                                    </div>
+                                    <ul class="d-flex list-unstyled mb-2">
+
+                                        <li><i class="fa-solid fa-star text-warning"></i></li>
+                                        <li><i class="fa-solid fa-star text-warning"></i></li>
+                                        <li><i class="fa-solid fa-star text-warning"></i></li>
+                                        <li><i class="fa-solid fa-star text-warning"></i></li>
+                                        <li><i class="fa-solid fa-star-half-stroke text-warning"></i></li>
+
+                                    </ul>
+                                </div>
+                                <div class="d-flex justify-content-between">
+
+                                    <!-- Info -->
+                                    <div>
+                                        <h6 class="card-title mb-0"><a href="#!"> Backend Development </a></h6>
+
+                                    </div>
+                                    <ul class="d-flex list-unstyled mb-2">
+
+                                        <li><i class="fa-solid fa-star text-warning"></i></li>
+                                        <li><i class="fa-solid fa-star text-warning"></i></li>
+                                        <li><i class="fa-solid fa-star text-warning"></i></li>
+                                        <li><i class="fa-solid fa-star text-warning"></i></li>
+                                        <li><i class="fa-solid fa-star-half-stroke text-warning"></i></li>
+
+                                    </ul>
+                                </div>
+                                <!-- Experience item END -->
+
+                                <!-- Experience item START -->
+                                <div class="d-flex justify-content-between">
+
+                                    <!-- Info -->
+                                    <div>
+                                        <h6 class="card-title mb-0"><a href="#!"> Frontend with Javascript </a></h6>
+
+                                    </div>
+                                    <ul class="d-flex list-unstyled mb-2">
+
+                                        <li><i class="fa-solid fa-star text-warning"></i></li>
+                                        <li><i class="fa-solid fa-star text-warning"></i></li>
+                                        <li><i class="fa-solid fa-star text-warning"></i></li>
+                                        <li><i class="fa-solid fa-star text-warning"></i></li>
+                                        <li><i class="fa-solid fa-star-half-stroke text-warning"></i></li>
+
+                                    </ul>
+                                </div>
+                                <!-- Experience item END -->
+
+                                <!-- Experience item START -->
+                                <div class="d-flex justify-content-between">
+
+                                    <!-- Info -->
+                                    <div>
+                                        <h6 class="card-title mb-0"><a href="#!"> Artificial Intelligence and Machine
+                                                Learning </a></h6>
+
+                                    </div>
+                                    <ul class="d-flex list-unstyled mb-1">
+
+                                        <li><i class="fa-solid fa-star text-warning"></i></li>
+                                        <li><i class="fa-solid fa-star text-warning"></i></li>
+                                        <li><i class="fa-solid fa-star text-warning"></i></li>
+                                        <li><i class="fa-solid fa-star text-warning"></i></li>
+                                        <li><i class="fa-solid fa-star-half-stroke text-warning"></i></li>
+
+                                    </ul>
+                                </div>
+                                <!-- Experience item END -->
+
+                            </div>
+                            <!-- Card body END -->
+                        </div>
+                    </div>
+                    <!-- experience section start  -->
+                    <div class="col-sm-6 col-lg-12">
+                        <div class="card">
+
+                            <div class="card-header d-flex justify-content-between border-0">
+                                <h5 class="card-title">Experience</h5>
+
+                            </div>
+
+                            <div class="card-body position-relative pt-0">
+                                <!-- Experience item START -->
+                                <div class="d-flex">
+
+                                    <!-- Info -->
+                                    <div>
+                                        <h6 class="card-title mb-1"><a href="#!"> Sr. UI/UX Developer </a></h6>
+                                        <p class="mb-1 "> Microsoft Technosoft</p>
+                                        <p class="mb-1 small">May 2018 - Present </p>
+                                        <div class="mt-3">
+                                        <p class="mb-0">
+                                            Microsoft is a technology company offering transformational products and
+                                            solutions in AdTech, MarTech, and deep tech to drive creative, media, data,
+                                            and business transformation, helping global businesses become real-time,
+                                            disruptive, and thereby achieve
+                                            exponential growth. We are a geography agnostic, hybrid work culture, and
+                                            agile company.
+                                        </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <!-- Experience item END -->
+
+                                <!-- Experience item START -->
+                                <div class="d-flex">
+
+                                    <!-- Info -->
+                                    <div class="mt-4">
+                                        <h6 class="card-title mb-1"> UI Developer </h6>
+                                        <p class="mb-1 ">TCS</p>
+                                        <p class="small">April 2015 - Jan 2018</p>
+                                    </div>
+                                </div>
+                                <!-- Experience item END -->
+
+                                <!-- Experience item START -->
+                                <div class="d-flex">
+
+                                    <!-- Info -->
+                                    <div>
+                                        <h6 class="card-title mb-1"> UI Developer </h6>
+                                        <p class=" mb-1 "> Wipro</p>
+                                        <p class="small">Sep 2009 - Fab 2015</p>
+                                    </div>
+                                </div>
+                                <!-- Experience item END -->
+
+                            </div>
+                            <!-- Card body END -->
+                        </div>
+                    </div>
+
+                    <!-- education section start  -->
+
+                    <div class="col-sm-6 col-lg-12">
+                        <div class="card">
+                            <!-- Card header START -->
+                            <div class="card-header d-flex justify-content-between border-0">
+                                <h5 class="card-title">Education</h5>
+
+                            </div>
+                            <!-- Card header END -->
+                            <!-- Card body START -->
+                            <div class="card-body position-relative pt-0">
+                                <!-- Experience item START -->
+                                <div class="d-flex">
+
+                                    <!-- Info -->
+                                    <div>
+                                        <h6 class="card-title mb-1"><a href="#!"> Bachelor of Engineering - BE </a></h6>
+                                        <p class="small">May 2018 - Present </p>
+                                    </div>
+                                </div>
+                                <!-- Experience item END -->
+
+                                <!-- Experience item START -->
+                                <div class="d-flex">
+
+                                    <!-- Info -->
+                                    <div>
+                                        <h6 class="card-title mb-1"><a href="#!"> MCA </a></h6>
+                                        <p class="small">Dec 2015 - April 2018 </p>
+                                    </div>
+                                </div>
+                                <!-- Experience item END -->
+
+                                <!-- Experience item START -->
+                                <div class="d-flex">
+
+                                    <!-- Info -->
+                                    <div>
+                                        <h6 class="card-title mb-1"><a href="#!"> BCA </a></h6>
+                                        <p class="small mb-0">Jan 2006 - Nov 2015 </p>
+                                    </div>
+                                </div>
+                                <!-- Experience item END -->
+
+                            </div>
+                            <!-- Card body END -->
+                        </div>
+                    </div>
+                    <!-- certification section start  -->
+                    <div class="col-sm-6 col-lg-12">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between border-0">
+                                <h5 class="card-title">Certification</h5>
+                            </div>
+                            <div class="card-body position-relative pt-0">
+                                <div class="d-flex">
+                                    <!-- Info -->
+                                    <div>
+                                        <h6 class="card-title mb-1"><a href="#!"> AWS Foundation Certificate </a></h6>
+                                        <p class="small mb-1">AWS </p>
+                                        <p class="small mb-0">Issued by May 2018 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card body END -->
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-12">
+                        <div class="card">
+                            <!-- Card header START -->
+                            <div class="card-header d-flex justify-content-between border-0">
+                                <h5 class="card-title">Language</h5>
+                            </div>
+                            <!-- Card header END -->
+                            <!-- Card body START -->
+                            <div class="card-body position-relative pt-0">
+                                <!-- Experience item START -->
+                                <div class="d-flex">
+
+                                    <!-- Info -->
+                                    <div>
+                                        <h6 class="card-title mb-0">French</h6>
+
+                                    </div>
+                                </div>
+
+
+
+                                <div class="d-flex mt-3">
+
+                                    <!-- Info -->
+                                    <div>
+                                        <h6 class="card-title mb-0"> English </h6>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- Card body END -->
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-12">
+                        <div class="card">
+                            <!-- Card header START -->
+                            <div class="card-header  border-0">
+                                <h5 class="card-title">Mentor having similar skills or topics</h5>
+                            </div>
+
+                            <!-- Card header START -->
+
+                            <!-- Card body START -->
+                            <div class="card-body">
+                                <div class="tiny-slider arrow-hover">
+                                    <div class="tiny-slider-inner ms-n4" data-arrow="true" data-dots="false"
+                                        data-items-xl="3" data-items-lg="2" data-items-md="2" data-items-sm="2"
+                                        data-items-xs="1" data-gutter="12" data-edge="30">
+                                        <!-- Slider items -->
+                                        <div>
+                                            <!-- Card add friend item START -->
+                                            <div class="card shadow-none text-center">
+                                                <!-- Card body -->
+                                                <div class="card-body p-2 pb-0">
+                                                    <div class="avatar avatar-xl">
+                                                        <a href="#!"><img class="avatar-img rounded-circle"
+                                                                src="assets/images/myimages/rovert.png" alt=""></a>
+                                                    </div>
+                                                    <h6 class="card-title mb-1 mt-3"> <a href="#!"> Robert Willsom </a>
+                                                    </h6>
+                                                    <p class="mb-1 small lh-sm">Cloud Architect, 6+ yrs experience</p>
+                                                    <p class="mb-1 small lh-sm">AWS, Azure, Cloud Computing</p>
+                                                </div>
+                                                <!-- Card footer -->
+                                                <div class="card-footer p-2 border-0">
+                                                    <button class="btn btn-sm btn-primary-soft w-100"> View Profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- Card add friend item END -->
+                                        </div>
+                                        <div>
+                                            <!-- Card add friend item START -->
+                                            <div class="card shadow-none text-center">
+                                                <!-- Card body -->
+                                                <div class="card-body p-2 pb-0">
+                                                    <div class="avatar avatar-story avatar-xl">
+                                                        <a href="#!"><img class="avatar-img rounded-circle"
+                                                                src="assets/images/myimages/rovert.png" alt=""></a>
+                                                    </div>
+                                                    <h6 class="card-title mb-1 mt-3"> <a href="#!"> Robert Willsom </a>
+                                                    </h6>
+                                                    <p class="mb-1 small lh-sm">Cloud Architect, 6+ yrs experience</p>
+                                                    <p class="mb-1 small lh-sm">AWS, Azure, Cloud Computing</p>
+                                                </div>
+                                                <!-- Card footer -->
+                                                <div class="card-footer p-2 border-0">
+                                                    <button class="btn btn-sm btn-primary-soft w-100"> View Profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- Card add friend item END -->
+                                        </div>
+                                        <div>
+                                            <!-- Card add friend item START -->
+                                            <div class="card shadow-none text-center">
+                                                <!-- Card body -->
+                                                <div class="card-body p-2 pb-0">
+                                                    <div class="avatar avatar-xl">
+                                                        <a href="#!"><img class="avatar-img rounded-circle"
+                                                                src="assets/images/myimages/rovert.png" alt=""></a>
+                                                    </div>
+                                                    <h6 class="card-title mb-1 mt-3"> <a href="#!"> Robert Willsom </a>
+                                                    </h6>
+                                                    <p class="mb-1 small lh-sm">Cloud Architect, 6+ yrs experience</p>
+                                                    <p class="mb-1 small lh-sm">AWS, Azure, Cloud Computing</p>
+                                                </div>
+                                                <!-- Card footer -->
+                                                <div class="card-footer p-2 border-0">
+                                                    <button class="btn btn-sm btn-primary-soft w-100"> View profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- Card add friend item END -->
+                                        </div>
+                                        <div>
+                                            <!-- Card add friend item START -->
+                                            <div class="card shadow-none text-center">
+                                                <!-- Card body -->
+                                                <div class="card-body p-2 pb-0">
+                                                    <div class="avatar avatar-xl">
+                                                        <a href="#!"><img class="avatar-img rounded-circle"
+                                                                src="assets/images/myimages/rovert.png" alt=""></a>
+                                                    </div>
+                                                    <h6 class="card-title mb-1 mt-3"> <a href="#!"> Robert Willsom </a>
+                                                    </h6>
+                                                    <p class="mb-1 small lh-sm">Cloud Architect, 6+ yrs experience</p>
+                                                    <p class="mb-1 small lh-sm">AWS, Azure, Cloud Computing</p>
+
+                                                </div>
+                                                <!-- Card footer -->
+                                                <div class="card-footer p-2 border-0">
+                                                    <button class="btn btn-sm btn-primary-soft w-100"> View Profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- Card add friend item END -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card body END -->
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Card feed item END -->
+                </div>
+                <!-- Main content END -->
+
+                <!-- Right sidebar START -->
+                <div class="col-lg-4">
+
+                    <div class="row g-4">
+
+                        <!-- Card START -->
+                        <div class="col-md-6 col-lg-12">
+
+                            <div class="card">
+                                <div class="card-header  border-0">
+                                    <h5 class="mb-0">1-on-1 Session</h5>
+                                </div>
+                                <div class="card-body position-relative  pb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <!-- Info -->
+                                        <div>
+                                            <h6 class="card-title mb-0 ">Availability  : </h6>
+                                        </div>
+                                        <p>Mon, Wed</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <!-- Info -->
+                                        <div>
+                                            <h6 class="card-title mb-0"> Timing : </h6>
+                                        </div>
+                                        <p>4-6 PM, EST</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <!-- Info -->
+                                        <div>
+                                            <h6 class="card-title mb-0">Skills : </h6>
+                                        </div>
+                                        <select name="Cloud Architect" id="Cloud Architect" class="user_proflie_select">
+                                            <option value="Cloud Architect">Cloud Architect</option>
+                                            <option value="Cloud Architect">Backend Development</option>
+                                            <option value="Cloud Architect">Frontend with Javascript</option>
+                                            <option value="Cloud Architect">AI/ML</option>
+                                        </select>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-3">
+                                        <!-- Info -->
+                                        <div>
+                                            <h6 class="card-title mb-0 ">Pricing : </h6>
+                                        </div>
+                                        <p>$ 30</p>
+                                    </div>
+                                    <div class="">                                      
+                                        <a href="datetime.html" type="button" class="btn btn-primary-soft w-100">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-3">
+                                <div class="card-header  border-0">
+                                    <h5 class="mb-0">Reviews</h5>
+                                </div>
+
+
+                                <div class="card-body position-relative pt-2 ">
+                                    <h5 class="ratings_five mb-4"> 4.7 <span>Out of 5</span> </h5>
+                                    <ul class="d-flex list-unstyled listitems">
+                                        <li><i class="fa-solid fa-star text-warning"></i></li>
+                                        <li><i class="fa-solid fa-star text-warning"></i></li>
+                                        <li><i class="fa-solid fa-star text-warning"></i></li>
+                                        <li><i class="fa-solid fa-star text-warning"></i></li>
+                                        <li><i class="fa-solid fa-star text-muted text-warning"></i></li>
+                                    </ul>
+
+                                    <div class="card">
+                                        <div class="card-body position-relative pt-3 pb-3">
+                                            <div class="d-flex mb-0">
+                                                <!-- Avatar -->
+                                                <div class="avatar status-online me-2">
+                                                    <a href="#!"><img class="avatar-img rounded-circle"
+                                                            src="assets/images/myimages/profile.png" alt=""></a>
+                                                </div>
+                                                <!-- Info -->
+                                                <div class="ms-2 w-100 ">
+                                                    <div class="d-sm-flex justify-content-between">
+                                                        <div>
+                                                            <a class="h6 mb-0" href="#!">Ranier Poul</a>
+                                                            <p class="d-block small mb-0"> Research Inter-UAE</p>
+
+                                                        </div>
+
+
+                                                    </div>
+
+                                                </div>
+
+
+
+                                            </div>
+                                            <div class="d-flex mb-0">
+
+
+                                                <!-- Info -->
+                                                <div class=" w-100">
+                                                    <div class="d-sm-flex justify-content-between align-items-center">
+                                                        <div class="userlist_sect">
+                                                            <p>
+                                                            <ul class="d-flex list-unstyled">
+
+                                                                <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                                <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                                <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                                <li><i class="fa-solid fa-star text-warning "></i></li>
+                                                                <li><i
+                                                                        class="fa-solid fa-star text-warning text-muted"></i>
+                                                                </li>
+
+                                                            </ul>
+                                                            </p>
+
+
+                                                        </div>
+                                                        <p class="mb-0"><small>March 4, 2022</small></p>
+
+                                                    </div>
+                                                    <p class="mb-2"> <small class="text-dull"> Backend
+                                                            Development</small></p>
+                                                    <p class="d-block small para_sec">Gives you a good idea on what the
+                                                        role of a full stack web developer is using front end technology
+                                                        stacks and backend php.</p>
+
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card mt-3">
+                                        <div class="card-body position-relative pt-3 pb-3">
+                                            <div class="d-flex mb-0">
+                                                <!-- Avatar -->
+                                                <div class="avatar  status-online me-2">
+                                                    <a href="#!"><img class="avatar-img rounded-circle"
+                                                            src="assets/images/myimages/profile.png" alt=""></a>
+                                                </div>
+                                                <!-- Info -->
+                                                <div class="ms-2 w-100">
+                                                    <div class="d-sm-flex justify-content-between">
+                                                        <div>
+                                                            <a class="h6 mb-0" href="#!">Ranier Poul</a>
+                                                            <p class="d-block small mb-0"> Research Inter-UAE</p>
+
+                                                        </div>
+
+
+                                                    </div>
+
+                                                </div>
+
+
+
+                                            </div>
+                                            <div class="d-flex mb-0">
+                                                <!-- Avatar -->
+
+                                                <!-- Info -->
+                                                <div class="ms-2 w-100">
+                                                    <div class="d-sm-flex justify-content-between align-items-center">
+                                                        <div class="userlist_sect">
+                                                            <p>
+                                                            <ul class="d-flex list-unstyled">
+
+                                                                <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                                <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                                <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                                <li><i
+                                                                        class="fa-solid fa-star text-warning text-muted"></i>
+                                                                </li>
+                                                                <li><i
+                                                                        class="fa-solid fa-star text-warning text-muted"></i>
+                                                                </li>
+
+                                                            </ul>
+                                                            </p>
+
+
+                                                        </div>
+                                                        <p class="mb-0"><small>March 4, 2022</small></p>
+
+                                                    </div>
+                                                    <p class="mb-2"> <small class="text-dull"> Backend
+                                                            Development</small></p>
+                                                    <p class="d-block small para_sec"> This is a great session with
+                                                        clear explanations that are useful and interesting. Keep up the
+                                                        great work!</p>
+
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card mt-3">
+                                        <div class="card-body position-relative pt-3 pb-3">
+                                            <div class="d-flex mb-0">
+                                                <!-- Avatar -->
+                                                <div class="avatar  status-online me-2">
+                                                    <a href="#!"><img class="avatar-img rounded-circle"
+                                                            src="assets/images/myimages/profile.png" alt=""></a>
+                                                </div>
+                                                <!-- Info -->
+                                                <div class="ms-2 w-100">
+                                                    <div class="d-sm-flex justify-content-between">
+                                                        <div>
+                                                            <a class="h6 mb-0" href="#!">Ranier Poul</a>
+                                                            <p class="d-block small mb-0"> Research Inter-UAE</p>
+
+                                                        </div>
+
+
+                                                    </div>
+
+                                                </div>
+
+
+
+                                            </div>
+                                            <div class="d-flex mb-0">
+                                                <!-- Avatar -->
+
+                                                <!-- Info -->
+                                                <div class="ms-2 w-100">
+                                                    <div
+                                                        class="d-sm-flex justify-content-between align-items-center mb-0">
+                                                        <div class="userlist_sect">
+                                                            <p>
+                                                            <ul class="d-flex list-unstyled">
+
+                                                                <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                                <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                                <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                                <li><i class="fa-solid fa-star text-warning"></i></li>
+                                                                <li><i class="fa-solid fa-startext-warning"></i></li>
+
+                                                            </ul>
+                                                            </p>
+
+
+                                                        </div>
+                                                        <p class="mb-0"><small>March 4, 2022</small></p>
+
+                                                    </div>
+                                                    <p class="mb-2"> <small class="text-dull"> Backend
+                                                            Development</small></p>
+                                                    <p class="d-block small para_sec">Sessions for beginners and those
+                                                        who wanted to brush up on the basics. Mentor's way of speaking
+                                                        is engaging and easy to listen to.</p>
+
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class=" mt-3 text-center">
+                                        <a href="#" class="text-purple">View More</a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- Card END -->
+
+
+
+                        <!-- Card END -->
+
+
+
+                        <!-- Card END -->
+                    </div>
+
+
+                </div>
+
+                <!-- new section -->
+
+
+
+                <!-- Right sidebar END -->
+
+            </div>
+            <!-- Row END -->
+        </div>
+        <!-- Container END -->
+
+    </main>
+    <!-- **************** MAIN CONTENT END **************** -->
+
+    <!-- Modal create Feed START -->
+    <div class="modal fade" id="modalCreateFeed" tabindex="-1" aria-labelledby="modalLabelCreateFeed"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <!-- Modal feed header START -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabelCreateFeed">Create post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Modal feed header END -->
+
+                <!-- Modal feed body START -->
+                <div class="modal-body">
+                    <!-- Add Feed -->
+                    <div class="d-flex mb-3">
+                        <!-- Avatar -->
+                        <div class="avatar avatar-xs me-2">
+                            <img class="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt="">
+                        </div>
+                        <!-- Feed box  -->
+                        <form class="w-100">
+                            <textarea class="form-control pe-4 fs-3 lh-1 border-0" rows="4"
+                                placeholder="Share your thoughts..." autofocus></textarea>
+                        </form>
+                    </div>
+                    <!-- Feed rect START -->
+                    <div class="hstack gap-2">
+                        <a class="icon-md bg-success bg-opacity-10 text-success rounded-circle" href="#"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="Photo"> <i
+                                class="bi bi-image-fill"></i> </a>
+                        <a class="icon-md bg-info bg-opacity-10 text-info rounded-circle" href="#"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="Video"> <i
+                                class="bi bi-camera-reels-fill"></i> </a>
+                        <a class="icon-md bg-danger bg-opacity-10 text-danger rounded-circle" href="#"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="Events"> <i
+                                class="bi bi-calendar2-event-fill"></i> </a>
+                        <a class="icon-md bg-warning bg-opacity-10 text-warning rounded-circle" href="#"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="Feeling/Activity"> <i
+                                class="bi bi-emoji-smile-fill"></i> </a>
+                        <a class="icon-md bg-light text-secondary rounded-circle" href="#" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Check in"> <i class="bi bi-geo-alt-fill"></i> </a>
+                        <a class="icon-md bg-primary bg-opacity-10 text-primary rounded-circle" href="#"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="Tag people on top"> <i
+                                class="bi bi-tag-fill"></i> </a>
+                    </div>
+                    <!-- Feed rect END -->
+                </div>
+                <!-- Modal feed body END -->
+
+                <!-- Modal feed footer -->
+                <div class="modal-footer row justify-content-between">
+                    <!-- Select -->
+                    <div class="col-lg-3">
+                        <select class="form-select js-choice" data-position="top" data-search-enabled="false">
+                            <option value="PB">Public</option>
+                            <option value="PV">Friends</option>
+                            <option value="PV">Only me</option>
+                            <option value="PV">Custom</option>
+                        </select>
+                    </div>
+                    <!-- Button -->
+                    <div class="col-lg-8 text-sm-end">
+                        <button type="button" class="btn btn-danger-soft me-2"> <i
+                                class="bi bi-camera-video-fill pe-1"></i> Live video</button>
+                        <button type="button" class="btn btn-success-soft">Post</button>
+                    </div>
+                </div>
+                <!-- Modal feed footer -->
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal create feed END -->
+
+    <!-- Modal create Feed photo START -->
+    <div class="modal fade" id="feedActionPhoto" tabindex="-1" aria-labelledby="feedActionPhotoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal feed header START -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="feedActionPhotoLabel">Add post photo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Modal feed header END -->
+
+                <!-- Modal feed body START -->
+                <div class="modal-body">
+                    <!-- Add Feed -->
+                    <div class="d-flex mb-3">
+                        <!-- Avatar -->
+                        <div class="avatar avatar-xs me-2">
+                            <img class="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt="">
+                        </div>
+                        <!-- Feed box  -->
+                        <form class="w-100">
+                            <textarea class="form-control pe-4 fs-3 lh-1 border-0" rows="2"
+                                placeholder="Share your thoughts..."></textarea>
+                        </form>
+                    </div>
+
+                    <!-- Dropzone photo START -->
+                    <div>
+                        <label class="form-label">Upload attachment</label>
+                        <div class="dropzone dropzone-default card shadow-none" data-dropzone='{"maxFiles":2}'>
+                            <div class="dz-message">
+                                <i class="bi bi-images display-3"></i>
+                                <p>Drag here or click to upload photo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Dropzone photo END -->
+
+                </div>
+                <!-- Modal feed body END -->
+
+                <!-- Modal feed footer -->
+                <div class="modal-footer ">
+                    <!-- Button -->
+                    <button type="button" class="btn btn-danger-soft me-2" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success-soft">Post</button>
+                </div>
+                <!-- Modal feed footer -->
+            </div>
+        </div>
+    </div>
+    <!-- Modal create Feed photo END -->
+
+    <!-- Modal create Feed video START -->
+    <div class="modal fade" id="feedActionVideo" tabindex="-1" aria-labelledby="feedActionVideoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal feed header START -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="feedActionVideoLabel">Add post video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Modal feed header END -->
+
+                <!-- Modal feed body START -->
+                <div class="modal-body">
+                    <!-- Add Feed -->
+                    <div class="d-flex mb-3">
+                        <!-- Avatar -->
+                        <div class="avatar avatar-xs me-2">
+                            <img class="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt="">
+                        </div>
+                        <!-- Feed box  -->
+                        <form class="w-100">
+                            <textarea class="form-control pe-4 fs-3 lh-1 border-0" rows="2"
+                                placeholder="Share your thoughts..."></textarea>
+                        </form>
+                    </div>
+
+                    <!-- Dropzone photo START -->
+                    <div>
+                        <label class="form-label">Upload attachment</label>
+                        <div class="dropzone dropzone-default card shadow-none" data-dropzone='{"maxFiles":2}'>
+                            <div class="dz-message">
+                                <i class="bi bi-camera-reels display-3"></i>
+                                <p>Drag here or click to upload video.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Dropzone photo END -->
+
+                </div>
+                <!-- Modal feed body END -->
+
+                <!-- Modal feed footer -->
+                <div class="modal-footer">
+                    <!-- Button -->
+                    <button type="button" class="btn btn-danger-soft me-2"><i class="bi bi-camera-video-fill pe-1"></i>
+                        Live video</button>
+                    <button type="button" class="btn btn-success-soft">Post</button>
+                </div>
+                <!-- Modal feed footer -->
+            </div>
+        </div>
+    </div>
+    <!-- Modal create Feed video END -->
+
+    <!-- Modal create events START -->
+    <div class="modal fade" id="modalCreateEvents" tabindex="-1" aria-labelledby="modalLabelCreateAlbum"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal feed header START -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabelCreateAlbum">Create event</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Modal feed header END -->
+                <!-- Modal feed body START -->
+                <div class="modal-body">
+                    <!-- Form START -->
+                    <form class="row g-4">
+                        <!-- Title -->
+                        <div class="col-12">
+                            <label class="form-label">Title</label>
+                            <input type="email" class="form-control" placeholder="Event name here">
+                        </div>
+                        <!-- Description -->
+                        <div class="col-12">
+                            <label class="form-label">Description</label>
+                            <textarea class="form-control" rows="2" placeholder="Ex: topics, schedule, etc."></textarea>
+                        </div>
+                        <!-- Date -->
+                        <div class="col-sm-4">
+                            <label class="form-label">Date</label>
+                            <input type="text" class="form-control flatpickr" placeholder="Select date">
+                        </div>
+                        <!-- Time -->
+                        <div class="col-sm-4">
+                            <label class="form-label">Time</label>
+                            <input type="text" class="form-control flatpickr" data-enableTime="true"
+                                data-noCalendar="true" placeholder="Select time">
+                        </div>
+                        <!-- Duration -->
+                        <div class="col-sm-4">
+                            <label class="form-label">Duration</label>
+                            <input type="email" class="form-control" placeholder="1hr 23m">
+                        </div>
+                        <!-- Location -->
+                        <div class="col-12">
+                            <label class="form-label">Location</label>
+                            <input type="email" class="form-control" placeholder="Logansport, IN 46947">
+                        </div>
+                        <!-- Add guests -->
+                        <div class="col-12">
+                            <label class="form-label">Add guests</label>
+                            <input type="email" class="form-control" placeholder="Guest email">
+                        </div>
+                        <!-- Avatar group START -->
+                        <div class="col-12 mt-3">
+                            <ul class="avatar-group list-unstyled align-items-center mb-0">
+                                <li class="avatar avatar-xs">
+                                    <img class="avatar-img rounded-circle" src="assets/images/avatar/01.jpg"
+                                        alt="avatar">
+                                </li>
+                                <li class="avatar avatar-xs">
+                                    <img class="avatar-img rounded-circle" src="assets/images/avatar/02.jpg"
+                                        alt="avatar">
+                                </li>
+                                <li class="avatar avatar-xs">
+                                    <img class="avatar-img rounded-circle" src="assets/images/avatar/03.jpg"
+                                        alt="avatar">
+                                </li>
+                                <li class="avatar avatar-xs">
+                                    <img class="avatar-img rounded-circle" src="assets/images/avatar/04.jpg"
+                                        alt="avatar">
+                                </li>
+                                <li class="avatar avatar-xs">
+                                    <img class="avatar-img rounded-circle" src="assets/images/avatar/05.jpg"
+                                        alt="avatar">
+                                </li>
+                                <li class="avatar avatar-xs">
+                                    <img class="avatar-img rounded-circle" src="assets/images/avatar/06.jpg"
+                                        alt="avatar">
+                                </li>
+                                <li class="avatar avatar-xs">
+                                    <img class="avatar-img rounded-circle" src="assets/images/avatar/07.jpg"
+                                        alt="avatar">
+                                </li>
+                                <li class="ms-3">
+                                    <small> +50 </small>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Upload Photos or Videos -->
+                        <!-- Dropzone photo START -->
+                        <div>
+                            <label class="form-label">Upload attachment</label>
+                            <div class="dropzone dropzone-default card shadow-none" data-dropzone='{"maxFiles":2}'>
+                                <div class="dz-message">
+                                    <i class="bi bi-file-earmark-text display-3"></i>
+                                    <p>Drop presentation and document here or click to upload.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dropzone photo END -->
+                    </form>
+                    <!-- Form END -->
+                </div>
+                <!-- Modal feed body END -->
+                <!-- Modal footer -->
+                <!-- Button -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger-soft me-2" data-bs-dismiss="modal"> Cancel</button>
+                    <button type="button" class="btn btn-success-soft">Create now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal create events END -->
+
+    <!-- =======================
+JS libraries, plugins and custom scripts -->
+
+    <!-- Bootstrap JS -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Vendors -->
+    <script src="assets/vendor/tiny-slider/dist/tiny-slider.js"></script>
+    <script src="assets/vendor/OverlayScrollbars-master/js/OverlayScrollbars.min.js"></script>
+    <script src="assets/vendor/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="assets/vendor/glightbox-master/dist/js/glightbox.min.js"></script>
+    <script src="assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="assets/vendor/plyr/plyr.js"></script>
+    <script src="assets/vendor/dropzone/dist/min/dropzone.min.js"></script>
+
+    <!-- Template Functions -->
+    <script src="assets/js/functions.js"></script>
+
+</body>
+
+
+
+</html>

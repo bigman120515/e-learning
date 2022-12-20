@@ -1,0 +1,3098 @@
+{
+	"info": {
+		"_postman_id": "9dc1ed4a-dac2-4b97-9da7-a0ed15309f44",
+		"name": "Learnet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18920630"
+	},
+	"item": [
+		{
+			"name": "Master Skills",
+			"item": [
+				{
+					"name": "Skill List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url1}}skills",
+							"host": [
+								"{{base_url1}}skills"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Skill",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"skillName\":\"Wordpress\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url1}}skills",
+							"host": [
+								"{{base_url1}}skills"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Skill",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYXZvcml0ZXMiOltdLCJfaWQiOiI2MzY2NDhiNGZkYTNiMjRjZmJiZTllNTEiLCJsaW5rZWRpbklkIjoiOEM1UEQxSUJRRiIsImVtYWlsIjoiYXRlZWtzYXJAZ21haWwuY29tIiwiY29tcGxldGVkU3RlcCI6OSwiY29ubmVjdGlvbnMiOltdLCJmaXJzdE5hbWUiOiJBdGVlayIsInBvc3RzIjpbXSwiaXNWZXJpZmllZCI6dHJ1ZSwiaXNBY3RpdmUiOnRydWUsImxhc3ROYW1lIjoiU2FydmFyIiwibWVudGVlVG9waWNzIjpbIkphdmFzY3JpcHQiXSwibWVudG9yVG9waWNzIjpbIkphdmFzY3JpcHQiXSwicHJvZmlsZVBpY3R1cmUiOiJodHRwczovL21lZGlhLWV4cDEubGljZG4uY29tL2Rtcy9pbWFnZS9DNEQwM0FRR0s5dkNxSEkzT3RBL3Byb2ZpbGUtZGlzcGxheXBob3RvLXNocmlua18yMDBfMjAwLzAvMTY2MTk0NjIyNjQyMD9lPTE2NzI4NzY4MDAmdj1iZXRhJnQ9UDNkb005Z0JQWUhhUmU3bmJ2VW40NVlhaEIyclJMR3p6VVhCbm5kOFVNdyIsInNlc3Npb24iOltdLCJza2lsbHMiOltdLCJ1c2VyRXhwZXJpZW5jZSI6WyI2MzY2NDkzMGZkYTNiMjRjZmJiZTllNTgiXSwidXNlckVkdWNhdGlvbiI6WyI2MzZmODIxZWU5ZWIzN2NhMTg2ODFiY2QiLCI2MzZmODIyNGU5ZWIzN2NhMTg2ODFiZGEiXSwidXNlckNlcnRpZmljYXRpb24iOlsiNjM2ZjgyNzJlOWViMzdjYTE4NjgxYmYxIl0sInVzZXJMYW5ndWFnZSI6WyI2MzczMzg1ZGYxOWUzZGFkMzE4NWZiZTAiXSwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wNVQxMToyNzo0OC4yNThaIiwidXBkYXRlZEF0IjoiMjAyMi0xMS0xNVQwNjo1NzozMy42MDBaIiwiX192Ijo1LCJjb3VudHJ5IjoiSW5kaWEiLCJsb2NhdGlvbiI6IkJob3BhbCIsInppcENvZGUiOjQ2MjAyMiwiY3VycmVudENvbXBhbnkiOiJTdW4gU2hpbmUgU2Nob29sIiwiY3VycmVudEpvYlRpdGxlIjoiQ29tcHV0ZXIgU2NpZW5jZSIsInVzZXJPVFBzIjpudWxsLCJpYXQiOjE2Njk3OTE1NTMsImV4cCI6MTY3MjM4MzU1M30.N4u2fACKJjpcXLdAznwuOXfvKoXcdCwp_ut2tjLTB4U",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url1}}skills/6386fe41c5e74fa6d0d63856",
+							"host": [
+								"{{base_url1}}skills"
+							],
+							"path": [
+								"6386fe41c5e74fa6d0d63856"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "SignUp/Login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{base_url1}}user/connect-linkedin?code=dfadsfdsf&redirect_url=learnet.acolabz.com",
+							"host": [
+								"{{base_url1}}user"
+							],
+							"path": [
+								"connect-linkedin"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "dfadsfdsf"
+								},
+								{
+									"key": "redirect_url",
+									"value": "learnet.acolabz.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Onboarding",
+			"item": [
+				{
+					"name": "create-user using LinkedIn",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"linkedinId\": s51k-LY8hn\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}new-user",
+							"host": [
+								"{{base_url}}new-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userEmail",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"linkedinId\": 84512165,\r\n    \"email\": \"test2@test.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/user/new-user/email",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"user",
+								"new-user",
+								"email"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userAddress",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"linkedinId\": 84512165,\r\n    \"country\": \"India\",\r\n    \"zipCode\": 201304,\r\n    \"location\": \"Noida\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}new-user/address",
+							"host": [
+								"{{base_url}}new-user"
+							],
+							"path": [
+								"address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get countries list",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}new-user/address/country",
+							"host": [
+								"{{base_url}}new-user"
+							],
+							"path": [
+								"address",
+								"country"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send Verification Mail",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzY2NDhiNGZkYTNiMjRjZmJiZTllNTEiLCJsaW5rZWRpbklkIjoiOEM1UEQxSUJRRiIsImVtYWlsIjoiYXRlZWtzYXJAZ21haWwuY29tIiwiY29tcGxldGVkU3RlcCI6MTAsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiQXRlZWsiLCJwb3N0cyI6W10sImlzVmVyaWZpZWQiOnRydWUsImlzQWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6IlNhcnZhciIsIm1lbnRlZVRvcGljcyI6WyJKYXZhc2NyaXB0Il0sIm1lbnRvclRvcGljcyI6WyJKYXZhc2NyaXB0Il0sInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzREMDNBUUdLOXZDcUhJM090QS9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfMjAwXzIwMC8wLzE2NjE5NDYyMjY0MjA_ZT0xNjcyODc2ODAwJnY9YmV0YSZ0PVAzZG9NOWdCUFlIYVJlN25idlVuNDVZYWhCMnJSTEd6elVYQm5uZDhVTXciLCJzZXNzaW9uIjpbXSwic2tpbGxzIjpbXSwidXNlckV4cGVyaWVuY2UiOlsiNjM2NjQ5MzBmZGEzYjI0Y2ZiYmU5ZTU4Il0sInVzZXJFZHVjYXRpb24iOlsiNjM4OTk4YTE3OWM2OTU4MjlmMWM3ZjY2Il0sInVzZXJDZXJ0aWZpY2F0aW9uIjpbIjYzNmY4MjcyZTllYjM3Y2ExODY4MWJmMSJdLCJ1c2VyTGFuZ3VhZ2UiOlsiNjM3MzM4NWRmMTllM2RhZDMxODVmYmUwIl0sImNyZWF0ZWRBdCI6IjIwMjItMTEtMDVUMTE6Mjc6NDguMjU4WiIsInVwZGF0ZWRBdCI6IjIwMjItMTItMDJUMDY6MTg6MDkuNjkxWiIsIl9fdiI6OCwiY291bnRyeSI6IkluZGlhIiwibG9jYXRpb24iOiJCaG9wYWwiLCJ6aXBDb2RlIjo0NjIwMjIsImN1cnJlbnRDb21wYW55IjoiU3VuIFNoaW5lIFNjaG9vbCIsImN1cnJlbnRKb2JUaXRsZSI6IkNvbXB1dGVyIFNjaWVuY2UiLCJ1c2VyT1RQcyI6bnVsbCwiaXNEZWxldGVkIjpmYWxzZSwiZmF2b3JpdGVzIjpbXSwidG90YWxDb25uZWN0aW9ucyI6MCwidG90YWxQb3N0IjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwiaWF0IjoxNjcwMDY4NzE4LCJleHAiOjE2NzI2NjA3MTh9.C8bPfAUMwu4-y_CxGSCy5a5f1F6vOrcXx19iw6Pn0p0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}send-mail",
+							"host": [
+								"{{base_url}}send-mail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verifyEmail",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzY2NDhiNGZkYTNiMjRjZmJiZTllNTEiLCJsaW5rZWRpbklkIjoiOEM1UEQxSUJRRiIsImVtYWlsIjoiYXRlZWtzYXJAZ21haWwuY29tIiwiY29tcGxldGVkU3RlcCI6MTAsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiQXRlZWsiLCJwb3N0cyI6W10sImlzVmVyaWZpZWQiOnRydWUsImlzQWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6IlNhcnZhciIsIm1lbnRlZVRvcGljcyI6WyJKYXZhc2NyaXB0Il0sIm1lbnRvclRvcGljcyI6WyJKYXZhc2NyaXB0Il0sInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzREMDNBUUdLOXZDcUhJM090QS9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfMjAwXzIwMC8wLzE2NjE5NDYyMjY0MjA_ZT0xNjcyODc2ODAwJnY9YmV0YSZ0PVAzZG9NOWdCUFlIYVJlN25idlVuNDVZYWhCMnJSTEd6elVYQm5uZDhVTXciLCJzZXNzaW9uIjpbXSwic2tpbGxzIjpbXSwidXNlckV4cGVyaWVuY2UiOlsiNjM2NjQ5MzBmZGEzYjI0Y2ZiYmU5ZTU4Il0sInVzZXJFZHVjYXRpb24iOlsiNjM4OTk4YTE3OWM2OTU4MjlmMWM3ZjY2Il0sInVzZXJDZXJ0aWZpY2F0aW9uIjpbIjYzNmY4MjcyZTllYjM3Y2ExODY4MWJmMSJdLCJ1c2VyTGFuZ3VhZ2UiOlsiNjM3MzM4NWRmMTllM2RhZDMxODVmYmUwIl0sImNyZWF0ZWRBdCI6IjIwMjItMTEtMDVUMTE6Mjc6NDguMjU4WiIsInVwZGF0ZWRBdCI6IjIwMjItMTItMDJUMDY6MTg6MDkuNjkxWiIsIl9fdiI6OCwiY291bnRyeSI6IkluZGlhIiwibG9jYXRpb24iOiJCaG9wYWwiLCJ6aXBDb2RlIjo0NjIwMjIsImN1cnJlbnRDb21wYW55IjoiU3VuIFNoaW5lIFNjaG9vbCIsImN1cnJlbnRKb2JUaXRsZSI6IkNvbXB1dGVyIFNjaWVuY2UiLCJ1c2VyT1RQcyI6bnVsbCwiaXNEZWxldGVkIjpmYWxzZSwiZmF2b3JpdGVzIjpbXSwidG90YWxDb25uZWN0aW9ucyI6MCwidG90YWxQb3N0IjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwiaWF0IjoxNjcwMDY4NzE4LCJleHAiOjE2NzI2NjA3MTh9.C8bPfAUMwu4-y_CxGSCy5a5f1F6vOrcXx19iw6Pn0p0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"linkedinId\": \"132456789\",\r\n    \"email\": \"rahul2701rk@gmail.com\",\r\n    \"otp\": 541384\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}verification",
+							"host": [
+								"{{base_url}}verification"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user Job info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jobTitle\": \"Software Engineer\",\r\n    \"employmentType\": \"IT\",\r\n    \"companyName\": \"Acompworld Technosoft\",\r\n    \"startDate\": \"2022-08-16\",\r\n    \"present\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/user/new-user/84512165/job-info",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"user",
+								"new-user",
+								"84512165",
+								"job-info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user college info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"collegeName\":\"IIMT College of Engineering\",\r\n    \"startYear\": 2021,\r\n    \"endYear\": 2024,\r\n    \"hasCompleted\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/user/new-user/6317461010c05a59babf6a94/college-info",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"user",
+								"new-user",
+								"6317461010c05a59babf6a94",
+								"college-info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "menteeTopics",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"topics\": [\"Java\", \".Net Core\", \"Node.js\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}new-user/mentee-topics",
+							"host": [
+								"{{base_url}}new-user"
+							],
+							"path": [
+								"mentee-topics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mentorTopics",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"topic\": \"Development\",\r\n        \"fee\": 1100\r\n    },\r\n    {\r\n        \"topic\": \"Photography\",\r\n        \"fee\": 700\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}new-user/mentor-topics",
+							"host": [
+								"{{base_url}}new-user"
+							],
+							"path": [
+								"mentor-topics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add connections",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wbGV0ZWRTdGVwIjoxLCJfaWQiOiI2MzE1OTNhOTdiMjhkNzI0ODVkN2E3ODUiLCJsaW5rZWRpbklkIjoiODQ1MTIxNjUiLCJjcmVhdGVkQXQiOiIyMDIyLTA5LTA1VDA2OjE0OjAxLjE5NFoiLCJ1cGRhdGVkQXQiOiIyMDIyLTA5LTEzVDEyOjQyOjE4Ljk4NVoiLCJfX3YiOjUyLCJlbWFpbCI6InRlc3QyQHRlc3QuY29tIiwiY291bnRyeSI6InlnY3lkZSIsImxvY2F0aW9uIjoiYWhzY2JqaGQiLCJ6aXBDb2RlIjoyMDEzMDQsInN0YXRlIjoiRy5CIE5hZ2FyIiwidXNlckNvbGxlZ2VJbmZvIjoiNjMyMDdhYWE2MTgyMTIzNDY1Njg5NzJlIiwibWVudGVlVG9waWNzIjpbIkEiLCJCLlRlY2giLCJqc2JkY3VzZCIsImpzYmRzZGNjdXNkIiwianNiZHNkY2N1c2QiLCJqc2Jkc2RjY3VzZCIsImpzYmRzZGNldmN1c2QiXSwibWVudG9yVG9waWNzIjpbeyJ0b3BpYyI6IkhhY2tpbmciLCJmZWUiOjE5OTAsIl9pZCI6IjYzMTlkNDFlYTEyMjM1YTQ1OTE5ZDlmOSJ9XSwiYmFubmVySW1hZ2UiOiJiYW5uZXJJbWFnZS5qcGciLCJiaW8iOiJFYXQgU2xlZXAgQ29kZSBSZXBlYXQg8J-OiCIsImN1cnJlbnRKb2JUaXRsZSI6IlNvZnR3YXJlIEVuZ2luZWVyIiwiZmlyc3ROYW1lIjoiWWFkYXYiLCJsYXN0TmFtZSI6IlJhaHVsIiwicHJvZmlsZVBpY3R1cmUiOiJwcm9maWxlSW1hZ2UuanBnIiwidXNlckxhbmd1YWdlIjpbIkhpbmRpIiwiRW5nbGlzaCJdLCJpc0FjdGl2ZSI6dHJ1ZSwiaXNEZWxldGVkIjpmYWxzZSwiaXNWZXJpZmllZCI6ImZhbHNlIiwiam9pbmluZ0RhdGUiOiIyMDIxLTEyLTMxVDE4OjMwOjAwLjAwMFoiLCJ0b3RhbENvbm5lY3Rpb25zIjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwidG90YWxQb3N0IjowLCJ1c2VyQ2VydGlmaWNhdGlvbiI6W10sInVzZXJFZHVjYXRpb24iOlsiNjMyMDM3NzdmNGEzZWUyODFiMjc3MjQ4Il0sInVzZXJFeHBlcmllbmNlIjpbIjYzMWY2YjZkNDM2ODU2MWNhYjE2MzQwMiIsIjYzMjA2MzU2OTE1YWU3MzMzZDE2OGQ5MyIsIjYzMjA2ZWI5OTAzMTdkOWIzNWVjOGU2YSIsIjYzMjA3OTJhNjE4MjEyMzQ2NTY4OTcyNCJdLCJza2lsbHMiOltdLCJmZWVkcyI6WyI2MzIwNWFiNTBjYTRmYmMzZmE2NzFhZDYiXSwiaWF0IjoxNjYzMDczNjY2LCJleHAiOjE2NjU2NjU2NjZ9.aSScLTIBPair6vFcV9efXGlGOcM_YM_zzaqiP6HjqrA",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    \"63189599e5d0623b894d6106\",\r\n    \"6317461010c05a59babf5454\"\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}84512165/add-connections",
+							"host": [
+								"{{base_url}}84512165"
+							],
+							"path": [
+								"add-connections"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Skills",
+			"item": [
+				{
+					"name": "get user skills",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Full-Stack Development\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/skills",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"skills"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add skill",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzhiNGU0NjljNmRkZmQ1Y2M4ZmM1MjciLCJsaW5rZWRpbklkIjoiU2ZYR2I5U05KNyIsImVtYWlsIjoiUHJhbmp1bEBhY29tcHdvcmxkLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjQsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiU21pdGgiLCJwb3N0cyI6W10sImlzVmVyaWZpZWQiOnRydWUsImxhc3ROYW1lIjoiTWVudG9yIiwibWVudGVlVG9waWNzIjpbIkphdmFzY3JpcHQiXSwibWVudG9yVG9waWNzIjpbIkphdmFzY3JpcHQiXSwicHJvZmlsZVBpY3R1cmUiOiJodHRwczovL21lZGlhLWV4cDEubGljZG4uY29tL2Rtcy9pbWFnZS9ENEQwM0FRRkNyUC1nUEtaSUpBL3Byb2ZpbGUtZGlzcGxheXBob3RvLXNocmlua18yMDBfMjAwLzAvMTY2OTM1NTYyODEyMT9lPTE2NzUyOTYwMDAmdj1iZXRhJnQ9RVNKTWFIRHVBUmd6d0FGTlJSb1BVaEljejQ2RVVzUnQ2cWtwMnNSZkItayIsInNlc3Npb24iOltdLCJza2lsbHMiOltdLCJ0b3RhbENvbm5lY3Rpb25zIjowLCJ0b3RhbFBvc3QiOjAsInRvdGFsRm9sbG93ZXIiOjAsInRvdGFsRm9sbG93aW5nIjowLCJ1c2VyRXhwZXJpZW5jZSI6WyI2MzhiNGU2YzljNmRkZmQ1Y2M4ZmM1MzAiXSwidXNlckVkdWNhdGlvbiI6W10sInVzZXJDZXJ0aWZpY2F0aW9uIjpbXSwidXNlckxhbmd1YWdlIjpbXSwiZmF2b3JpdGVzIjpbXSwiaXNBY3RpdmUiOnRydWUsImlzRGVsZXRlZCI6ZmFsc2UsImNyZWF0ZWRBdCI6IjIwMjItMTItMDNUMTM6MjU6MjYuMTYyWiIsInVwZGF0ZWRBdCI6IjIwMjItMTItMDNUMTU6MjI6MjQuNTk0WiIsIl9fdiI6MSwiY291bnRyeSI6IkluZGlhIiwibG9jYXRpb24iOiJCZW5nYWx1cnUiLCJ6aXBDb2RlIjo1NjAwMDEsImN1cnJlbnRDb21wYW55IjoiVW5hY2FkZW15IiwiY3VycmVudEpvYlRpdGxlIjoiU29mdHdhcmUgVGVzdCBFbmdpbmVlciIsInVzZXJPVFBzIjpudWxsLCJiaW8iOiJIZWxsbyBGb2xrcyIsImlhdCI6MTY3MDIyNDQ5MywiZXhwIjoxNjcyODE2NDkzfQ.2sDzxIe5shUBKKuuYXRr8YuodfnOMaxuSN07PCPST_o",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"React\",\r\n    \"rating\":\"5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/add-skills",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"add-skills"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user skill",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"skillId\":\"63380a6bf4a0c81697036103\",\r\n    \"title\": \"Software developer\",\r\n    \"rating\":\"4\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/update-skill/63380a6bf4a0c81697036103",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"update-skill",
+								"63380a6bf4a0c81697036103"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete skill",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Full-Stack Development\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/delete-skill/6374aee422a95f4c4d13f55a",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"delete-skill",
+								"6374aee422a95f4c4d13f55a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Experiences",
+			"item": [
+				{
+					"name": "User Experiences",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyName\": \"Acompworld Technosoft\",\r\n    \"startDate\": \"16/08/2022\",\r\n    \"present\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user-experiences/get",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user-experiences",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add user experience",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jobTitle\": \"IT engineer\",\r\n    \"employementType\":\"software\",\r\n    \"companyName\": \"Acompworld\",\r\n    \"startDate\": \"2022-06-01\",\r\n    \"endDate\": \"2022-08-15\",\r\n    \"present\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/add-experience",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"add-experience"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user experience",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jobTitle\": \"odoo developer\",\r\n    \"employementType\": \"work from office\",\r\n    \"companyName\": \"ABC\",\r\n    \"location\":\"bhopal\",\r\n    \"startDate\": \"2022-06-01\",\r\n    \"endDate\": \"2023-08-15\",\r\n    \"present\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/update-experience/636f45ac877fb5b1773a7ef2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"update-experience",
+								"636f45ac877fb5b1773a7ef2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user experience",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}delete-experience/636f45ac877fb5b1773a7ef2",
+							"host": [
+								"{{base_url}}delete-experience"
+							],
+							"path": [
+								"636f45ac877fb5b1773a7ef2"
+							],
+							"query": [
+								{
+									"key": "authorization",
+									"value": "{{token}}",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Education",
+			"item": [
+				{
+					"name": "Get User Education",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}education/get",
+							"host": [
+								"{{base_url}}education"
+							],
+							"path": [
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add User Education",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"collegeName\": \"Technocrats Institute of Technology\",\r\n    \"degreeName\": \"B.E.\",\r\n    \"fieldOfStudy\": \"Computer Science & Engineering\",\r\n    \"startYear\": \"2016\",\r\n    \"endYear\": \"2020\",\r\n    \"present\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/education",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"education"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User Education",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"collegeName\": \"Chhotu Ram Rural Institute of Technology\",\r\n    \"degreeName\": \"B.Tech\",\r\n    \"fieldOfStudy\": \"Medical Electronics  Engineering\",\r\n    \"startYear\": \"2018\",\r\n    \"endYear\": \"2021\",\r\n    \"present\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/education/update/636c8524ae82ca0eaa32355e",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"education",
+								"update",
+								"636c8524ae82ca0eaa32355e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User Education",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}education/delete/636f8224e9eb37ca18681bda",
+							"host": [
+								"{{base_url}}education"
+							],
+							"path": [
+								"delete",
+								"636f8224e9eb37ca18681bda"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Certifications",
+			"item": [
+				{
+					"name": "user Certifications",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url1}}certificates",
+							"host": [
+								"{{base_url1}}certificates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add user certification",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCJsaW5rZWRpbklkIjoiU2ZYR2I5U05KNyIsImVtYWlsIjoiUHJhbmp1bEBhY29tcHdvcmxkLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjM1LCJjb25uZWN0aW9ucyI6WyI2MzYzYjhhYzU0MjVjOWE4NmQwZDlkMjQiLCI2MzJhY2FmNjcxMTViYWI2MzQxOWUxOTEiLCI2MzJhY2FmNjcxMTViYWI2MzQxOWUxOTEiLCI2MzJhY2FmNjcxMTViYWI2MzQxOWUxOTEiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiXSwiZmlyc3ROYW1lIjoiU21pdGgiLCJwb3N0cyI6WyI2MzczNTQyM2YxOWUzZGFkMzE4NWZlMGQiLCI2Mzc0NjYxOTRkZTk3ZGUzNGU2ODVlZGEiLCI2Mzc0NjY0MDRkZTk3ZGUzNGU2ODVlZGYiLCI2Mzc0NjkwYTRkZTk3ZGUzNGU2ODVlZjAiLCI2Mzc0NjlhZTRkZTk3ZGUzNGU2ODVlZmQiLCI2Mzc1Yzg5NDI0YmI4MzU5MDhmZWRlZjAiXSwiaXNWZXJpZmllZCI6dHJ1ZSwiaXNBY3RpdmUiOnRydWUsImxhc3ROYW1lIjoiU3R1ZGVudCIsIm1lbnRlZVRvcGljcyI6WyJBY2NvdW50aW5nIFNvZnR3YXJlIiwiVGlnZXIiLCJEb2N0b3IiLCJDaGVldGFoIiwiRG9jdG9yIiwiQ2hlZXRhaCIsIkRvY3RvciIsIkNoZWV0YWgiLCJEb2N0b3IiXSwibWVudG9yVG9waWNzIjpbIkFjY3VyYWN5Il0sInByb2ZpbGVQaWN0dXJlIjpudWxsLCJzZXNzaW9uIjpbXSwic2tpbGxzIjpbIjYzNmM4OGRiMmViOTE0ODk0OWY2MTdiMSIsIjYzNmM5N2U3MmViOTE0ODk0OWY2MWE1YSIsIjYzNzMxZTE2NDM4NmE1YzM3NmQyNTViMyIsIjYzNzMxZTQ2NDM4NmE1YzM3NmQyNTViOCIsIjYzNzMzMGRlZTJlZDg5ZWI0NDhjNTY5MCIsIjYzNzMzOTNiZjE5ZTNkYWQzMTg1ZmMxZiIsIjYzNzMzOTU4ZjE5ZTNkYWQzMTg1ZmMyYiIsIjYzNzQ4MDc4NTg1MDU1YWVhMzY5YjBlMiIsIjYzNzRhOGEzMjJhOTVmNGM0ZDEzZjQ5ZiIsIjYzNzRiNGMwMjJhOTVmNGM0ZDEzZjkzNyIsIjYzNzRjMTY0MjJhOTVmNGM0ZDEzZmJiZiIsIjYzNzVmMGU3MjRiYjgzNTkwOGZlZTJiNyJdLCJ1c2VyRXhwZXJpZW5jZSI6WyI2MzY2NTgwZTczYzQ2MDk3YmExZDBkOTAiLCI2MzZjOWM4MjJlYjkxNDg5NDlmNjFhYzMiLCI2Mzc0ODBkZjU4NTA1NWFlYTM2OWIwZjciLCI2Mzc0YWJhNDIyYTk1ZjRjNGQxM2Y1NDYiLCI2Mzc0YjJhYzIyYTk1ZjRjNGQxM2Y3NGQiLCI2Mzc0YjM5MzIyYTk1ZjRjNGQxM2Y3YzIiLCI2Mzc0YjNlNDIyYTk1ZjRjNGQxM2Y3ZmIiLCI2Mzc0YjQ3ZTIyYTk1ZjRjNGQxM2Y4ZGMiLCI2Mzc1ZjI1NjI0YmI4MzU5MDhmZWUzMjgiLCI2Mzc1ZjJkODI0YmI4MzU5MDhmZWUzYmMiXSwidXNlckVkdWNhdGlvbiI6WyI2MzZjODkyNzJlYjkxNDg5NDlmNjE3ZTciLCI2MzczMzU2ZGEwOGUwMzA2NGRiZWRmNWMiLCI2Mzc0ODE1ODU4NTA1NWFlYTM2OWIxMGMiXSwidXNlckNlcnRpZmljYXRpb24iOlsiNjM2Yzg5NTkyZWI5MTQ4OTQ5ZjYxN2Y4IiwiNjM2Yzk4M2UyZWI5MTQ4OTQ5ZjYxYTZjIiwiNjM2ZjMyM2FlOWViMzdjYTE4NjgxNjliIl0sInVzZXJMYW5ndWFnZSI6WyI2MzY2NTllMTczYzQ2MDk3YmExZDBlNDIiLCI2MzY2NTllNDczYzQ2MDk3YmExZDBlNGEiLCI2MzY2NTllNzczYzQ2MDk3YmExZDBlNGYiLCI2MzY2NTllNzczYzQ2MDk3YmExZDBlNTEiLCI2MzY2NTlmMjczYzQ2MDk3YmExZDBlNTYiLCI2MzY2NTlmNTczYzQ2MDk3YmExZDBlNWEiLCI2MzZjOTg2MzJlYjkxNDg5NDlmNjFhN2UiLCI2MzZjOTg5OTJlYjkxNDg5NDlmNjFhOWEiLCI2MzZjOThhMjJlYjkxNDg5NDlmNjFhOWUiLCI2MzZjOThiOTJlYjkxNDg5NDlmNjFhYjAiLCI2MzZjZjAwMGNjY2IxMzlhOWVkYTdkMWEiLCI2MzZmMzI1OWU5ZWIzN2NhMTg2ODE2YjQiLCI2MzZmMzI2ZGU5ZWIzN2NhMTg2ODE2YjgiLCI2MzZmNDk0N2U5ZWIzN2NhMTg2ODE4MzMiLCI2MzZmNDk0OGU5ZWIzN2NhMTg2ODE4MzciLCI2Mzc1ZjhmNDI0YmI4MzU5MDhmZWU0ZDQiLCI2Mzc1ZjkwNTI0YmI4MzU5MDhmZWU0ZDgiXSwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wNVQwNDo1MDo0OS41OTRaIiwidXBkYXRlZEF0IjoiMjAyMi0xMS0xN1QwOTowNDowNS4zMTJaIiwiX192Ijo1MSwiY291bnRyeSI6IkluZGlhIiwibG9jYXRpb24iOiJHZW9zdGF0aW9uYXJ5IE9yYml0XG4iLCJ6aXBDb2RlIjowLCJjdXJyZW50Q29tcGFueSI6Ikp5b3RpIiwiY3VycmVudEpvYlRpdGxlIjoiU2NpZW5jZSBTdHVkZW50LiBTY2llbmNlIGJlYXRzLiIsInVzZXJPVFBzIjpudWxsLCJiaW8iOiJzZ2dzZ3MiLCJpYXQiOjE2Njg4MzM3MjYsImV4cCI6MTY3MTQyNTcyNn0.yKvrR1EFlbfmKSpTBlv6wkHk7RQE3eIpJE-pi5MXGnA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"certificateName\":\"REACT JS  \",\r\n    \"issuingOrganization\": \"UDEMY\",\r\n    \"issueDate\": \"2021-11-01\",\r\n    \"expiryDate\":\"2030-11-01\",\r\n    \"credentialId\":\"105\",\r\n    \"credentialUrl\":\"WWW.UDEMY.COM\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://learnet.acolabz.com/backend/v1/certificates",
+							"protocol": "https",
+							"host": [
+								"learnet",
+								"acolabz",
+								"com"
+							],
+							"path": [
+								"backend",
+								"v1",
+								"certificates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user certification",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorize",
+								"value": "{{token}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n            \"certificateName\": \"python certification\",\r\n            \"issuingOrganization\": \"Sca\",\r\n            \"issueDate\": \"2022-11-01\",\r\n            \"expiryDate\": \"2022-11-02\",\r\n            \"credentialId\": \"102\",\r\n            \"credentialURL\": \"http:/jkjsdhj/\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/v1/certificates/update/636b59e78a4daf0d90b2860a",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"v1",
+								"certificates",
+								"update",
+								"636b59e78a4daf0d90b2860a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user certification",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jobTitle\": \"Freelance\",\r\n    \"companyName\": \"Rahul Freelancer\",\r\n    \"startDate\": \"2022-06-01\",\r\n    \"endDate\": \"2022-08-15\",\r\n    \"present\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url1}}certificates/delete/636f85e87d0e0c940245b5b1",
+							"host": [
+								"{{base_url1}}certificates"
+							],
+							"path": [
+								"delete",
+								"636f85e87d0e0c940245b5b1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Language",
+			"item": [
+				{
+					"name": "User Language",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"1\",\r\n    \"language\": \"Python\",\r\n    \"proficient\": \"Mediator\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}user-language/get",
+							"host": [
+								"{{base_url}}user-language"
+							],
+							"path": [
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add user language",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"6363b9115425c9a86d0d9d4a\",\r\n    \"language\": \"python2\",\r\n    \"proficient\": \"Expert\"      \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/add-language",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"add-language"
+							],
+							"query": [
+								{
+									"key": "authorization",
+									"value": "{{token}}",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user language",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorize",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzRmZGZlZGExNjUwMDdkMGZhY2ZjMTQiLCJsaW5rZWRpbklkIjoiOEM1UEQxSUJRRiIsImVtYWlsIjoiYXRlZWtzYXJAZ21haWwuY29tIiwiY29tcGxldGVkU3RlcCI6NywiY29ubmVjdGlvbnMiOltdLCJmaXJzdE5hbWUiOiJBdGVlayIsInBvc3RzIjpbXSwiaXNWZXJpZmllZCI6dHJ1ZSwiaXNBY3RpdmUiOnRydWUsImxhc3ROYW1lIjoiU2FydmFyIiwibWVudGVlVG9waWNzIjpbIkNsb3VkIG5ldHdvcmtpbmcgYW5kIGZpbGUgc2hhcmluZyAiLCJTb2NpYWwgbWVkaWEvZGlnaXRhbCBjb21tdW5pY2F0aW9uIl0sIm1lbnRvclRvcGljcyI6WyJSZXNlYXJjaCBhbmQgZGF0YSBhbmFseXNpcyJdLCJwcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vbWVkaWEtZXhwMS5saWNkbi5jb20vZG1zL2ltYWdlL0M0RDAzQVFHSzl2Q3FISTNPdEEvcHJvZmlsZS1kaXNwbGF5cGhvdG8tc2hyaW5rXzIwMF8yMDAvMC8xNjYxOTQ2MjI2NDIwP2U9MTY3MTY2NzIwMCZ2PWJldGEmdD1GTzg5S05hVUZ6MFZ1c3luMDVaTGlNUHlDWXZEUVpaNEZkZ0xENGdPY0pZIiwic2Vzc2lvbiI6W10sInNraWxscyI6W10sInVzZXJFeHBlcmllbmNlIjpbIjYzNTExOTFhYzdiMGJkZTE0NGUzMWE5OSJdLCJ1c2VyRWR1Y2F0aW9uIjpbXSwidXNlckNlcnRpZmljYXRpb24iOltdLCJ1c2VyTGFuZ3VhZ2UiOltdLCJjcmVhdGVkQXQiOiIyMDIyLTEwLTE5VDExOjMwOjUzLjE2NVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTEwLTIwVDA5OjQ5OjAzLjM3MVoiLCJfX3YiOjEsImNvdW50cnkiOiJJbmRpYSIsImxvY2F0aW9uIjoiQmhvcGFsIiwiemlwQ29kZSI6NDYyMDIyLCJjdXJyZW50Q29tcGFueSI6IkFjb21wd29ybGQgVGVjaG5vc29mdCBQdnQuIEx0ZC4iLCJjdXJyZW50Sm9iVGl0bGUiOiJUZWFtIExlYWRlciIsInVzZXJPVFBzIjpudWxsLCJpYXQiOjE2NjcyMTYyMjAsImV4cCI6MTY2OTgwODIyMH0.PsPe4P1V-otNUD4cHWo_45bQZVgu6LqkF67o2yxXO0E",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n                \"language\": \"Python\",\r\n                \"proficient\": \"Expert\",\r\n                \"isDeleted\": false,\r\n                \"__v\": 0\r\n            }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/update-language/636b68e9070c13ebee1b5a14",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"update-language",
+								"636b68e9070c13ebee1b5a14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user language",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}delete-language/6363bbf06100bc314f8cab30",
+							"host": [
+								"{{base_url}}delete-language"
+							],
+							"path": [
+								"6363bbf06100bc314f8cab30"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get Users (For Dev Team Only)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wbGV0ZWRTdGVwIjoxLCJfaWQiOiI2MzE1OTNhOTdiMjhkNzI0ODVkN2E3ODUiLCJsaW5rZWRpbklkIjoiODQ1MTIxNjUiLCJjcmVhdGVkQXQiOiIyMDIyLTA5LTA1VDA2OjE0OjAxLjE5NFoiLCJ1cGRhdGVkQXQiOiIyMDIyLTA5LTEzVDEyOjQyOjE4Ljk4NVoiLCJfX3YiOjUyLCJlbWFpbCI6InRlc3QyQHRlc3QuY29tIiwiY291bnRyeSI6InlnY3lkZSIsImxvY2F0aW9uIjoiYWhzY2JqaGQiLCJ6aXBDb2RlIjoyMDEzMDQsInN0YXRlIjoiRy5CIE5hZ2FyIiwidXNlckNvbGxlZ2VJbmZvIjoiNjMyMDdhYWE2MTgyMTIzNDY1Njg5NzJlIiwibWVudGVlVG9waWNzIjpbIkEiLCJCLlRlY2giLCJqc2JkY3VzZCIsImpzYmRzZGNjdXNkIiwianNiZHNkY2N1c2QiLCJqc2Jkc2RjY3VzZCIsImpzYmRzZGNldmN1c2QiXSwibWVudG9yVG9waWNzIjpbeyJ0b3BpYyI6IkhhY2tpbmciLCJmZWUiOjE5OTAsIl9pZCI6IjYzMTlkNDFlYTEyMjM1YTQ1OTE5ZDlmOSJ9XSwiYmFubmVySW1hZ2UiOiJiYW5uZXJJbWFnZS5qcGciLCJiaW8iOiJFYXQgU2xlZXAgQ29kZSBSZXBlYXQg8J-OiCIsImN1cnJlbnRKb2JUaXRsZSI6IlNvZnR3YXJlIEVuZ2luZWVyIiwiZmlyc3ROYW1lIjoiWWFkYXYiLCJsYXN0TmFtZSI6IlJhaHVsIiwicHJvZmlsZVBpY3R1cmUiOiJwcm9maWxlSW1hZ2UuanBnIiwidXNlckxhbmd1YWdlIjpbIkhpbmRpIiwiRW5nbGlzaCJdLCJpc0FjdGl2ZSI6dHJ1ZSwiaXNEZWxldGVkIjpmYWxzZSwiaXNWZXJpZmllZCI6ImZhbHNlIiwiam9pbmluZ0RhdGUiOiIyMDIxLTEyLTMxVDE4OjMwOjAwLjAwMFoiLCJ0b3RhbENvbm5lY3Rpb25zIjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwidG90YWxQb3N0IjowLCJ1c2VyQ2VydGlmaWNhdGlvbiI6W10sInVzZXJFZHVjYXRpb24iOlsiNjMyMDM3NzdmNGEzZWUyODFiMjc3MjQ4Il0sInVzZXJFeHBlcmllbmNlIjpbIjYzMWY2YjZkNDM2ODU2MWNhYjE2MzQwMiIsIjYzMjA2MzU2OTE1YWU3MzMzZDE2OGQ5MyIsIjYzMjA2ZWI5OTAzMTdkOWIzNWVjOGU2YSIsIjYzMjA3OTJhNjE4MjEyMzQ2NTY4OTcyNCJdLCJza2lsbHMiOltdLCJmZWVkcyI6WyI2MzIwNWFiNTBjYTRmYmMzZmE2NzFhZDYiXSwiaWF0IjoxNjYzMDczNjY2LCJleHAiOjE2NjU2NjU2NjZ9.aSScLTIBPair6vFcV9efXGlGOcM_YM_zzaqiP6HjqrA",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}users",
+							"host": [
+								"{{base_url}}users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wbGV0ZWRTdGVwIjoxLCJfaWQiOiI2MzE1OTNhOTdiMjhkNzI0ODVkN2E3ODUiLCJsaW5rZWRpbklkIjoiODQ1MTIxNjUiLCJjcmVhdGVkQXQiOiIyMDIyLTA5LTA1VDA2OjE0OjAxLjE5NFoiLCJ1cGRhdGVkQXQiOiIyMDIyLTA5LTEzVDEyOjQyOjE4Ljk4NVoiLCJfX3YiOjUyLCJlbWFpbCI6InRlc3QyQHRlc3QuY29tIiwiY291bnRyeSI6InlnY3lkZSIsImxvY2F0aW9uIjoiYWhzY2JqaGQiLCJ6aXBDb2RlIjoyMDEzMDQsInN0YXRlIjoiRy5CIE5hZ2FyIiwidXNlckNvbGxlZ2VJbmZvIjoiNjMyMDdhYWE2MTgyMTIzNDY1Njg5NzJlIiwibWVudGVlVG9waWNzIjpbIkEiLCJCLlRlY2giLCJqc2JkY3VzZCIsImpzYmRzZGNjdXNkIiwianNiZHNkY2N1c2QiLCJqc2Jkc2RjY3VzZCIsImpzYmRzZGNldmN1c2QiXSwibWVudG9yVG9waWNzIjpbeyJ0b3BpYyI6IkhhY2tpbmciLCJmZWUiOjE5OTAsIl9pZCI6IjYzMTlkNDFlYTEyMjM1YTQ1OTE5ZDlmOSJ9XSwiYmFubmVySW1hZ2UiOiJiYW5uZXJJbWFnZS5qcGciLCJiaW8iOiJFYXQgU2xlZXAgQ29kZSBSZXBlYXQg8J-OiCIsImN1cnJlbnRKb2JUaXRsZSI6IlNvZnR3YXJlIEVuZ2luZWVyIiwiZmlyc3ROYW1lIjoiWWFkYXYiLCJsYXN0TmFtZSI6IlJhaHVsIiwicHJvZmlsZVBpY3R1cmUiOiJwcm9maWxlSW1hZ2UuanBnIiwidXNlckxhbmd1YWdlIjpbIkhpbmRpIiwiRW5nbGlzaCJdLCJpc0FjdGl2ZSI6dHJ1ZSwiaXNEZWxldGVkIjpmYWxzZSwiaXNWZXJpZmllZCI6ImZhbHNlIiwiam9pbmluZ0RhdGUiOiIyMDIxLTEyLTMxVDE4OjMwOjAwLjAwMFoiLCJ0b3RhbENvbm5lY3Rpb25zIjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwidG90YWxQb3N0IjowLCJ1c2VyQ2VydGlmaWNhdGlvbiI6W10sInVzZXJFZHVjYXRpb24iOlsiNjMyMDM3NzdmNGEzZWUyODFiMjc3MjQ4Il0sInVzZXJFeHBlcmllbmNlIjpbIjYzMWY2YjZkNDM2ODU2MWNhYjE2MzQwMiIsIjYzMjA2MzU2OTE1YWU3MzMzZDE2OGQ5MyIsIjYzMjA2ZWI5OTAzMTdkOWIzNWVjOGU2YSIsIjYzMjA3OTJhNjE4MjEyMzQ2NTY4OTcyNCJdLCJza2lsbHMiOltdLCJmZWVkcyI6WyI2MzIwNWFiNTBjYTRmYmMzZmE2NzFhZDYiXSwiaWF0IjoxNjYzMDczNjY2LCJleHAiOjE2NjU2NjU2NjZ9.aSScLTIBPair6vFcV9efXGlGOcM_YM_zzaqiP6HjqrA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"linkedinId\" : \"6484616\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}new-user",
+							"host": [
+								"{{base_url}}new-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}84512165",
+							"host": [
+								"{{base_url}}84512165"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\" : \"\",\r\n    \"lastName\": \"\",\r\n    \"currentJobTitle\": \"\",\r\n    \"country\": \"\",\r\n    \"location\":\"Bhopal\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}637c9a964b4c3dc417544754/basic",
+							"host": [
+								"{{base_url}}637c9a964b4c3dc417544754"
+							],
+							"path": [
+								"basic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User Address",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"country\":\"India\",\r\n    \"location\":\"Bhopal, MP\",\r\n    \"zipCode\":\" \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}update-address",
+							"host": [
+								"{{base_url}}update-address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Job Title",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"job_title\":\"Software Engineer\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}update-jobtitle",
+							"host": [
+								"{{base_url}}update-jobtitle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "My Connections",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url1}}user/638b4e469c6ddfd5cc8fc527/connections",
+							"host": [
+								"{{base_url1}}user"
+							],
+							"path": [
+								"638b4e469c6ddfd5cc8fc527",
+								"connections"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User (For Dev Team Only)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}delete-user?email=shubhamtiwarimzp@gmail.com",
+							"host": [
+								"{{base_url}}delete-user"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "shubhamtiwarimzp@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User (Temporary)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}delete-user?email=ateeksar@gmail.com",
+							"host": [
+								"{{base_url}}delete-user"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "ateeksar@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "My Post",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}s51k-LY8hn/user-posts",
+							"host": [
+								"{{base_url}}s51k-LY8hn"
+							],
+							"path": [
+								"user-posts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Latest News",
+			"item": [
+				{
+					"name": "Add News",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Govind Kumar has shared a photo.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url1}}news",
+							"host": [
+								"{{base_url1}}news"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url1}}news",
+							"host": [
+								"{{base_url1}}news"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete News",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url1}}news/638872051f46f892a590dafb",
+							"host": [
+								"{{base_url1}}news"
+							],
+							"path": [
+								"638872051f46f892a590dafb"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profile",
+			"item": [
+				{
+					"name": "View Profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzhiNGU0NjljNmRkZmQ1Y2M4ZmM1MjciLCJsaW5rZWRpbklkIjoiU2ZYR2I5U05KNyIsImVtYWlsIjoiUHJhbmp1bEBhY29tcHdvcmxkLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjYsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiU21pdGgiLCJwb3N0cyI6WyI2MzhkZGQxODBhYjBjZDBiMDhmYzk5MzYiXSwiaXNWZXJpZmllZCI6dHJ1ZSwibGFzdE5hbWUiOiJNZW50b3IiLCJtZW50ZWVUb3BpY3MiOlsiSmF2YSIsIi5OZXQgQ29yZSIsIk5vZGUuanMiXSwibWVudG9yVG9waWNzIjpbIk1pY3Jvc29mdCBPZmZpY2UgUGFjazogV29yZCwgRXhjZWwsIEFjY2VzcywgUHVibGlzaGVyLCBPdXRsb29rLCBQb3dlcnBvaW50Il0sInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvRDREMDNBUUZDclAtZ1BLWklKQS9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfMjAwXzIwMC8wLzE2NjkzNTU2MjgxMjE_ZT0xNjc1Mjk2MDAwJnY9YmV0YSZ0PUVTSk1hSER1QVJnendBRk5SUm9QVWhJY3o0NkVVc1J0NnFrcDJzUmZCLWsiLCJzZXNzaW9uIjpbXSwic2tpbGxzIjpbIjYzOGRhMWVmMTNmOTA4ZWI4MDQ4NGQwZiIsIjYzOGViOTU5ZTkyZTI2YTBmMDAwZjQxYyIsIjYzOGVjNmNmYzNhNDcxZTlhZTViYWM2MCIsIjYzOTJkMWM1MGYyN2I3YTBiOTRlOTg2YiIsIjYzOTJkMWZkMGYyN2I3YTBiOTRlOTg3NyJdLCJ0b3RhbENvbm5lY3Rpb25zIjowLCJ0b3RhbFBvc3QiOjAsInRvdGFsRm9sbG93ZXIiOjAsInRvdGFsRm9sbG93aW5nIjowLCJ1c2VyRXhwZXJpZW5jZSI6WyI2MzhiNGU2YzljNmRkZmQ1Y2M4ZmM1MzAiLCI2MzhmMjMwNDMzMmEwN2NhMmMyNDM1OWEiLCI2MzhmMzI4NDMzMmEwN2NhMmMyNDM4ZjkiXSwidXNlckVkdWNhdGlvbiI6WyI2MzhmMWQwZTMzMmEwN2NhMmMyNDM0MGQiLCI2MzhmMmFjMzMzMmEwN2NhMmMyNDM3YWMiLCI2MzhmMzRjYjMzMmEwN2NhMmMyNDM5NTQiXSwidXNlckNlcnRpZmljYXRpb24iOltdLCJ1c2VyTGFuZ3VhZ2UiOltdLCJmYXZvcml0ZXMiOlsiNjM4NDdhYThkMzU0YmUyY2I4ZGEwYmRlIl0sImlzQWN0aXZlIjp0cnVlLCJpc0RlbGV0ZWQiOmZhbHNlLCJjcmVhdGVkQXQiOiIyMDIyLTEyLTAzVDEzOjI1OjI2LjE2MloiLCJ1cGRhdGVkQXQiOiIyMDIyLTEyLTEyVDA1OjMyOjA5LjQ0M1oiLCJfX3YiOjE5LCJjb3VudHJ5IjoiSW5kaWEiLCJsb2NhdGlvbiI6Ik1hbmRpZGVlcCIsInppcENvZGUiOjQ2MjAyNCwiY3VycmVudENvbXBhbnkiOiJBY29tcHdvcmxkIiwiY3VycmVudEpvYlRpdGxlIjoiU29mdHdhcmUgU0QiLCJ1c2VyT1RQcyI6IjIwNTc2MCIsImJpbyI6IkhlbGxvIEZvbGtzIiwiaWF0IjoxNjcwODI0NjQ1LCJleHAiOjE2NzM0MTY2NDV9.8td7J3NHRfAeai7Dr6o2b3fcSSkj8WkRMf0ik-2N2sw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}profile/load/6396c32853ac2741fae8c426",
+							"host": [
+								"{{base_url}}profile"
+							],
+							"path": [
+								"load",
+								"6396c32853ac2741fae8c426"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mentor Suggestion List",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzhiNGU0NjljNmRkZmQ1Y2M4ZmM1MjciLCJsaW5rZWRpbklkIjoiU2ZYR2I5U05KNyIsImVtYWlsIjoiUHJhbmp1bEBhY29tcHdvcmxkLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjYsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiU21pdGgiLCJwb3N0cyI6WyI2MzhkZGQxODBhYjBjZDBiMDhmYzk5MzYiXSwiaXNWZXJpZmllZCI6dHJ1ZSwibGFzdE5hbWUiOiJNZW50b3IiLCJtZW50ZWVUb3BpY3MiOlsiSmF2YSIsIi5OZXQgQ29yZSIsIk5vZGUuanMiXSwibWVudG9yVG9waWNzIjpbIk1pY3Jvc29mdCBPZmZpY2UgUGFjazogV29yZCwgRXhjZWwsIEFjY2VzcywgUHVibGlzaGVyLCBPdXRsb29rLCBQb3dlcnBvaW50Il0sInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvRDREMDNBUUZDclAtZ1BLWklKQS9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfMjAwXzIwMC8wLzE2NjkzNTU2MjgxMjE_ZT0xNjc1Mjk2MDAwJnY9YmV0YSZ0PUVTSk1hSER1QVJnendBRk5SUm9QVWhJY3o0NkVVc1J0NnFrcDJzUmZCLWsiLCJzZXNzaW9uIjpbXSwic2tpbGxzIjpbIjYzOGRhMWVmMTNmOTA4ZWI4MDQ4NGQwZiIsIjYzOGViOTU5ZTkyZTI2YTBmMDAwZjQxYyIsIjYzOGVjNmNmYzNhNDcxZTlhZTViYWM2MCIsIjYzOTJkMWM1MGYyN2I3YTBiOTRlOTg2YiIsIjYzOTJkMWZkMGYyN2I3YTBiOTRlOTg3NyJdLCJ0b3RhbENvbm5lY3Rpb25zIjowLCJ0b3RhbFBvc3QiOjAsInRvdGFsRm9sbG93ZXIiOjAsInRvdGFsRm9sbG93aW5nIjowLCJ1c2VyRXhwZXJpZW5jZSI6WyI2MzhiNGU2YzljNmRkZmQ1Y2M4ZmM1MzAiLCI2MzhmMjMwNDMzMmEwN2NhMmMyNDM1OWEiLCI2MzhmMzI4NDMzMmEwN2NhMmMyNDM4ZjkiXSwidXNlckVkdWNhdGlvbiI6WyI2MzhmMWQwZTMzMmEwN2NhMmMyNDM0MGQiLCI2MzhmMmFjMzMzMmEwN2NhMmMyNDM3YWMiLCI2MzhmMzRjYjMzMmEwN2NhMmMyNDM5NTQiXSwidXNlckNlcnRpZmljYXRpb24iOltdLCJ1c2VyTGFuZ3VhZ2UiOltdLCJmYXZvcml0ZXMiOlsiNjM4NDdhYThkMzU0YmUyY2I4ZGEwYmRlIl0sImlzQWN0aXZlIjp0cnVlLCJpc0RlbGV0ZWQiOmZhbHNlLCJjcmVhdGVkQXQiOiIyMDIyLTEyLTAzVDEzOjI1OjI2LjE2MloiLCJ1cGRhdGVkQXQiOiIyMDIyLTEyLTEyVDA1OjMyOjA5LjQ0M1oiLCJfX3YiOjE5LCJjb3VudHJ5IjoiSW5kaWEiLCJsb2NhdGlvbiI6Ik1hbmRpZGVlcCIsInppcENvZGUiOjQ2MjAyNCwiY3VycmVudENvbXBhbnkiOiJBY29tcHdvcmxkIiwiY3VycmVudEpvYlRpdGxlIjoiU29mdHdhcmUgU0QiLCJ1c2VyT1RQcyI6IjIwNTc2MCIsImJpbyI6IkhlbGxvIEZvbGtzIiwiaWF0IjoxNjcwODI0NjQ1LCJleHAiOjE2NzM0MTY2NDV9.8td7J3NHRfAeai7Dr6o2b3fcSSkj8WkRMf0ik-2N2sw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}get/filter",
+							"host": [
+								"{{base_url}}get"
+							],
+							"path": [
+								"filter"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Posts",
+			"item": [
+				{
+					"name": "Get Post List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzdjOWE5NjRiNGMzZGM0MTc1NDQ3NTQiLCJsaW5rZWRpbklkIjoiczUxay1MWThobiIsImVtYWlsIjoic2h1YmhhbUBhY29tcHdvcmxkLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjEzLCJjb25uZWN0aW9ucyI6W10sImZpcnN0TmFtZSI6InNodWJoYW0iLCJwb3N0cyI6WyI2MzdkYTg4NDRiNGMzZGM0MTc1NDQ5NGIiLCI2MzdkYmU3ZjRiNGMzZGM0MTc1NDRhYzgiLCI2MzdkZmFhODRiNGMzZGM0MTc1NDU2NmIiLCI2MzdkZmMxNDRiNGMzZGM0MTc1NDU3MjMiLCI2MzdlMGI3NTRiNGMzZGM0MTc1NDU3ZDAiLCI2MzdlZjUzNjRiNGMzZGM0MTc1NDU4OTIiLCI2MzdlZjVlOTRiNGMzZGM0MTc1NDU4YTYiLCI2MzdlZjYyODRiNGMzZGM0MTc1NDU4YmEiLCI2MzdlZjY5MTRiNGMzZGM0MTc1NDU4ZGMiLCI2MzdlZjkxNDRiNGMzZGM0MTc1NDU5OWEiLCI2Mzg0NGE4MzRiNGMzZGM0MTc1NDcyZDkiLCI2Mzg0NjA1NzRiNGMzZGM0MTc1NDczZTMiLCI2Mzg0NjEwMDRiNGMzZGM0MTc1NDc0MzkiLCI2Mzg0NjE0OTRiNGMzZGM0MTc1NDc0M2UiLCI2Mzg0NzA1NGIyYTAwODg1OGJkMTFiNGMiLCI2Mzg0N2NjYjliNDI0YTgzOGQxOWI2MTkiLCI2Mzg0N2Y0MzliNDI0YTgzOGQxOWI2M2IiLCI2Mzg0ODBkNjliNDI0YTgzOGQxOWI2ODciLCI2Mzg0ODJmMjliNDI0YTgzOGQxOWI2ZWYiLCI2Mzg1OTlmYjM4MDY4MGUyZmYyOTEwZjQiLCI2Mzg1OWYyYTM4MDY4MGUyZmYyOTExODIiLCI2Mzg1YTI2NjM4MDY4MGUyZmYyOTEyMGYiLCI2Mzg1YTI2YzM4MDY4MGUyZmYyOTEyMTQiXSwiaXNWZXJpZmllZCI6dHJ1ZSwiaXNBY3RpdmUiOnRydWUsImxhc3ROYW1lIjoidmlzaHdha2FybWEiLCJtZW50ZWVUb3BpY3MiOlsiTWljcm9zb2Z0IEV4Y2VsIChBZHZhbmNlZCkiLCJEaWdpdGFsIHByaW50aW5nIiwiTWljcm9zb2Z0IEV4Y2VsIChBZHZhbmNlZCkiLCJEaWdpdGFsIHByaW50aW5nIl0sIm1lbnRvclRvcGljcyI6WyJBZG9iZSBDcmVhdGl2ZSBTdWl0ZTogSWxsdXN0cmF0b3IsIEluRGVzaWduLCBQaG90b3Nob3AiLCJTVEFUQSwgU1BTUywgU0FTICJdLCJwcm9maWxlUGljdHVyZSI6bnVsbCwic2Vzc2lvbiI6W10sInNraWxscyI6WyI2MzdjYTE5NjRiNGMzZGM0MTc1NDQ3YzYiLCI2MzdjYTFhZDRiNGMzZGM0MTc1NDQ3ZDQiLCI2Mzg0NzI0OWIyYTAwODg1OGJkMTFiYTUiXSwidXNlckV4cGVyaWVuY2UiOlsiNjM3YzliZTA0YjRjM2RjNDE3NTQ0NzVjIiwiNjM3YzljMWM0YjRjM2RjNDE3NTQ0NzYzIiwiNjM4NDcyNzliMmEwMDg4NThiZDExYmI3Il0sInVzZXJFZHVjYXRpb24iOlsiNjM3Y2EyNDg0YjRjM2RjNDE3NTQ0N2ViIiwiNjM4NDcyYmZiMmEwMDg4NThiZDExYmM5Il0sInVzZXJDZXJ0aWZpY2F0aW9uIjpbIjYzN2NhMjg0NGI0YzNkYzQxNzU0NDdmYSIsIjYzODQ3MmVhYjJhMDA4ODU4YmQxMWJkYiJdLCJ1c2VyTGFuZ3VhZ2UiOlsiNjM3Y2EyYTg0YjRjM2RjNDE3NTQ0ODBiIiwiNjM3Y2EyYTk0YjRjM2RjNDE3NTQ0ODE3IiwiNjM4NDhhNTk5YjQyNGE4MzhkMTliN2EzIiwiNjM4NDhhNWE5YjQyNGE4MzhkMTliN2E3Il0sImNyZWF0ZWRBdCI6IjIwMjItMTEtMjJUMDk6NDc6MDIuMTg4WiIsInVwZGF0ZWRBdCI6IjIwMjItMTEtMjlUMDY6MTA6NTIuOTMyWiIsIl9fdiI6MzcsImNvdW50cnkiOiJJbmRpYSIsImxvY2F0aW9uIjoiRGFsbGFzLCAgVW5pdGVkIiwiemlwQ29kZSI6MCwiY3VycmVudENvbXBhbnkiOiJBY29tcHdvcmxkIiwiY3VycmVudEpvYlRpdGxlIjoiU29mdHdhcmUgRGV2ZWxvcGVyIiwidXNlck9UUHMiOm51bGwsImJpbyI6IkkgaGVhZCB0aGUgdGVjaG5pY2FsIHRlYW0gb2YgQWNvbXB3b3JsZCwgYW5kIGFtIHJlc3BvbnNpYmxlIGZvciBBY29tcHdvcmxk4oCZcyBzb2Z0d2FyZSBkZXZlbG9wbWVudCBhbmQgcHJvZHVjdCBlbmdpbmVlcmluZyBmdW5jdGlvbnMuXG5cbk15IHJvbGUgaXMgZGVzaWduaW5nLCBjb2RpbmcgYW5kIG1vZGlmeWluZyB3ZWJzaXRlcywgZnJvbSBsYXlvdXQgdG8gZnVuY3Rpb24gYW5kIGFjY29yZGluZyB0byBhIGNsaWVudCdzIHNwZWNpZmljYXRpb25zLiBTdHJpdmUgdG8gY3JlYXRlIHZpc3VhbGx5IGFwcGVhbGluZyBzaXRlcyB0aGF0IGZlYXR1cmUgdXNlci1mcmllbmRseSBkZXNpZ24gYW5kIGNsZWFyIG5hdmlnYXRpb24uXG5cbkR1cmluZyBteSBlbGV2ZW4geWVhcnMgb2YgZXhwZXJpZW5jZSBpbiB0aGUgSVQgaW5kdXN0cnksIEkgaGF2ZSBwcm92aWRlZCBjb21wYW5pZXMgdGhlIGFiaWxpdHkgdG8gY2FwdHVyZSBtYXJrZXQgc2hhcmUgYW5kIGhlbHAgc3RyZW5ndGhlbiB0aGVpciBwcm9kdWN0IG9mZmVyaW5ncyBpbiBzb2Z0d2FyZSBhbmQgdGVjaG5vbG9neSB0cmFpbmluZyBzZWN0b3IuIiwiZmF2b3JpdGVzIjpbXSwiaWF0IjoxNjY5NzEwMDMzLCJleHAiOjE2NzIzMDIwMzN9.dLVwjww8YQwal1mXhzT06ZWrQwmrjsj86yGNyPYlz8E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}s51k-LY8hn/posts",
+							"host": [
+								"{{base_url}}s51k-LY8hn"
+							],
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"body\": \"We are the family of acompworld \",\r\n    \"photo\": \"post/1670920350179lzrzot.jpeg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}HCh_Cuan1R/new-post",
+							"host": [
+								"{{base_url}}HCh_Cuan1R"
+							],
+							"path": [
+								"new-post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Post",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"body\": \"There is no shortcut to success.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}update-post/63996e7e8c427dd0d251fa7a",
+							"host": [
+								"{{base_url}}update-post"
+							],
+							"path": [
+								"63996e7e8c427dd0d251fa7a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Post",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"body\": \"Hello World!\",\r\n    \"photo\": [\"firstfeed.jpg\", \"feed.jpeg\"],\r\n    \"file\": [\"helloworld.cpp\", \"firstprogram.pdf\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}delete-post/63859b94ff95dd061fb1a8da",
+							"host": [
+								"{{base_url}}delete-post"
+							],
+							"path": [
+								"63859b94ff95dd061fb1a8da"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Search",
+			"item": [
+				{
+					"name": "Search By Skill/Mentor Name",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}search?keyword=Python",
+							"host": [
+								"{{base_url}}search"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "Python"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Post",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}search/posts?keyword=India",
+							"host": [
+								"{{base_url}}search"
+							],
+							"path": [
+								"posts"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "India"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Connections",
+			"item": [
+				{
+					"name": "My connections",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzYzYjkxMTU0MjVjOWE4NmQwZDlkM2EiLCJsaW5rZWRpbklkIjoiNVdxQ2x0Zms1UiIsImVtYWlsIjoicmFrZXNoa3VtYXJtZTUzQGdtYWlsLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjUsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiUmFrZXNoIiwicG9zdHMiOlsiNjM3NGRiNWMzY2IzZmRkNzIzZDFlYzMxIiwiNjM3NGUzZjJhMTgwMzM3YTNmZTlhNWViIiwiNjM3OGExODAzYWU4ZGNmNDgyOTEzZTRiIiwiNjM3ZDA3YzlkZjFiODJlZTA4YmUyNzJlIiwiNjM4NDQxMWE4NDNkNjYyNGY4ZTM0ZjI0IiwiNjM4NDdhYThkMzU0YmUyY2I4ZGEwYmRlIiwiNjM4NDdiMWFkMzU0YmUyY2I4ZGEwYmUzIiwiNjM4NGFjNGJlOWJhOWJiYTE1YWY1ZmIxIiwiNjM4NTliOTRmZjk1ZGQwNjFmYjFhOGRhIiwiNjM5MWI5MzEzOTA5ZTEwNDIzNmE1MjI0IiwiNjM5ODM5NTRiYWIyMjNjMTdiZGVjYzdkIl0sImlzVmVyaWZpZWQiOnRydWUsImlzQWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6Ikt1bWFyIiwibWVudGVlVG9waWNzIjpbIkJyYW5kIG1hbmFnZW1lbnQiLCJCcmFuZCBtYW5hZ2VtZW50Il0sIm1lbnRvclRvcGljcyI6W10sInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzU2MDNBUUdqTVpyNWlJV28wUS9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfMjAwXzIwMC8wLzE2NTM2NTg3Mjc2OTI_ZT0xNjcyODc2ODAwJnY9YmV0YSZ0PTBQNUdZX2t2N0szdnYycWpBY1pGdnZkOXRfbmJuWTQ1VXVMMDRkc1BwZnciLCJzZXNzaW9uIjpbIjYzOTA3ZTQ4NzUzNGIwNGVkMDdlYmIxNCIsIjYzOTE3NWEyYmMxZTBkY2U2YjZkYzYyYyIsIjYzOTE3NjQ5ZWY3NWZmMWY5NDRkZTdlMSIsIjYzOTE3N2YzM2JjNGU4OGY4NjJlNjU0YyIsIjYzOTFlNWJjYjBhNjMwZmRmMjE5MzExYSIsIjYzOTFlNmNlMjM4MTk2YjkyODQ0YmY0NyJdLCJza2lsbHMiOlsiNjM5MDU0YzAzMzJhMDdjYTJjMjQ2MGNlIl0sInVzZXJFeHBlcmllbmNlIjpbIjYzOGFkMGExMWI3MDM4NTJjN2IzNjU4YiJdLCJ1c2VyRWR1Y2F0aW9uIjpbXSwidXNlckNlcnRpZmljYXRpb24iOlsiNjM2Yzk0YTc2ZTFkZWNiYmRjNWI5YTM1Il0sInVzZXJMYW5ndWFnZSI6WyI2MzY0YTNmODQzNzBmZTZjNzFmNTExYTQiLCI2MzY1ZjJlNzFkM2E3YjQ2NzcxYzAzNDUiLCI2MzY2M2VlMDk3MjcwYjc5NDJhZTRkZDQiLCI2MzY2M2YyMjk3MjcwYjc5NDJhZTRkZTAiLCI2MzZiNjhlOTA3MGMxM2ViZWUxYjVhMTQiLCI2MzZiYTk2NjQ4M2ZiYjNjZGIwZjVmMjQiLCI2MzZjYTRkMTRlMzdlMWExNTc5MTkwYzEiLCI2MzcxZTRiM2IwNDUzNjAyOGYwOWUxODAiLCI2MzczMWE4ODQ0MjVkYWNiNjY5YmVhN2UiLCI2Mzc1ZjhkZjI0YmI4MzU5MDhmZWU0Y2QiLCI2MzkxYTQ3YmQyMzEwYzE3MDk2NGU0NjMiXSwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wM1QxMjo1MDoyNS44NjhaIiwidXBkYXRlZEF0IjoiMjAyMi0xMi0xM1QwODozNTozMi42MzNaIiwiX192IjoxODksImNvdW50cnkiOiJJbmRpYSIsImxvY2F0aW9uIjoiTm9pZGEiLCJ6aXBDb2RlIjoyMDEzMDQsImN1cnJlbnRKb2JUaXRsZSI6IlNvZnR3YXJlIERldmFsb3BlciIsImZhdm9yaXRlcyI6WyI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiXSwiaXNEZWxldGVkIjpmYWxzZSwiY3VycmVudENvbXBhbnkiOiJBY29tcHdvcmxkIHB2dCBsdGQiLCJ1c2VyT1RQcyI6bnVsbCwidG90YWxDb25uZWN0aW9ucyI6MCwidG90YWxQb3N0IjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwiYmlvIjoiSSBhbSBhIHNvZnR3YXJlIEVuZ2luZWVyLiIsInNlc3Npb25UaW1lIjoyLCJpYXQiOjE2NzA5OTkwNjcsImV4cCI6MTY3MzU5MTA2N30.XQAdZw_-TljYShILKghVsopbn4mwfnPduGgn_iHmiZc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url1}}connections",
+							"host": [
+								"{{base_url1}}connections"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Other connections",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzYzYjkxMTU0MjVjOWE4NmQwZDlkM2EiLCJsaW5rZWRpbklkIjoiNVdxQ2x0Zms1UiIsImVtYWlsIjoicmFrZXNoa3VtYXJtZTUzQGdtYWlsLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjUsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiUmFrZXNoIiwicG9zdHMiOlsiNjM3NGRiNWMzY2IzZmRkNzIzZDFlYzMxIiwiNjM3NGUzZjJhMTgwMzM3YTNmZTlhNWViIiwiNjM3OGExODAzYWU4ZGNmNDgyOTEzZTRiIiwiNjM3ZDA3YzlkZjFiODJlZTA4YmUyNzJlIiwiNjM4NDQxMWE4NDNkNjYyNGY4ZTM0ZjI0IiwiNjM4NDdhYThkMzU0YmUyY2I4ZGEwYmRlIiwiNjM4NDdiMWFkMzU0YmUyY2I4ZGEwYmUzIiwiNjM4NGFjNGJlOWJhOWJiYTE1YWY1ZmIxIiwiNjM4NTliOTRmZjk1ZGQwNjFmYjFhOGRhIiwiNjM5MWI5MzEzOTA5ZTEwNDIzNmE1MjI0IiwiNjM5ODM5NTRiYWIyMjNjMTdiZGVjYzdkIl0sImlzVmVyaWZpZWQiOnRydWUsImlzQWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6Ikt1bWFyIiwibWVudGVlVG9waWNzIjpbIkJyYW5kIG1hbmFnZW1lbnQiLCJCcmFuZCBtYW5hZ2VtZW50Il0sIm1lbnRvclRvcGljcyI6W10sInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzU2MDNBUUdqTVpyNWlJV28wUS9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfMjAwXzIwMC8wLzE2NTM2NTg3Mjc2OTI_ZT0xNjcyODc2ODAwJnY9YmV0YSZ0PTBQNUdZX2t2N0szdnYycWpBY1pGdnZkOXRfbmJuWTQ1VXVMMDRkc1BwZnciLCJzZXNzaW9uIjpbIjYzOTA3ZTQ4NzUzNGIwNGVkMDdlYmIxNCIsIjYzOTE3NWEyYmMxZTBkY2U2YjZkYzYyYyIsIjYzOTE3NjQ5ZWY3NWZmMWY5NDRkZTdlMSIsIjYzOTE3N2YzM2JjNGU4OGY4NjJlNjU0YyIsIjYzOTFlNWJjYjBhNjMwZmRmMjE5MzExYSIsIjYzOTFlNmNlMjM4MTk2YjkyODQ0YmY0NyJdLCJza2lsbHMiOlsiNjM5MDU0YzAzMzJhMDdjYTJjMjQ2MGNlIl0sInVzZXJFeHBlcmllbmNlIjpbIjYzOGFkMGExMWI3MDM4NTJjN2IzNjU4YiJdLCJ1c2VyRWR1Y2F0aW9uIjpbXSwidXNlckNlcnRpZmljYXRpb24iOlsiNjM2Yzk0YTc2ZTFkZWNiYmRjNWI5YTM1Il0sInVzZXJMYW5ndWFnZSI6WyI2MzY0YTNmODQzNzBmZTZjNzFmNTExYTQiLCI2MzY1ZjJlNzFkM2E3YjQ2NzcxYzAzNDUiLCI2MzY2M2VlMDk3MjcwYjc5NDJhZTRkZDQiLCI2MzY2M2YyMjk3MjcwYjc5NDJhZTRkZTAiLCI2MzZiNjhlOTA3MGMxM2ViZWUxYjVhMTQiLCI2MzZiYTk2NjQ4M2ZiYjNjZGIwZjVmMjQiLCI2MzZjYTRkMTRlMzdlMWExNTc5MTkwYzEiLCI2MzcxZTRiM2IwNDUzNjAyOGYwOWUxODAiLCI2MzczMWE4ODQ0MjVkYWNiNjY5YmVhN2UiLCI2Mzc1ZjhkZjI0YmI4MzU5MDhmZWU0Y2QiLCI2MzkxYTQ3YmQyMzEwYzE3MDk2NGU0NjMiXSwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wM1QxMjo1MDoyNS44NjhaIiwidXBkYXRlZEF0IjoiMjAyMi0xMi0xM1QwODozNTozMi42MzNaIiwiX192IjoxODksImNvdW50cnkiOiJJbmRpYSIsImxvY2F0aW9uIjoiTm9pZGEiLCJ6aXBDb2RlIjoyMDEzMDQsImN1cnJlbnRKb2JUaXRsZSI6IlNvZnR3YXJlIERldmFsb3BlciIsImZhdm9yaXRlcyI6WyI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiXSwiaXNEZWxldGVkIjpmYWxzZSwiY3VycmVudENvbXBhbnkiOiJBY29tcHdvcmxkIHB2dCBsdGQiLCJ1c2VyT1RQcyI6bnVsbCwidG90YWxDb25uZWN0aW9ucyI6MCwidG90YWxQb3N0IjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwiYmlvIjoiSSBhbSBhIHNvZnR3YXJlIEVuZ2luZWVyLiIsInNlc3Npb25UaW1lIjoyLCJpYXQiOjE2NzA5OTkwNjcsImV4cCI6MTY3MzU5MTA2N30.XQAdZw_-TljYShILKghVsopbn4mwfnPduGgn_iHmiZc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url1}}connections/get?Id=6363b9115425c9a86d0d9d3a",
+							"host": [
+								"{{base_url1}}connections"
+							],
+							"path": [
+								"get"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "6363b9115425c9a86d0d9d3a"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add connection",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzYzYjkxMTU0MjVjOWE4NmQwZDlkM2EiLCJsaW5rZWRpbklkIjoiNVdxQ2x0Zms1UiIsImVtYWlsIjoicmFrZXNoa3VtYXJtZTUzQGdtYWlsLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjUsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiUmFrZXNoIiwicG9zdHMiOlsiNjM3NGRiNWMzY2IzZmRkNzIzZDFlYzMxIiwiNjM3NGUzZjJhMTgwMzM3YTNmZTlhNWViIiwiNjM3OGExODAzYWU4ZGNmNDgyOTEzZTRiIiwiNjM3ZDA3YzlkZjFiODJlZTA4YmUyNzJlIiwiNjM4NDQxMWE4NDNkNjYyNGY4ZTM0ZjI0IiwiNjM4NDdhYThkMzU0YmUyY2I4ZGEwYmRlIiwiNjM4NDdiMWFkMzU0YmUyY2I4ZGEwYmUzIiwiNjM4NGFjNGJlOWJhOWJiYTE1YWY1ZmIxIiwiNjM4NTliOTRmZjk1ZGQwNjFmYjFhOGRhIiwiNjM5MWI5MzEzOTA5ZTEwNDIzNmE1MjI0IiwiNjM5ODM5NTRiYWIyMjNjMTdiZGVjYzdkIl0sImlzVmVyaWZpZWQiOnRydWUsImlzQWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6Ikt1bWFyIiwibWVudGVlVG9waWNzIjpbIkJyYW5kIG1hbmFnZW1lbnQiLCJCcmFuZCBtYW5hZ2VtZW50Il0sIm1lbnRvclRvcGljcyI6W10sInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzU2MDNBUUdqTVpyNWlJV28wUS9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfMjAwXzIwMC8wLzE2NTM2NTg3Mjc2OTI_ZT0xNjcyODc2ODAwJnY9YmV0YSZ0PTBQNUdZX2t2N0szdnYycWpBY1pGdnZkOXRfbmJuWTQ1VXVMMDRkc1BwZnciLCJzZXNzaW9uIjpbIjYzOTA3ZTQ4NzUzNGIwNGVkMDdlYmIxNCIsIjYzOTE3NWEyYmMxZTBkY2U2YjZkYzYyYyIsIjYzOTE3NjQ5ZWY3NWZmMWY5NDRkZTdlMSIsIjYzOTE3N2YzM2JjNGU4OGY4NjJlNjU0YyIsIjYzOTFlNWJjYjBhNjMwZmRmMjE5MzExYSIsIjYzOTFlNmNlMjM4MTk2YjkyODQ0YmY0NyJdLCJza2lsbHMiOlsiNjM5MDU0YzAzMzJhMDdjYTJjMjQ2MGNlIl0sInVzZXJFeHBlcmllbmNlIjpbIjYzOGFkMGExMWI3MDM4NTJjN2IzNjU4YiJdLCJ1c2VyRWR1Y2F0aW9uIjpbXSwidXNlckNlcnRpZmljYXRpb24iOlsiNjM2Yzk0YTc2ZTFkZWNiYmRjNWI5YTM1Il0sInVzZXJMYW5ndWFnZSI6WyI2MzY0YTNmODQzNzBmZTZjNzFmNTExYTQiLCI2MzY1ZjJlNzFkM2E3YjQ2NzcxYzAzNDUiLCI2MzY2M2VlMDk3MjcwYjc5NDJhZTRkZDQiLCI2MzY2M2YyMjk3MjcwYjc5NDJhZTRkZTAiLCI2MzZiNjhlOTA3MGMxM2ViZWUxYjVhMTQiLCI2MzZiYTk2NjQ4M2ZiYjNjZGIwZjVmMjQiLCI2MzZjYTRkMTRlMzdlMWExNTc5MTkwYzEiLCI2MzcxZTRiM2IwNDUzNjAyOGYwOWUxODAiLCI2MzczMWE4ODQ0MjVkYWNiNjY5YmVhN2UiLCI2Mzc1ZjhkZjI0YmI4MzU5MDhmZWU0Y2QiLCI2MzkxYTQ3YmQyMzEwYzE3MDk2NGU0NjMiXSwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wM1QxMjo1MDoyNS44NjhaIiwidXBkYXRlZEF0IjoiMjAyMi0xMi0xM1QwODozNTozMi42MzNaIiwiX192IjoxODksImNvdW50cnkiOiJJbmRpYSIsImxvY2F0aW9uIjoiTm9pZGEiLCJ6aXBDb2RlIjoyMDEzMDQsImN1cnJlbnRKb2JUaXRsZSI6IlNvZnR3YXJlIERldmFsb3BlciIsImZhdm9yaXRlcyI6WyI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiXSwiaXNEZWxldGVkIjpmYWxzZSwiY3VycmVudENvbXBhbnkiOiJBY29tcHdvcmxkIHB2dCBsdGQiLCJ1c2VyT1RQcyI6bnVsbCwidG90YWxDb25uZWN0aW9ucyI6MCwidG90YWxQb3N0IjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwiYmlvIjoiSSBhbSBhIHNvZnR3YXJlIEVuZ2luZWVyLiIsInNlc3Npb25UaW1lIjoyLCJpYXQiOjE2NzA5OTkwNjcsImV4cCI6MTY3MzU5MTA2N30.XQAdZw_-TljYShILKghVsopbn4mwfnPduGgn_iHmiZc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\":\"6396c32853ac2741fae8c426\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url1}}conn/connections",
+							"host": [
+								"{{base_url1}}conn"
+							],
+							"path": [
+								"connections"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send Invitation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzYzYjkxMTU0MjVjOWE4NmQwZDlkM2EiLCJsaW5rZWRpbklkIjoiNVdxQ2x0Zms1UiIsImVtYWlsIjoicmFrZXNoa3VtYXJtZTUzQGdtYWlsLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjUsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiUmFrZXNoIiwicG9zdHMiOlsiNjM3NGRiNWMzY2IzZmRkNzIzZDFlYzMxIiwiNjM3NGUzZjJhMTgwMzM3YTNmZTlhNWViIiwiNjM3OGExODAzYWU4ZGNmNDgyOTEzZTRiIiwiNjM3ZDA3YzlkZjFiODJlZTA4YmUyNzJlIiwiNjM4NDQxMWE4NDNkNjYyNGY4ZTM0ZjI0IiwiNjM4NDdhYThkMzU0YmUyY2I4ZGEwYmRlIiwiNjM4NDdiMWFkMzU0YmUyY2I4ZGEwYmUzIiwiNjM4NGFjNGJlOWJhOWJiYTE1YWY1ZmIxIiwiNjM4NTliOTRmZjk1ZGQwNjFmYjFhOGRhIiwiNjM5MWI5MzEzOTA5ZTEwNDIzNmE1MjI0IiwiNjM5ODM5NTRiYWIyMjNjMTdiZGVjYzdkIl0sImlzVmVyaWZpZWQiOnRydWUsImlzQWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6Ikt1bWFyIiwibWVudGVlVG9waWNzIjpbIkJyYW5kIG1hbmFnZW1lbnQiLCJCcmFuZCBtYW5hZ2VtZW50Il0sIm1lbnRvclRvcGljcyI6W10sInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzU2MDNBUUdqTVpyNWlJV28wUS9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfMjAwXzIwMC8wLzE2NTM2NTg3Mjc2OTI_ZT0xNjcyODc2ODAwJnY9YmV0YSZ0PTBQNUdZX2t2N0szdnYycWpBY1pGdnZkOXRfbmJuWTQ1VXVMMDRkc1BwZnciLCJzZXNzaW9uIjpbIjYzOTA3ZTQ4NzUzNGIwNGVkMDdlYmIxNCIsIjYzOTE3NWEyYmMxZTBkY2U2YjZkYzYyYyIsIjYzOTE3NjQ5ZWY3NWZmMWY5NDRkZTdlMSIsIjYzOTE3N2YzM2JjNGU4OGY4NjJlNjU0YyIsIjYzOTFlNWJjYjBhNjMwZmRmMjE5MzExYSIsIjYzOTFlNmNlMjM4MTk2YjkyODQ0YmY0NyJdLCJza2lsbHMiOlsiNjM5MDU0YzAzMzJhMDdjYTJjMjQ2MGNlIl0sInVzZXJFeHBlcmllbmNlIjpbIjYzOGFkMGExMWI3MDM4NTJjN2IzNjU4YiJdLCJ1c2VyRWR1Y2F0aW9uIjpbXSwidXNlckNlcnRpZmljYXRpb24iOlsiNjM2Yzk0YTc2ZTFkZWNiYmRjNWI5YTM1Il0sInVzZXJMYW5ndWFnZSI6WyI2MzY0YTNmODQzNzBmZTZjNzFmNTExYTQiLCI2MzY1ZjJlNzFkM2E3YjQ2NzcxYzAzNDUiLCI2MzY2M2VlMDk3MjcwYjc5NDJhZTRkZDQiLCI2MzY2M2YyMjk3MjcwYjc5NDJhZTRkZTAiLCI2MzZiNjhlOTA3MGMxM2ViZWUxYjVhMTQiLCI2MzZiYTk2NjQ4M2ZiYjNjZGIwZjVmMjQiLCI2MzZjYTRkMTRlMzdlMWExNTc5MTkwYzEiLCI2MzcxZTRiM2IwNDUzNjAyOGYwOWUxODAiLCI2MzczMWE4ODQ0MjVkYWNiNjY5YmVhN2UiLCI2Mzc1ZjhkZjI0YmI4MzU5MDhmZWU0Y2QiLCI2MzkxYTQ3YmQyMzEwYzE3MDk2NGU0NjMiXSwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wM1QxMjo1MDoyNS44NjhaIiwidXBkYXRlZEF0IjoiMjAyMi0xMi0xM1QwODozNTozMi42MzNaIiwiX192IjoxODksImNvdW50cnkiOiJJbmRpYSIsImxvY2F0aW9uIjoiTm9pZGEiLCJ6aXBDb2RlIjoyMDEzMDQsImN1cnJlbnRKb2JUaXRsZSI6IlNvZnR3YXJlIERldmFsb3BlciIsImZhdm9yaXRlcyI6WyI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiXSwiaXNEZWxldGVkIjpmYWxzZSwiY3VycmVudENvbXBhbnkiOiJBY29tcHdvcmxkIHB2dCBsdGQiLCJ1c2VyT1RQcyI6bnVsbCwidG90YWxDb25uZWN0aW9ucyI6MCwidG90YWxQb3N0IjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwiYmlvIjoiSSBhbSBhIHNvZnR3YXJlIEVuZ2luZWVyLiIsInNlc3Npb25UaW1lIjoyLCJpYXQiOjE2NzA5OTkwNjcsImV4cCI6MTY3MzU5MTA2N30.XQAdZw_-TljYShILKghVsopbn4mwfnPduGgn_iHmiZc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\":\"6363b9115425c9a86d0d9d3a\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/v1/connections/invitations",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"v1",
+								"connections",
+								"invitations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "My Invitations",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzYzYjkxMTU0MjVjOWE4NmQwZDlkM2EiLCJsaW5rZWRpbklkIjoiNVdxQ2x0Zms1UiIsImVtYWlsIjoicmFrZXNoa3VtYXJtZTUzQGdtYWlsLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjUsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiUmFrZXNoIiwicG9zdHMiOlsiNjM3NGRiNWMzY2IzZmRkNzIzZDFlYzMxIiwiNjM3NGUzZjJhMTgwMzM3YTNmZTlhNWViIiwiNjM3OGExODAzYWU4ZGNmNDgyOTEzZTRiIiwiNjM3ZDA3YzlkZjFiODJlZTA4YmUyNzJlIiwiNjM4NDQxMWE4NDNkNjYyNGY4ZTM0ZjI0IiwiNjM4NDdhYThkMzU0YmUyY2I4ZGEwYmRlIiwiNjM4NDdiMWFkMzU0YmUyY2I4ZGEwYmUzIiwiNjM4NGFjNGJlOWJhOWJiYTE1YWY1ZmIxIiwiNjM4NTliOTRmZjk1ZGQwNjFmYjFhOGRhIiwiNjM5MWI5MzEzOTA5ZTEwNDIzNmE1MjI0IiwiNjM5ODM5NTRiYWIyMjNjMTdiZGVjYzdkIl0sImlzVmVyaWZpZWQiOnRydWUsImlzQWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6Ikt1bWFyIiwibWVudGVlVG9waWNzIjpbIkJyYW5kIG1hbmFnZW1lbnQiLCJCcmFuZCBtYW5hZ2VtZW50Il0sIm1lbnRvclRvcGljcyI6W10sInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzU2MDNBUUdqTVpyNWlJV28wUS9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfMjAwXzIwMC8wLzE2NTM2NTg3Mjc2OTI_ZT0xNjcyODc2ODAwJnY9YmV0YSZ0PTBQNUdZX2t2N0szdnYycWpBY1pGdnZkOXRfbmJuWTQ1VXVMMDRkc1BwZnciLCJzZXNzaW9uIjpbIjYzOTA3ZTQ4NzUzNGIwNGVkMDdlYmIxNCIsIjYzOTE3NWEyYmMxZTBkY2U2YjZkYzYyYyIsIjYzOTE3NjQ5ZWY3NWZmMWY5NDRkZTdlMSIsIjYzOTE3N2YzM2JjNGU4OGY4NjJlNjU0YyIsIjYzOTFlNWJjYjBhNjMwZmRmMjE5MzExYSIsIjYzOTFlNmNlMjM4MTk2YjkyODQ0YmY0NyJdLCJza2lsbHMiOlsiNjM5MDU0YzAzMzJhMDdjYTJjMjQ2MGNlIl0sInVzZXJFeHBlcmllbmNlIjpbIjYzOGFkMGExMWI3MDM4NTJjN2IzNjU4YiJdLCJ1c2VyRWR1Y2F0aW9uIjpbXSwidXNlckNlcnRpZmljYXRpb24iOlsiNjM2Yzk0YTc2ZTFkZWNiYmRjNWI5YTM1Il0sInVzZXJMYW5ndWFnZSI6WyI2MzY0YTNmODQzNzBmZTZjNzFmNTExYTQiLCI2MzY1ZjJlNzFkM2E3YjQ2NzcxYzAzNDUiLCI2MzY2M2VlMDk3MjcwYjc5NDJhZTRkZDQiLCI2MzY2M2YyMjk3MjcwYjc5NDJhZTRkZTAiLCI2MzZiNjhlOTA3MGMxM2ViZWUxYjVhMTQiLCI2MzZiYTk2NjQ4M2ZiYjNjZGIwZjVmMjQiLCI2MzZjYTRkMTRlMzdlMWExNTc5MTkwYzEiLCI2MzcxZTRiM2IwNDUzNjAyOGYwOWUxODAiLCI2MzczMWE4ODQ0MjVkYWNiNjY5YmVhN2UiLCI2Mzc1ZjhkZjI0YmI4MzU5MDhmZWU0Y2QiLCI2MzkxYTQ3YmQyMzEwYzE3MDk2NGU0NjMiXSwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wM1QxMjo1MDoyNS44NjhaIiwidXBkYXRlZEF0IjoiMjAyMi0xMi0xM1QwODozNTozMi42MzNaIiwiX192IjoxODksImNvdW50cnkiOiJJbmRpYSIsImxvY2F0aW9uIjoiTm9pZGEiLCJ6aXBDb2RlIjoyMDEzMDQsImN1cnJlbnRKb2JUaXRsZSI6IlNvZnR3YXJlIERldmFsb3BlciIsImZhdm9yaXRlcyI6WyI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiXSwiaXNEZWxldGVkIjpmYWxzZSwiY3VycmVudENvbXBhbnkiOiJBY29tcHdvcmxkIHB2dCBsdGQiLCJ1c2VyT1RQcyI6bnVsbCwidG90YWxDb25uZWN0aW9ucyI6MCwidG90YWxQb3N0IjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwiYmlvIjoiSSBhbSBhIHNvZnR3YXJlIEVuZ2luZWVyLiIsInNlc3Npb25UaW1lIjoyLCJpYXQiOjE2NzA5OTkwNjcsImV4cCI6MTY3MzU5MTA2N30.XQAdZw_-TljYShILKghVsopbn4mwfnPduGgn_iHmiZc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url1}}connections/invitations",
+							"host": [
+								"{{base_url1}}connections"
+							],
+							"path": [
+								"invitations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Accept Invitation",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzYzYjkxMTU0MjVjOWE4NmQwZDlkM2EiLCJsaW5rZWRpbklkIjoiNVdxQ2x0Zms1UiIsImVtYWlsIjoicmFrZXNoa3VtYXJtZTUzQGdtYWlsLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjUsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiUmFrZXNoIiwicG9zdHMiOlsiNjM3NGRiNWMzY2IzZmRkNzIzZDFlYzMxIiwiNjM3NGUzZjJhMTgwMzM3YTNmZTlhNWViIiwiNjM3OGExODAzYWU4ZGNmNDgyOTEzZTRiIiwiNjM3ZDA3YzlkZjFiODJlZTA4YmUyNzJlIiwiNjM4NDQxMWE4NDNkNjYyNGY4ZTM0ZjI0IiwiNjM4NDdhYThkMzU0YmUyY2I4ZGEwYmRlIiwiNjM4NDdiMWFkMzU0YmUyY2I4ZGEwYmUzIiwiNjM4NGFjNGJlOWJhOWJiYTE1YWY1ZmIxIiwiNjM4NTliOTRmZjk1ZGQwNjFmYjFhOGRhIiwiNjM5MWI5MzEzOTA5ZTEwNDIzNmE1MjI0IiwiNjM5ODM5NTRiYWIyMjNjMTdiZGVjYzdkIl0sImlzVmVyaWZpZWQiOnRydWUsImlzQWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6Ikt1bWFyIiwibWVudGVlVG9waWNzIjpbIkJyYW5kIG1hbmFnZW1lbnQiLCJCcmFuZCBtYW5hZ2VtZW50Il0sIm1lbnRvclRvcGljcyI6W10sInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzU2MDNBUUdqTVpyNWlJV28wUS9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfMjAwXzIwMC8wLzE2NTM2NTg3Mjc2OTI_ZT0xNjcyODc2ODAwJnY9YmV0YSZ0PTBQNUdZX2t2N0szdnYycWpBY1pGdnZkOXRfbmJuWTQ1VXVMMDRkc1BwZnciLCJzZXNzaW9uIjpbIjYzOTA3ZTQ4NzUzNGIwNGVkMDdlYmIxNCIsIjYzOTE3NWEyYmMxZTBkY2U2YjZkYzYyYyIsIjYzOTE3NjQ5ZWY3NWZmMWY5NDRkZTdlMSIsIjYzOTE3N2YzM2JjNGU4OGY4NjJlNjU0YyIsIjYzOTFlNWJjYjBhNjMwZmRmMjE5MzExYSIsIjYzOTFlNmNlMjM4MTk2YjkyODQ0YmY0NyJdLCJza2lsbHMiOlsiNjM5MDU0YzAzMzJhMDdjYTJjMjQ2MGNlIl0sInVzZXJFeHBlcmllbmNlIjpbIjYzOGFkMGExMWI3MDM4NTJjN2IzNjU4YiJdLCJ1c2VyRWR1Y2F0aW9uIjpbXSwidXNlckNlcnRpZmljYXRpb24iOlsiNjM2Yzk0YTc2ZTFkZWNiYmRjNWI5YTM1Il0sInVzZXJMYW5ndWFnZSI6WyI2MzY0YTNmODQzNzBmZTZjNzFmNTExYTQiLCI2MzY1ZjJlNzFkM2E3YjQ2NzcxYzAzNDUiLCI2MzY2M2VlMDk3MjcwYjc5NDJhZTRkZDQiLCI2MzY2M2YyMjk3MjcwYjc5NDJhZTRkZTAiLCI2MzZiNjhlOTA3MGMxM2ViZWUxYjVhMTQiLCI2MzZiYTk2NjQ4M2ZiYjNjZGIwZjVmMjQiLCI2MzZjYTRkMTRlMzdlMWExNTc5MTkwYzEiLCI2MzcxZTRiM2IwNDUzNjAyOGYwOWUxODAiLCI2MzczMWE4ODQ0MjVkYWNiNjY5YmVhN2UiLCI2Mzc1ZjhkZjI0YmI4MzU5MDhmZWU0Y2QiLCI2MzkxYTQ3YmQyMzEwYzE3MDk2NGU0NjMiXSwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wM1QxMjo1MDoyNS44NjhaIiwidXBkYXRlZEF0IjoiMjAyMi0xMi0xM1QwODozNTozMi42MzNaIiwiX192IjoxODksImNvdW50cnkiOiJJbmRpYSIsImxvY2F0aW9uIjoiTm9pZGEiLCJ6aXBDb2RlIjoyMDEzMDQsImN1cnJlbnRKb2JUaXRsZSI6IlNvZnR3YXJlIERldmFsb3BlciIsImZhdm9yaXRlcyI6WyI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiXSwiaXNEZWxldGVkIjpmYWxzZSwiY3VycmVudENvbXBhbnkiOiJBY29tcHdvcmxkIHB2dCBsdGQiLCJ1c2VyT1RQcyI6bnVsbCwidG90YWxDb25uZWN0aW9ucyI6MCwidG90YWxQb3N0IjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwiYmlvIjoiSSBhbSBhIHNvZnR3YXJlIEVuZ2luZWVyLiIsInNlc3Npb25UaW1lIjoyLCJpYXQiOjE2NzA5OTkwNjcsImV4cCI6MTY3MzU5MTA2N30.XQAdZw_-TljYShILKghVsopbn4mwfnPduGgn_iHmiZc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\":\"6396c32853ac2741fae8c426\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/v1/connections/invitations",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"v1",
+								"connections",
+								"invitations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reject Invitation",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzYzYjkxMTU0MjVjOWE4NmQwZDlkM2EiLCJsaW5rZWRpbklkIjoiNVdxQ2x0Zms1UiIsImVtYWlsIjoicmFrZXNoa3VtYXJtZTUzQGdtYWlsLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjUsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiUmFrZXNoIiwicG9zdHMiOlsiNjM3NGRiNWMzY2IzZmRkNzIzZDFlYzMxIiwiNjM3NGUzZjJhMTgwMzM3YTNmZTlhNWViIiwiNjM3OGExODAzYWU4ZGNmNDgyOTEzZTRiIiwiNjM3ZDA3YzlkZjFiODJlZTA4YmUyNzJlIiwiNjM4NDQxMWE4NDNkNjYyNGY4ZTM0ZjI0IiwiNjM4NDdhYThkMzU0YmUyY2I4ZGEwYmRlIiwiNjM4NDdiMWFkMzU0YmUyY2I4ZGEwYmUzIiwiNjM4NGFjNGJlOWJhOWJiYTE1YWY1ZmIxIiwiNjM4NTliOTRmZjk1ZGQwNjFmYjFhOGRhIiwiNjM5MWI5MzEzOTA5ZTEwNDIzNmE1MjI0IiwiNjM5ODM5NTRiYWIyMjNjMTdiZGVjYzdkIl0sImlzVmVyaWZpZWQiOnRydWUsImlzQWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6Ikt1bWFyIiwibWVudGVlVG9waWNzIjpbIkJyYW5kIG1hbmFnZW1lbnQiLCJCcmFuZCBtYW5hZ2VtZW50Il0sIm1lbnRvclRvcGljcyI6W10sInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzU2MDNBUUdqTVpyNWlJV28wUS9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfMjAwXzIwMC8wLzE2NTM2NTg3Mjc2OTI_ZT0xNjcyODc2ODAwJnY9YmV0YSZ0PTBQNUdZX2t2N0szdnYycWpBY1pGdnZkOXRfbmJuWTQ1VXVMMDRkc1BwZnciLCJzZXNzaW9uIjpbIjYzOTA3ZTQ4NzUzNGIwNGVkMDdlYmIxNCIsIjYzOTE3NWEyYmMxZTBkY2U2YjZkYzYyYyIsIjYzOTE3NjQ5ZWY3NWZmMWY5NDRkZTdlMSIsIjYzOTE3N2YzM2JjNGU4OGY4NjJlNjU0YyIsIjYzOTFlNWJjYjBhNjMwZmRmMjE5MzExYSIsIjYzOTFlNmNlMjM4MTk2YjkyODQ0YmY0NyJdLCJza2lsbHMiOlsiNjM5MDU0YzAzMzJhMDdjYTJjMjQ2MGNlIl0sInVzZXJFeHBlcmllbmNlIjpbIjYzOGFkMGExMWI3MDM4NTJjN2IzNjU4YiJdLCJ1c2VyRWR1Y2F0aW9uIjpbXSwidXNlckNlcnRpZmljYXRpb24iOlsiNjM2Yzk0YTc2ZTFkZWNiYmRjNWI5YTM1Il0sInVzZXJMYW5ndWFnZSI6WyI2MzY0YTNmODQzNzBmZTZjNzFmNTExYTQiLCI2MzY1ZjJlNzFkM2E3YjQ2NzcxYzAzNDUiLCI2MzY2M2VlMDk3MjcwYjc5NDJhZTRkZDQiLCI2MzY2M2YyMjk3MjcwYjc5NDJhZTRkZTAiLCI2MzZiNjhlOTA3MGMxM2ViZWUxYjVhMTQiLCI2MzZiYTk2NjQ4M2ZiYjNjZGIwZjVmMjQiLCI2MzZjYTRkMTRlMzdlMWExNTc5MTkwYzEiLCI2MzcxZTRiM2IwNDUzNjAyOGYwOWUxODAiLCI2MzczMWE4ODQ0MjVkYWNiNjY5YmVhN2UiLCI2Mzc1ZjhkZjI0YmI4MzU5MDhmZWU0Y2QiLCI2MzkxYTQ3YmQyMzEwYzE3MDk2NGU0NjMiXSwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wM1QxMjo1MDoyNS44NjhaIiwidXBkYXRlZEF0IjoiMjAyMi0xMi0xM1QwODozNTozMi42MzNaIiwiX192IjoxODksImNvdW50cnkiOiJJbmRpYSIsImxvY2F0aW9uIjoiTm9pZGEiLCJ6aXBDb2RlIjoyMDEzMDQsImN1cnJlbnRKb2JUaXRsZSI6IlNvZnR3YXJlIERldmFsb3BlciIsImZhdm9yaXRlcyI6WyI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiXSwiaXNEZWxldGVkIjpmYWxzZSwiY3VycmVudENvbXBhbnkiOiJBY29tcHdvcmxkIHB2dCBsdGQiLCJ1c2VyT1RQcyI6bnVsbCwidG90YWxDb25uZWN0aW9ucyI6MCwidG90YWxQb3N0IjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwiYmlvIjoiSSBhbSBhIHNvZnR3YXJlIEVuZ2luZWVyLiIsInNlc3Npb25UaW1lIjoyLCJpYXQiOjE2NzA5OTkwNjcsImV4cCI6MTY3MzU5MTA2N30.XQAdZw_-TljYShILKghVsopbn4mwfnPduGgn_iHmiZc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/v1/connections/invitations/6363b9115425c9a86d0d9d3a",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"v1",
+								"connections",
+								"invitations",
+								"6363b9115425c9a86d0d9d3a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Connections",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzYzYjkxMTU0MjVjOWE4NmQwZDlkM2EiLCJsaW5rZWRpbklkIjoiNVdxQ2x0Zms1UiIsImVtYWlsIjoicmFrZXNoa3VtYXJtZTUzQGdtYWlsLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjUsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiUmFrZXNoIiwicG9zdHMiOlsiNjM3NGRiNWMzY2IzZmRkNzIzZDFlYzMxIiwiNjM3NGUzZjJhMTgwMzM3YTNmZTlhNWViIiwiNjM3OGExODAzYWU4ZGNmNDgyOTEzZTRiIiwiNjM3ZDA3YzlkZjFiODJlZTA4YmUyNzJlIiwiNjM4NDQxMWE4NDNkNjYyNGY4ZTM0ZjI0IiwiNjM4NDdhYThkMzU0YmUyY2I4ZGEwYmRlIiwiNjM4NDdiMWFkMzU0YmUyY2I4ZGEwYmUzIiwiNjM4NGFjNGJlOWJhOWJiYTE1YWY1ZmIxIiwiNjM4NTliOTRmZjk1ZGQwNjFmYjFhOGRhIiwiNjM5MWI5MzEzOTA5ZTEwNDIzNmE1MjI0IiwiNjM5ODM5NTRiYWIyMjNjMTdiZGVjYzdkIl0sImlzVmVyaWZpZWQiOnRydWUsImlzQWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6Ikt1bWFyIiwibWVudGVlVG9waWNzIjpbIkJyYW5kIG1hbmFnZW1lbnQiLCJCcmFuZCBtYW5hZ2VtZW50Il0sIm1lbnRvclRvcGljcyI6W10sInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzU2MDNBUUdqTVpyNWlJV28wUS9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfMjAwXzIwMC8wLzE2NTM2NTg3Mjc2OTI_ZT0xNjcyODc2ODAwJnY9YmV0YSZ0PTBQNUdZX2t2N0szdnYycWpBY1pGdnZkOXRfbmJuWTQ1VXVMMDRkc1BwZnciLCJzZXNzaW9uIjpbIjYzOTA3ZTQ4NzUzNGIwNGVkMDdlYmIxNCIsIjYzOTE3NWEyYmMxZTBkY2U2YjZkYzYyYyIsIjYzOTE3NjQ5ZWY3NWZmMWY5NDRkZTdlMSIsIjYzOTE3N2YzM2JjNGU4OGY4NjJlNjU0YyIsIjYzOTFlNWJjYjBhNjMwZmRmMjE5MzExYSIsIjYzOTFlNmNlMjM4MTk2YjkyODQ0YmY0NyJdLCJza2lsbHMiOlsiNjM5MDU0YzAzMzJhMDdjYTJjMjQ2MGNlIl0sInVzZXJFeHBlcmllbmNlIjpbIjYzOGFkMGExMWI3MDM4NTJjN2IzNjU4YiJdLCJ1c2VyRWR1Y2F0aW9uIjpbXSwidXNlckNlcnRpZmljYXRpb24iOlsiNjM2Yzk0YTc2ZTFkZWNiYmRjNWI5YTM1Il0sInVzZXJMYW5ndWFnZSI6WyI2MzY0YTNmODQzNzBmZTZjNzFmNTExYTQiLCI2MzY1ZjJlNzFkM2E3YjQ2NzcxYzAzNDUiLCI2MzY2M2VlMDk3MjcwYjc5NDJhZTRkZDQiLCI2MzY2M2YyMjk3MjcwYjc5NDJhZTRkZTAiLCI2MzZiNjhlOTA3MGMxM2ViZWUxYjVhMTQiLCI2MzZiYTk2NjQ4M2ZiYjNjZGIwZjVmMjQiLCI2MzZjYTRkMTRlMzdlMWExNTc5MTkwYzEiLCI2MzcxZTRiM2IwNDUzNjAyOGYwOWUxODAiLCI2MzczMWE4ODQ0MjVkYWNiNjY5YmVhN2UiLCI2Mzc1ZjhkZjI0YmI4MzU5MDhmZWU0Y2QiLCI2MzkxYTQ3YmQyMzEwYzE3MDk2NGU0NjMiXSwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wM1QxMjo1MDoyNS44NjhaIiwidXBkYXRlZEF0IjoiMjAyMi0xMi0xM1QwODozNTozMi42MzNaIiwiX192IjoxODksImNvdW50cnkiOiJJbmRpYSIsImxvY2F0aW9uIjoiTm9pZGEiLCJ6aXBDb2RlIjoyMDEzMDQsImN1cnJlbnRKb2JUaXRsZSI6IlNvZnR3YXJlIERldmFsb3BlciIsImZhdm9yaXRlcyI6WyI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiXSwiaXNEZWxldGVkIjpmYWxzZSwiY3VycmVudENvbXBhbnkiOiJBY29tcHdvcmxkIHB2dCBsdGQiLCJ1c2VyT1RQcyI6bnVsbCwidG90YWxDb25uZWN0aW9ucyI6MCwidG90YWxQb3N0IjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwiYmlvIjoiSSBhbSBhIHNvZnR3YXJlIEVuZ2luZWVyLiIsInNlc3Npb25UaW1lIjoyLCJpYXQiOjE2NzA5OTkwNjcsImV4cCI6MTY3MzU5MTA2N30.XQAdZw_-TljYShILKghVsopbn4mwfnPduGgn_iHmiZc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url1}}connections/6396c32853ac2741fae8c426",
+							"host": [
+								"{{base_url1}}connections"
+							],
+							"path": [
+								"6396c32853ac2741fae8c426"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Availability",
+			"item": [
+				{
+					"name": "Get Availability",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzYzYjkxMTU0MjVjOWE4NmQwZDlkM2EiLCJsaW5rZWRpbklkIjoiNVdxQ2x0Zms1UiIsImVtYWlsIjoicmFrZXNoa3VtYXJtZTUzQGdtYWlsLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjUsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiUmFrZXNoIiwicG9zdHMiOlsiNjM3NGRiNWMzY2IzZmRkNzIzZDFlYzMxIiwiNjM3NGUzZjJhMTgwMzM3YTNmZTlhNWViIiwiNjM3OGExODAzYWU4ZGNmNDgyOTEzZTRiIiwiNjM3ZDA3YzlkZjFiODJlZTA4YmUyNzJlIiwiNjM4NDQxMWE4NDNkNjYyNGY4ZTM0ZjI0IiwiNjM4NDdhYThkMzU0YmUyY2I4ZGEwYmRlIiwiNjM4NDdiMWFkMzU0YmUyY2I4ZGEwYmUzIiwiNjM4NGFjNGJlOWJhOWJiYTE1YWY1ZmIxIiwiNjM4NTliOTRmZjk1ZGQwNjFmYjFhOGRhIiwiNjM5MWI5MzEzOTA5ZTEwNDIzNmE1MjI0IiwiNjM5ODM5NTRiYWIyMjNjMTdiZGVjYzdkIl0sImlzVmVyaWZpZWQiOnRydWUsImlzQWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6Ikt1bWFyIiwibWVudGVlVG9waWNzIjpbIkJyYW5kIG1hbmFnZW1lbnQiLCJCcmFuZCBtYW5hZ2VtZW50Il0sIm1lbnRvclRvcGljcyI6W10sInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzU2MDNBUUdqTVpyNWlJV28wUS9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfMjAwXzIwMC8wLzE2NTM2NTg3Mjc2OTI_ZT0xNjcyODc2ODAwJnY9YmV0YSZ0PTBQNUdZX2t2N0szdnYycWpBY1pGdnZkOXRfbmJuWTQ1VXVMMDRkc1BwZnciLCJzZXNzaW9uIjpbIjYzOTA3ZTQ4NzUzNGIwNGVkMDdlYmIxNCIsIjYzOTE3NWEyYmMxZTBkY2U2YjZkYzYyYyIsIjYzOTE3NjQ5ZWY3NWZmMWY5NDRkZTdlMSIsIjYzOTE3N2YzM2JjNGU4OGY4NjJlNjU0YyIsIjYzOTFlNWJjYjBhNjMwZmRmMjE5MzExYSIsIjYzOTFlNmNlMjM4MTk2YjkyODQ0YmY0NyJdLCJza2lsbHMiOlsiNjM5MDU0YzAzMzJhMDdjYTJjMjQ2MGNlIl0sInVzZXJFeHBlcmllbmNlIjpbIjYzOGFkMGExMWI3MDM4NTJjN2IzNjU4YiJdLCJ1c2VyRWR1Y2F0aW9uIjpbXSwidXNlckNlcnRpZmljYXRpb24iOlsiNjM2Yzk0YTc2ZTFkZWNiYmRjNWI5YTM1Il0sInVzZXJMYW5ndWFnZSI6WyI2MzY0YTNmODQzNzBmZTZjNzFmNTExYTQiLCI2MzY1ZjJlNzFkM2E3YjQ2NzcxYzAzNDUiLCI2MzY2M2VlMDk3MjcwYjc5NDJhZTRkZDQiLCI2MzY2M2YyMjk3MjcwYjc5NDJhZTRkZTAiLCI2MzZiNjhlOTA3MGMxM2ViZWUxYjVhMTQiLCI2MzZiYTk2NjQ4M2ZiYjNjZGIwZjVmMjQiLCI2MzZjYTRkMTRlMzdlMWExNTc5MTkwYzEiLCI2MzcxZTRiM2IwNDUzNjAyOGYwOWUxODAiLCI2MzczMWE4ODQ0MjVkYWNiNjY5YmVhN2UiLCI2Mzc1ZjhkZjI0YmI4MzU5MDhmZWU0Y2QiLCI2MzkxYTQ3YmQyMzEwYzE3MDk2NGU0NjMiXSwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wM1QxMjo1MDoyNS44NjhaIiwidXBkYXRlZEF0IjoiMjAyMi0xMi0xM1QwODozNTozMi42MzNaIiwiX192IjoxODksImNvdW50cnkiOiJJbmRpYSIsImxvY2F0aW9uIjoiTm9pZGEiLCJ6aXBDb2RlIjoyMDEzMDQsImN1cnJlbnRKb2JUaXRsZSI6IlNvZnR3YXJlIERldmFsb3BlciIsImZhdm9yaXRlcyI6WyI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiXSwiaXNEZWxldGVkIjpmYWxzZSwiY3VycmVudENvbXBhbnkiOiJBY29tcHdvcmxkIHB2dCBsdGQiLCJ1c2VyT1RQcyI6bnVsbCwidG90YWxDb25uZWN0aW9ucyI6MCwidG90YWxQb3N0IjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwiYmlvIjoiSSBhbSBhIHNvZnR3YXJlIEVuZ2luZWVyLiIsInNlc3Npb25UaW1lIjoyLCJpYXQiOjE2NzA5OTkwNjcsImV4cCI6MTY3MzU5MTA2N30.XQAdZw_-TljYShILKghVsopbn4mwfnPduGgn_iHmiZc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url1}}availabilities",
+							"host": [
+								"{{base_url1}}availabilities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Availability",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzYzYjkxMTU0MjVjOWE4NmQwZDlkM2EiLCJsaW5rZWRpbklkIjoiNVdxQ2x0Zms1UiIsImVtYWlsIjoicmFrZXNoa3VtYXJtZTUzQGdtYWlsLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjUsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiUmFrZXNoIiwicG9zdHMiOlsiNjM3NGRiNWMzY2IzZmRkNzIzZDFlYzMxIiwiNjM3NGUzZjJhMTgwMzM3YTNmZTlhNWViIiwiNjM3OGExODAzYWU4ZGNmNDgyOTEzZTRiIiwiNjM3ZDA3YzlkZjFiODJlZTA4YmUyNzJlIiwiNjM4NDQxMWE4NDNkNjYyNGY4ZTM0ZjI0IiwiNjM4NDdhYThkMzU0YmUyY2I4ZGEwYmRlIiwiNjM4NDdiMWFkMzU0YmUyY2I4ZGEwYmUzIiwiNjM4NGFjNGJlOWJhOWJiYTE1YWY1ZmIxIiwiNjM4NTliOTRmZjk1ZGQwNjFmYjFhOGRhIiwiNjM5MWI5MzEzOTA5ZTEwNDIzNmE1MjI0Il0sImlzVmVyaWZpZWQiOnRydWUsImlzQWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6Ikt1bWFyIiwibWVudGVlVG9waWNzIjpbIkJyYW5kIG1hbmFnZW1lbnQiLCJCcmFuZCBtYW5hZ2VtZW50Il0sIm1lbnRvclRvcGljcyI6W10sInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzU2MDNBUUdqTVpyNWlJV28wUS9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfMjAwXzIwMC8wLzE2NTM2NTg3Mjc2OTI_ZT0xNjcyODc2ODAwJnY9YmV0YSZ0PTBQNUdZX2t2N0szdnYycWpBY1pGdnZkOXRfbmJuWTQ1VXVMMDRkc1BwZnciLCJzZXNzaW9uIjpbIjYzOTA3ZTQ4NzUzNGIwNGVkMDdlYmIxNCIsIjYzOTE3NWEyYmMxZTBkY2U2YjZkYzYyYyIsIjYzOTE3NjQ5ZWY3NWZmMWY5NDRkZTdlMSIsIjYzOTE3N2YzM2JjNGU4OGY4NjJlNjU0YyIsIjYzOTFlNWJjYjBhNjMwZmRmMjE5MzExYSIsIjYzOTFlNmNlMjM4MTk2YjkyODQ0YmY0NyJdLCJza2lsbHMiOlsiNjM5MDU0YzAzMzJhMDdjYTJjMjQ2MGNlIl0sInVzZXJFeHBlcmllbmNlIjpbIjYzOGFkMGExMWI3MDM4NTJjN2IzNjU4YiJdLCJ1c2VyRWR1Y2F0aW9uIjpbXSwidXNlckNlcnRpZmljYXRpb24iOlsiNjM2Yzk0YTc2ZTFkZWNiYmRjNWI5YTM1Il0sInVzZXJMYW5ndWFnZSI6WyI2MzY0YTNmODQzNzBmZTZjNzFmNTExYTQiLCI2MzY1ZjJlNzFkM2E3YjQ2NzcxYzAzNDUiLCI2MzY2M2VlMDk3MjcwYjc5NDJhZTRkZDQiLCI2MzY2M2YyMjk3MjcwYjc5NDJhZTRkZTAiLCI2MzZiNjhlOTA3MGMxM2ViZWUxYjVhMTQiLCI2MzZiYTk2NjQ4M2ZiYjNjZGIwZjVmMjQiLCI2MzZjYTRkMTRlMzdlMWExNTc5MTkwYzEiLCI2MzcxZTRiM2IwNDUzNjAyOGYwOWUxODAiLCI2MzczMWE4ODQ0MjVkYWNiNjY5YmVhN2UiLCI2Mzc1ZjhkZjI0YmI4MzU5MDhmZWU0Y2QiLCI2MzkxYTQ3YmQyMzEwYzE3MDk2NGU0NjMiXSwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wM1QxMjo1MDoyNS44NjhaIiwidXBkYXRlZEF0IjoiMjAyMi0xMi0xMlQwNjo0NDowMS4zODFaIiwiX192IjoxODgsImNvdW50cnkiOiJJbmRpYSIsImxvY2F0aW9uIjoiTm9pZGEiLCJ6aXBDb2RlIjoyMDEzMDQsImN1cnJlbnRKb2JUaXRsZSI6IlNvZnR3YXJlIERldmFsb3BlciIsImZhdm9yaXRlcyI6WyI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiXSwiaXNEZWxldGVkIjpmYWxzZSwiY3VycmVudENvbXBhbnkiOiJBY29tcHdvcmxkIHB2dCBsdGQiLCJ1c2VyT1RQcyI6bnVsbCwidG90YWxDb25uZWN0aW9ucyI6MCwidG90YWxQb3N0IjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwiYmlvIjoiSSBhbSBhIHNvZnR3YXJlIEVuZ2luZWVyLiIsImlhdCI6MTY3MDkxNjU4NCwiZXhwIjoxNjczNTA4NTg0fQ.c1n8i9AeGYKtz9m1_4LDONtLADYhE2lrsmhIrSdDa1g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"days\":[ \r\n        {\r\n        \"day\":\"Wednesday\",\r\n        \"timings\":[\r\n            {\r\n                \"start_time\": \"0001-01-01 06:00:00\",\r\n                \"end_time\": \"0001-01-01 08:00:00\"\r\n            }\r\n        ]\r\n    }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url1}}availabilities",
+							"host": [
+								"{{base_url1}}availabilities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Availability",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzYzYjkxMTU0MjVjOWE4NmQwZDlkM2EiLCJsaW5rZWRpbklkIjoiNVdxQ2x0Zms1UiIsImVtYWlsIjoicmFrZXNoa3VtYXJtZTUzQGdtYWlsLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjUsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiUmFrZXNoIiwicG9zdHMiOlsiNjM3NGRiNWMzY2IzZmRkNzIzZDFlYzMxIiwiNjM3NGUzZjJhMTgwMzM3YTNmZTlhNWViIiwiNjM3OGExODAzYWU4ZGNmNDgyOTEzZTRiIiwiNjM3ZDA3YzlkZjFiODJlZTA4YmUyNzJlIiwiNjM4NDQxMWE4NDNkNjYyNGY4ZTM0ZjI0IiwiNjM4NDdhYThkMzU0YmUyY2I4ZGEwYmRlIiwiNjM4NDdiMWFkMzU0YmUyY2I4ZGEwYmUzIiwiNjM4NGFjNGJlOWJhOWJiYTE1YWY1ZmIxIiwiNjM4NTliOTRmZjk1ZGQwNjFmYjFhOGRhIiwiNjM5MWI5MzEzOTA5ZTEwNDIzNmE1MjI0Il0sImlzVmVyaWZpZWQiOnRydWUsImlzQWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6Ikt1bWFyIiwibWVudGVlVG9waWNzIjpbIkJyYW5kIG1hbmFnZW1lbnQiLCJCcmFuZCBtYW5hZ2VtZW50Il0sIm1lbnRvclRvcGljcyI6W10sInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzU2MDNBUUdqTVpyNWlJV28wUS9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfMjAwXzIwMC8wLzE2NTM2NTg3Mjc2OTI_ZT0xNjcyODc2ODAwJnY9YmV0YSZ0PTBQNUdZX2t2N0szdnYycWpBY1pGdnZkOXRfbmJuWTQ1VXVMMDRkc1BwZnciLCJzZXNzaW9uIjpbIjYzOTA3ZTQ4NzUzNGIwNGVkMDdlYmIxNCIsIjYzOTE3NWEyYmMxZTBkY2U2YjZkYzYyYyIsIjYzOTE3NjQ5ZWY3NWZmMWY5NDRkZTdlMSIsIjYzOTE3N2YzM2JjNGU4OGY4NjJlNjU0YyIsIjYzOTFlNWJjYjBhNjMwZmRmMjE5MzExYSIsIjYzOTFlNmNlMjM4MTk2YjkyODQ0YmY0NyJdLCJza2lsbHMiOlsiNjM5MDU0YzAzMzJhMDdjYTJjMjQ2MGNlIl0sInVzZXJFeHBlcmllbmNlIjpbIjYzOGFkMGExMWI3MDM4NTJjN2IzNjU4YiJdLCJ1c2VyRWR1Y2F0aW9uIjpbXSwidXNlckNlcnRpZmljYXRpb24iOlsiNjM2Yzk0YTc2ZTFkZWNiYmRjNWI5YTM1Il0sInVzZXJMYW5ndWFnZSI6WyI2MzY0YTNmODQzNzBmZTZjNzFmNTExYTQiLCI2MzY1ZjJlNzFkM2E3YjQ2NzcxYzAzNDUiLCI2MzY2M2VlMDk3MjcwYjc5NDJhZTRkZDQiLCI2MzY2M2YyMjk3MjcwYjc5NDJhZTRkZTAiLCI2MzZiNjhlOTA3MGMxM2ViZWUxYjVhMTQiLCI2MzZiYTk2NjQ4M2ZiYjNjZGIwZjVmMjQiLCI2MzZjYTRkMTRlMzdlMWExNTc5MTkwYzEiLCI2MzcxZTRiM2IwNDUzNjAyOGYwOWUxODAiLCI2MzczMWE4ODQ0MjVkYWNiNjY5YmVhN2UiLCI2Mzc1ZjhkZjI0YmI4MzU5MDhmZWU0Y2QiLCI2MzkxYTQ3YmQyMzEwYzE3MDk2NGU0NjMiXSwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wM1QxMjo1MDoyNS44NjhaIiwidXBkYXRlZEF0IjoiMjAyMi0xMi0xMlQwNjo0NDowMS4zODFaIiwiX192IjoxODgsImNvdW50cnkiOiJJbmRpYSIsImxvY2F0aW9uIjoiTm9pZGEiLCJ6aXBDb2RlIjoyMDEzMDQsImN1cnJlbnRKb2JUaXRsZSI6IlNvZnR3YXJlIERldmFsb3BlciIsImZhdm9yaXRlcyI6WyI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiXSwiaXNEZWxldGVkIjpmYWxzZSwiY3VycmVudENvbXBhbnkiOiJBY29tcHdvcmxkIHB2dCBsdGQiLCJ1c2VyT1RQcyI6bnVsbCwidG90YWxDb25uZWN0aW9ucyI6MCwidG90YWxQb3N0IjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwiYmlvIjoiSSBhbSBhIHNvZnR3YXJlIEVuZ2luZWVyLiIsImlhdCI6MTY3MDkxNjU4NCwiZXhwIjoxNjczNTA4NTg0fQ.c1n8i9AeGYKtz9m1_4LDONtLADYhE2lrsmhIrSdDa1g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url1}}availabilities/639ac9f6b923e4547599d078",
+							"host": [
+								"{{base_url1}}availabilities"
+							],
+							"path": [
+								"639ac9f6b923e4547599d078"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Session (Ateek)",
+			"item": [
+				{
+					"name": "Add Session",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzYzYjkxMTU0MjVjOWE4NmQwZDlkM2EiLCJsaW5rZWRpbklkIjoiNVdxQ2x0Zms1UiIsImVtYWlsIjoicmFrZXNoa3VtYXJtZTUzQGdtYWlsLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjUsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiUmFrZXNoIiwicG9zdHMiOlsiNjM3NGRiNWMzY2IzZmRkNzIzZDFlYzMxIiwiNjM3NGUzZjJhMTgwMzM3YTNmZTlhNWViIiwiNjM3OGExODAzYWU4ZGNmNDgyOTEzZTRiIiwiNjM3ZDA3YzlkZjFiODJlZTA4YmUyNzJlIiwiNjM4NDQxMWE4NDNkNjYyNGY4ZTM0ZjI0IiwiNjM4NDdhYThkMzU0YmUyY2I4ZGEwYmRlIiwiNjM4NDdiMWFkMzU0YmUyY2I4ZGEwYmUzIiwiNjM4NGFjNGJlOWJhOWJiYTE1YWY1ZmIxIiwiNjM4NTliOTRmZjk1ZGQwNjFmYjFhOGRhIiwiNjM5MWI5MzEzOTA5ZTEwNDIzNmE1MjI0IiwiNjM5ODM5NTRiYWIyMjNjMTdiZGVjYzdkIl0sImlzVmVyaWZpZWQiOnRydWUsImlzQWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6Ikt1bWFyIiwibWVudGVlVG9waWNzIjpbIkJyYW5kIG1hbmFnZW1lbnQiLCJCcmFuZCBtYW5hZ2VtZW50Il0sIm1lbnRvclRvcGljcyI6W10sInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzU2MDNBUUdqTVpyNWlJV28wUS9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfMjAwXzIwMC8wLzE2NTM2NTg3Mjc2OTI_ZT0xNjcyODc2ODAwJnY9YmV0YSZ0PTBQNUdZX2t2N0szdnYycWpBY1pGdnZkOXRfbmJuWTQ1VXVMMDRkc1BwZnciLCJzZXNzaW9uIjpbIjYzOTA3ZTQ4NzUzNGIwNGVkMDdlYmIxNCIsIjYzOTE3NWEyYmMxZTBkY2U2YjZkYzYyYyIsIjYzOTE3NjQ5ZWY3NWZmMWY5NDRkZTdlMSIsIjYzOTE3N2YzM2JjNGU4OGY4NjJlNjU0YyIsIjYzOTFlNWJjYjBhNjMwZmRmMjE5MzExYSIsIjYzOTFlNmNlMjM4MTk2YjkyODQ0YmY0NyJdLCJza2lsbHMiOlsiNjM5MDU0YzAzMzJhMDdjYTJjMjQ2MGNlIl0sInVzZXJFeHBlcmllbmNlIjpbIjYzOGFkMGExMWI3MDM4NTJjN2IzNjU4YiJdLCJ1c2VyRWR1Y2F0aW9uIjpbXSwidXNlckNlcnRpZmljYXRpb24iOlsiNjM2Yzk0YTc2ZTFkZWNiYmRjNWI5YTM1Il0sInVzZXJMYW5ndWFnZSI6WyI2MzY0YTNmODQzNzBmZTZjNzFmNTExYTQiLCI2MzY1ZjJlNzFkM2E3YjQ2NzcxYzAzNDUiLCI2MzY2M2VlMDk3MjcwYjc5NDJhZTRkZDQiLCI2MzY2M2YyMjk3MjcwYjc5NDJhZTRkZTAiLCI2MzZiNjhlOTA3MGMxM2ViZWUxYjVhMTQiLCI2MzZiYTk2NjQ4M2ZiYjNjZGIwZjVmMjQiLCI2MzZjYTRkMTRlMzdlMWExNTc5MTkwYzEiLCI2MzcxZTRiM2IwNDUzNjAyOGYwOWUxODAiLCI2MzczMWE4ODQ0MjVkYWNiNjY5YmVhN2UiLCI2Mzc1ZjhkZjI0YmI4MzU5MDhmZWU0Y2QiLCI2MzkxYTQ3YmQyMzEwYzE3MDk2NGU0NjMiXSwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wM1QxMjo1MDoyNS44NjhaIiwidXBkYXRlZEF0IjoiMjAyMi0xMi0xM1QwODozNTozMi42MzNaIiwiX192IjoxODksImNvdW50cnkiOiJJbmRpYSIsImxvY2F0aW9uIjoiTm9pZGEiLCJ6aXBDb2RlIjoyMDEzMDQsImN1cnJlbnRKb2JUaXRsZSI6IlNvZnR3YXJlIERldmFsb3BlciIsImZhdm9yaXRlcyI6WyI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiXSwiaXNEZWxldGVkIjpmYWxzZSwiY3VycmVudENvbXBhbnkiOiJBY29tcHdvcmxkIHB2dCBsdGQiLCJ1c2VyT1RQcyI6bnVsbCwidG90YWxDb25uZWN0aW9ucyI6MCwidG90YWxQb3N0IjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwiYmlvIjoiSSBhbSBhIHNvZnR3YXJlIEVuZ2luZWVyLiIsInNlc3Npb25UaW1lIjoyLCJpYXQiOjE2NzA5OTkwNjcsImV4cCI6MTY3MzU5MTA2N30.XQAdZw_-TljYShILKghVsopbn4mwfnPduGgn_iHmiZc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mentor\": \"6363b9115425c9a86d0d9d3a\",\r\n    \"sessionType\":\"GroupSession\",\r\n    \"skill\": \"Database\",\r\n    \"bannerImage\":null,\r\n    \"title\":\"Advance Java\",\r\n    \"duration\": \"1 Hr.\",\r\n    \"amount\": 200,\r\n    \"date\": \"2022-12-20 13:30:00\",\r\n    \"time\": \"15:30:00\",\r\n    \"isPaid\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url1}}sessions",
+							"host": [
+								"{{base_url1}}sessions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Join Session",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sessionId\":\"6392c48152f8ee328007c356\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url1}}sessions/mentee",
+							"host": [
+								"{{base_url1}}sessions"
+							],
+							"path": [
+								"mentee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Mentee",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sessionId\":\"6396ca3d96c63362c0c1a7ae\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url1}}sessions/remove/6396ca3d96c63362c0c1a7ae",
+							"host": [
+								"{{base_url1}}sessions"
+							],
+							"path": [
+								"remove",
+								"6396ca3d96c63362c0c1a7ae"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Sessions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url1}}sessions",
+							"host": [
+								"{{base_url1}}sessions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Upcoming Group Session (Mentor)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url1}}sessions/mentor-upcoming?type=GroupSession",
+							"host": [
+								"{{base_url1}}sessions"
+							],
+							"path": [
+								"mentor-upcoming"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "GroupSession"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Upcoming Group Session (Learner)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url1}}sessions/mentee-upcoming?type=GroupSession",
+							"host": [
+								"{{base_url1}}sessions"
+							],
+							"path": [
+								"mentee-upcoming"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "GroupSession"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Session",
+			"item": [
+				{
+					"name": "get learning Session",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzYzYjkxMTU0MjVjOWE4NmQwZDlkM2EiLCJsaW5rZWRpbklkIjoiNVdxQ2x0Zms1UiIsImVtYWlsIjoicmFrZXNoa3VtYXJtZTUzQGdtYWlsLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjUsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiUmFrZXNoIiwicG9zdHMiOlsiNjM3NGRiNWMzY2IzZmRkNzIzZDFlYzMxIiwiNjM3NGUzZjJhMTgwMzM3YTNmZTlhNWViIiwiNjM3OGExODAzYWU4ZGNmNDgyOTEzZTRiIiwiNjM3ZDA3YzlkZjFiODJlZTA4YmUyNzJlIiwiNjM4NDQxMWE4NDNkNjYyNGY4ZTM0ZjI0IiwiNjM4NDdhYThkMzU0YmUyY2I4ZGEwYmRlIiwiNjM4NDdiMWFkMzU0YmUyY2I4ZGEwYmUzIiwiNjM4NGFjNGJlOWJhOWJiYTE1YWY1ZmIxIiwiNjM4NTliOTRmZjk1ZGQwNjFmYjFhOGRhIiwiNjM5MWI5MzEzOTA5ZTEwNDIzNmE1MjI0IiwiNjM5ODM5NTRiYWIyMjNjMTdiZGVjYzdkIl0sImlzVmVyaWZpZWQiOnRydWUsImlzQWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6Ikt1bWFyIiwibWVudGVlVG9waWNzIjpbIkJyYW5kIG1hbmFnZW1lbnQiLCJCcmFuZCBtYW5hZ2VtZW50Il0sIm1lbnRvclRvcGljcyI6W10sInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzU2MDNBUUdqTVpyNWlJV28wUS9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfMjAwXzIwMC8wLzE2NTM2NTg3Mjc2OTI_ZT0xNjcyODc2ODAwJnY9YmV0YSZ0PTBQNUdZX2t2N0szdnYycWpBY1pGdnZkOXRfbmJuWTQ1VXVMMDRkc1BwZnciLCJzZXNzaW9uIjpbIjYzOTA3ZTQ4NzUzNGIwNGVkMDdlYmIxNCIsIjYzOTE3NWEyYmMxZTBkY2U2YjZkYzYyYyIsIjYzOTE3NjQ5ZWY3NWZmMWY5NDRkZTdlMSIsIjYzOTE3N2YzM2JjNGU4OGY4NjJlNjU0YyIsIjYzOTFlNWJjYjBhNjMwZmRmMjE5MzExYSIsIjYzOTFlNmNlMjM4MTk2YjkyODQ0YmY0NyJdLCJza2lsbHMiOlsiNjM5MDU0YzAzMzJhMDdjYTJjMjQ2MGNlIl0sInVzZXJFeHBlcmllbmNlIjpbIjYzOGFkMGExMWI3MDM4NTJjN2IzNjU4YiJdLCJ1c2VyRWR1Y2F0aW9uIjpbXSwidXNlckNlcnRpZmljYXRpb24iOlsiNjM2Yzk0YTc2ZTFkZWNiYmRjNWI5YTM1Il0sInVzZXJMYW5ndWFnZSI6WyI2MzY0YTNmODQzNzBmZTZjNzFmNTExYTQiLCI2MzY1ZjJlNzFkM2E3YjQ2NzcxYzAzNDUiLCI2MzY2M2VlMDk3MjcwYjc5NDJhZTRkZDQiLCI2MzY2M2YyMjk3MjcwYjc5NDJhZTRkZTAiLCI2MzZiNjhlOTA3MGMxM2ViZWUxYjVhMTQiLCI2MzZiYTk2NjQ4M2ZiYjNjZGIwZjVmMjQiLCI2MzZjYTRkMTRlMzdlMWExNTc5MTkwYzEiLCI2MzcxZTRiM2IwNDUzNjAyOGYwOWUxODAiLCI2MzczMWE4ODQ0MjVkYWNiNjY5YmVhN2UiLCI2Mzc1ZjhkZjI0YmI4MzU5MDhmZWU0Y2QiLCI2MzkxYTQ3YmQyMzEwYzE3MDk2NGU0NjMiXSwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wM1QxMjo1MDoyNS44NjhaIiwidXBkYXRlZEF0IjoiMjAyMi0xMi0xM1QwODozNTozMi42MzNaIiwiX192IjoxODksImNvdW50cnkiOiJJbmRpYSIsImxvY2F0aW9uIjoiTm9pZGEiLCJ6aXBDb2RlIjoyMDEzMDQsImN1cnJlbnRKb2JUaXRsZSI6IlNvZnR3YXJlIERldmFsb3BlciIsImZhdm9yaXRlcyI6WyI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiXSwiaXNEZWxldGVkIjpmYWxzZSwiY3VycmVudENvbXBhbnkiOiJBY29tcHdvcmxkIHB2dCBsdGQiLCJ1c2VyT1RQcyI6bnVsbCwidG90YWxDb25uZWN0aW9ucyI6MCwidG90YWxQb3N0IjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwiYmlvIjoiSSBhbSBhIHNvZnR3YXJlIEVuZ2luZWVyLiIsInNlc3Npb25UaW1lIjoyLCJpYXQiOjE2NzA5OTkwNjcsImV4cCI6MTY3MzU5MTA2N30.XQAdZw_-TljYShILKghVsopbn4mwfnPduGgn_iHmiZc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url1}}sessions/get/learning?filter=Completed",
+							"host": [
+								"{{base_url1}}sessions"
+							],
+							"path": [
+								"get",
+								"learning"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "Completed"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get mentoring Session",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzYzYjkxMTU0MjVjOWE4NmQwZDlkM2EiLCJsaW5rZWRpbklkIjoiNVdxQ2x0Zms1UiIsImVtYWlsIjoicmFrZXNoa3VtYXJtZTUzQGdtYWlsLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjUsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiUmFrZXNoIiwicG9zdHMiOlsiNjM3NGRiNWMzY2IzZmRkNzIzZDFlYzMxIiwiNjM3NGUzZjJhMTgwMzM3YTNmZTlhNWViIiwiNjM3OGExODAzYWU4ZGNmNDgyOTEzZTRiIiwiNjM3ZDA3YzlkZjFiODJlZTA4YmUyNzJlIiwiNjM4NDQxMWE4NDNkNjYyNGY4ZTM0ZjI0IiwiNjM4NDdhYThkMzU0YmUyY2I4ZGEwYmRlIiwiNjM4NDdiMWFkMzU0YmUyY2I4ZGEwYmUzIiwiNjM4NGFjNGJlOWJhOWJiYTE1YWY1ZmIxIiwiNjM4NTliOTRmZjk1ZGQwNjFmYjFhOGRhIiwiNjM5MWI5MzEzOTA5ZTEwNDIzNmE1MjI0IiwiNjM5ODM5NTRiYWIyMjNjMTdiZGVjYzdkIl0sImlzVmVyaWZpZWQiOnRydWUsImlzQWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6Ikt1bWFyIiwibWVudGVlVG9waWNzIjpbIkJyYW5kIG1hbmFnZW1lbnQiLCJCcmFuZCBtYW5hZ2VtZW50Il0sIm1lbnRvclRvcGljcyI6W10sInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzU2MDNBUUdqTVpyNWlJV28wUS9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfMjAwXzIwMC8wLzE2NTM2NTg3Mjc2OTI_ZT0xNjcyODc2ODAwJnY9YmV0YSZ0PTBQNUdZX2t2N0szdnYycWpBY1pGdnZkOXRfbmJuWTQ1VXVMMDRkc1BwZnciLCJzZXNzaW9uIjpbIjYzOTA3ZTQ4NzUzNGIwNGVkMDdlYmIxNCIsIjYzOTE3NWEyYmMxZTBkY2U2YjZkYzYyYyIsIjYzOTE3NjQ5ZWY3NWZmMWY5NDRkZTdlMSIsIjYzOTE3N2YzM2JjNGU4OGY4NjJlNjU0YyIsIjYzOTFlNWJjYjBhNjMwZmRmMjE5MzExYSIsIjYzOTFlNmNlMjM4MTk2YjkyODQ0YmY0NyJdLCJza2lsbHMiOlsiNjM5MDU0YzAzMzJhMDdjYTJjMjQ2MGNlIl0sInVzZXJFeHBlcmllbmNlIjpbIjYzOGFkMGExMWI3MDM4NTJjN2IzNjU4YiJdLCJ1c2VyRWR1Y2F0aW9uIjpbXSwidXNlckNlcnRpZmljYXRpb24iOlsiNjM2Yzk0YTc2ZTFkZWNiYmRjNWI5YTM1Il0sInVzZXJMYW5ndWFnZSI6WyI2MzY0YTNmODQzNzBmZTZjNzFmNTExYTQiLCI2MzY1ZjJlNzFkM2E3YjQ2NzcxYzAzNDUiLCI2MzY2M2VlMDk3MjcwYjc5NDJhZTRkZDQiLCI2MzY2M2YyMjk3MjcwYjc5NDJhZTRkZTAiLCI2MzZiNjhlOTA3MGMxM2ViZWUxYjVhMTQiLCI2MzZiYTk2NjQ4M2ZiYjNjZGIwZjVmMjQiLCI2MzZjYTRkMTRlMzdlMWExNTc5MTkwYzEiLCI2MzcxZTRiM2IwNDUzNjAyOGYwOWUxODAiLCI2MzczMWE4ODQ0MjVkYWNiNjY5YmVhN2UiLCI2Mzc1ZjhkZjI0YmI4MzU5MDhmZWU0Y2QiLCI2MzkxYTQ3YmQyMzEwYzE3MDk2NGU0NjMiXSwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wM1QxMjo1MDoyNS44NjhaIiwidXBkYXRlZEF0IjoiMjAyMi0xMi0xM1QwODozNTozMi42MzNaIiwiX192IjoxODksImNvdW50cnkiOiJJbmRpYSIsImxvY2F0aW9uIjoiTm9pZGEiLCJ6aXBDb2RlIjoyMDEzMDQsImN1cnJlbnRKb2JUaXRsZSI6IlNvZnR3YXJlIERldmFsb3BlciIsImZhdm9yaXRlcyI6WyI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiXSwiaXNEZWxldGVkIjpmYWxzZSwiY3VycmVudENvbXBhbnkiOiJBY29tcHdvcmxkIHB2dCBsdGQiLCJ1c2VyT1RQcyI6bnVsbCwidG90YWxDb25uZWN0aW9ucyI6MCwidG90YWxQb3N0IjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwiYmlvIjoiSSBhbSBhIHNvZnR3YXJlIEVuZ2luZWVyLiIsInNlc3Npb25UaW1lIjoyLCJpYXQiOjE2NzA5OTkwNjcsImV4cCI6MTY3MzU5MTA2N30.XQAdZw_-TljYShILKghVsopbn4mwfnPduGgn_iHmiZc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url1}}sessions/get/mentoring?filter=Upcoming",
+							"host": [
+								"{{base_url1}}sessions"
+							],
+							"path": [
+								"get",
+								"mentoring"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "Upcoming"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transactions",
+			"item": [
+				{
+					"name": "get all transactions",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzYzYjkxMTU0MjVjOWE4NmQwZDlkM2EiLCJsaW5rZWRpbklkIjoiNVdxQ2x0Zms1UiIsImVtYWlsIjoicmFrZXNoa3VtYXJtZTUzQGdtYWlsLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjUsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiUmFrZXNoIiwicG9zdHMiOlsiNjM3NGRiNWMzY2IzZmRkNzIzZDFlYzMxIiwiNjM3NGUzZjJhMTgwMzM3YTNmZTlhNWViIiwiNjM3OGExODAzYWU4ZGNmNDgyOTEzZTRiIiwiNjM3ZDA3YzlkZjFiODJlZTA4YmUyNzJlIiwiNjM4NDQxMWE4NDNkNjYyNGY4ZTM0ZjI0IiwiNjM4NDdhYThkMzU0YmUyY2I4ZGEwYmRlIiwiNjM4NDdiMWFkMzU0YmUyY2I4ZGEwYmUzIiwiNjM4NGFjNGJlOWJhOWJiYTE1YWY1ZmIxIiwiNjM4NTliOTRmZjk1ZGQwNjFmYjFhOGRhIiwiNjM5MWI5MzEzOTA5ZTEwNDIzNmE1MjI0IiwiNjM5ODM5NTRiYWIyMjNjMTdiZGVjYzdkIl0sImlzVmVyaWZpZWQiOnRydWUsImlzQWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6Ikt1bWFyIiwibWVudGVlVG9waWNzIjpbIkJyYW5kIG1hbmFnZW1lbnQiLCJCcmFuZCBtYW5hZ2VtZW50Il0sIm1lbnRvclRvcGljcyI6W10sInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzU2MDNBUUdqTVpyNWlJV28wUS9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfMjAwXzIwMC8wLzE2NTM2NTg3Mjc2OTI_ZT0xNjcyODc2ODAwJnY9YmV0YSZ0PTBQNUdZX2t2N0szdnYycWpBY1pGdnZkOXRfbmJuWTQ1VXVMMDRkc1BwZnciLCJzZXNzaW9uIjpbIjYzOTA3ZTQ4NzUzNGIwNGVkMDdlYmIxNCIsIjYzOTE3NWEyYmMxZTBkY2U2YjZkYzYyYyIsIjYzOTE3NjQ5ZWY3NWZmMWY5NDRkZTdlMSIsIjYzOTE3N2YzM2JjNGU4OGY4NjJlNjU0YyIsIjYzOTFlNWJjYjBhNjMwZmRmMjE5MzExYSIsIjYzOTFlNmNlMjM4MTk2YjkyODQ0YmY0NyJdLCJza2lsbHMiOlsiNjM5MDU0YzAzMzJhMDdjYTJjMjQ2MGNlIl0sInVzZXJFeHBlcmllbmNlIjpbIjYzOGFkMGExMWI3MDM4NTJjN2IzNjU4YiJdLCJ1c2VyRWR1Y2F0aW9uIjpbXSwidXNlckNlcnRpZmljYXRpb24iOlsiNjM2Yzk0YTc2ZTFkZWNiYmRjNWI5YTM1Il0sInVzZXJMYW5ndWFnZSI6WyI2MzY0YTNmODQzNzBmZTZjNzFmNTExYTQiLCI2MzY1ZjJlNzFkM2E3YjQ2NzcxYzAzNDUiLCI2MzY2M2VlMDk3MjcwYjc5NDJhZTRkZDQiLCI2MzY2M2YyMjk3MjcwYjc5NDJhZTRkZTAiLCI2MzZiNjhlOTA3MGMxM2ViZWUxYjVhMTQiLCI2MzZiYTk2NjQ4M2ZiYjNjZGIwZjVmMjQiLCI2MzZjYTRkMTRlMzdlMWExNTc5MTkwYzEiLCI2MzcxZTRiM2IwNDUzNjAyOGYwOWUxODAiLCI2MzczMWE4ODQ0MjVkYWNiNjY5YmVhN2UiLCI2Mzc1ZjhkZjI0YmI4MzU5MDhmZWU0Y2QiLCI2MzkxYTQ3YmQyMzEwYzE3MDk2NGU0NjMiXSwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wM1QxMjo1MDoyNS44NjhaIiwidXBkYXRlZEF0IjoiMjAyMi0xMi0xM1QwODozNTozMi42MzNaIiwiX192IjoxODksImNvdW50cnkiOiJJbmRpYSIsImxvY2F0aW9uIjoiTm9pZGEiLCJ6aXBDb2RlIjoyMDEzMDQsImN1cnJlbnRKb2JUaXRsZSI6IlNvZnR3YXJlIERldmFsb3BlciIsImZhdm9yaXRlcyI6WyI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiXSwiaXNEZWxldGVkIjpmYWxzZSwiY3VycmVudENvbXBhbnkiOiJBY29tcHdvcmxkIHB2dCBsdGQiLCJ1c2VyT1RQcyI6bnVsbCwidG90YWxDb25uZWN0aW9ucyI6MCwidG90YWxQb3N0IjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwiYmlvIjoiSSBhbSBhIHNvZnR3YXJlIEVuZ2luZWVyLiIsInNlc3Npb25UaW1lIjoyLCJpYXQiOjE2NzA5OTkwNjcsImV4cCI6MTY3MzU5MTA2N30.XQAdZw_-TljYShILKghVsopbn4mwfnPduGgn_iHmiZc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url1}}transactions",
+							"host": [
+								"{{base_url1}}transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create transaction",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzYzYjkxMTU0MjVjOWE4NmQwZDlkM2EiLCJsaW5rZWRpbklkIjoiNVdxQ2x0Zms1UiIsImVtYWlsIjoicmFrZXNoa3VtYXJtZTUzQGdtYWlsLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjUsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiUmFrZXNoIiwicG9zdHMiOlsiNjM3NGRiNWMzY2IzZmRkNzIzZDFlYzMxIiwiNjM3NGUzZjJhMTgwMzM3YTNmZTlhNWViIiwiNjM3OGExODAzYWU4ZGNmNDgyOTEzZTRiIiwiNjM3ZDA3YzlkZjFiODJlZTA4YmUyNzJlIiwiNjM4NDQxMWE4NDNkNjYyNGY4ZTM0ZjI0IiwiNjM4NDdhYThkMzU0YmUyY2I4ZGEwYmRlIiwiNjM4NDdiMWFkMzU0YmUyY2I4ZGEwYmUzIiwiNjM4NGFjNGJlOWJhOWJiYTE1YWY1ZmIxIiwiNjM4NTliOTRmZjk1ZGQwNjFmYjFhOGRhIiwiNjM5MWI5MzEzOTA5ZTEwNDIzNmE1MjI0IiwiNjM5ODM5NTRiYWIyMjNjMTdiZGVjYzdkIl0sImlzVmVyaWZpZWQiOnRydWUsImlzQWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6Ikt1bWFyIiwibWVudGVlVG9waWNzIjpbIkJyYW5kIG1hbmFnZW1lbnQiLCJCcmFuZCBtYW5hZ2VtZW50Il0sIm1lbnRvclRvcGljcyI6W10sInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzU2MDNBUUdqTVpyNWlJV28wUS9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfMjAwXzIwMC8wLzE2NTM2NTg3Mjc2OTI_ZT0xNjcyODc2ODAwJnY9YmV0YSZ0PTBQNUdZX2t2N0szdnYycWpBY1pGdnZkOXRfbmJuWTQ1VXVMMDRkc1BwZnciLCJzZXNzaW9uIjpbIjYzOTA3ZTQ4NzUzNGIwNGVkMDdlYmIxNCIsIjYzOTE3NWEyYmMxZTBkY2U2YjZkYzYyYyIsIjYzOTE3NjQ5ZWY3NWZmMWY5NDRkZTdlMSIsIjYzOTE3N2YzM2JjNGU4OGY4NjJlNjU0YyIsIjYzOTFlNWJjYjBhNjMwZmRmMjE5MzExYSIsIjYzOTFlNmNlMjM4MTk2YjkyODQ0YmY0NyJdLCJza2lsbHMiOlsiNjM5MDU0YzAzMzJhMDdjYTJjMjQ2MGNlIl0sInVzZXJFeHBlcmllbmNlIjpbIjYzOGFkMGExMWI3MDM4NTJjN2IzNjU4YiJdLCJ1c2VyRWR1Y2F0aW9uIjpbXSwidXNlckNlcnRpZmljYXRpb24iOlsiNjM2Yzk0YTc2ZTFkZWNiYmRjNWI5YTM1Il0sInVzZXJMYW5ndWFnZSI6WyI2MzY0YTNmODQzNzBmZTZjNzFmNTExYTQiLCI2MzY1ZjJlNzFkM2E3YjQ2NzcxYzAzNDUiLCI2MzY2M2VlMDk3MjcwYjc5NDJhZTRkZDQiLCI2MzY2M2YyMjk3MjcwYjc5NDJhZTRkZTAiLCI2MzZiNjhlOTA3MGMxM2ViZWUxYjVhMTQiLCI2MzZiYTk2NjQ4M2ZiYjNjZGIwZjVmMjQiLCI2MzZjYTRkMTRlMzdlMWExNTc5MTkwYzEiLCI2MzcxZTRiM2IwNDUzNjAyOGYwOWUxODAiLCI2MzczMWE4ODQ0MjVkYWNiNjY5YmVhN2UiLCI2Mzc1ZjhkZjI0YmI4MzU5MDhmZWU0Y2QiLCI2MzkxYTQ3YmQyMzEwYzE3MDk2NGU0NjMiXSwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wM1QxMjo1MDoyNS44NjhaIiwidXBkYXRlZEF0IjoiMjAyMi0xMi0xM1QwODozNTozMi42MzNaIiwiX192IjoxODksImNvdW50cnkiOiJJbmRpYSIsImxvY2F0aW9uIjoiTm9pZGEiLCJ6aXBDb2RlIjoyMDEzMDQsImN1cnJlbnRKb2JUaXRsZSI6IlNvZnR3YXJlIERldmFsb3BlciIsImZhdm9yaXRlcyI6WyI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiXSwiaXNEZWxldGVkIjpmYWxzZSwiY3VycmVudENvbXBhbnkiOiJBY29tcHdvcmxkIHB2dCBsdGQiLCJ1c2VyT1RQcyI6bnVsbCwidG90YWxDb25uZWN0aW9ucyI6MCwidG90YWxQb3N0IjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwiYmlvIjoiSSBhbSBhIHNvZnR3YXJlIEVuZ2luZWVyLiIsInNlc3Npb25UaW1lIjoyLCJpYXQiOjE2NzA5OTkwNjcsImV4cCI6MTY3MzU5MTA2N30.XQAdZw_-TljYShILKghVsopbn4mwfnPduGgn_iHmiZc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"6363b9115425c9a86d0d9d3a\",\r\n    \"session\": \"639c3f0da5de4826d70d4301\",\r\n    \"amount\": \"200\",\r\n    \"transaction_mode\":\" paypal\",\r\n    \"transaction_status\":\"Success\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}transactions",
+							"host": [
+								"{{base_url}}transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update transaction",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzYzYjkxMTU0MjVjOWE4NmQwZDlkM2EiLCJsaW5rZWRpbklkIjoiNVdxQ2x0Zms1UiIsImVtYWlsIjoicmFrZXNoa3VtYXJtZTUzQGdtYWlsLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjUsImNvbm5lY3Rpb25zIjpbXSwiZmlyc3ROYW1lIjoiUmFrZXNoIiwicG9zdHMiOlsiNjM3NGRiNWMzY2IzZmRkNzIzZDFlYzMxIiwiNjM3NGUzZjJhMTgwMzM3YTNmZTlhNWViIiwiNjM3OGExODAzYWU4ZGNmNDgyOTEzZTRiIiwiNjM3ZDA3YzlkZjFiODJlZTA4YmUyNzJlIiwiNjM4NDQxMWE4NDNkNjYyNGY4ZTM0ZjI0IiwiNjM4NDdhYThkMzU0YmUyY2I4ZGEwYmRlIiwiNjM4NDdiMWFkMzU0YmUyY2I4ZGEwYmUzIiwiNjM4NGFjNGJlOWJhOWJiYTE1YWY1ZmIxIiwiNjM4NTliOTRmZjk1ZGQwNjFmYjFhOGRhIiwiNjM5MWI5MzEzOTA5ZTEwNDIzNmE1MjI0IiwiNjM5ODM5NTRiYWIyMjNjMTdiZGVjYzdkIl0sImlzVmVyaWZpZWQiOnRydWUsImlzQWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6Ikt1bWFyIiwibWVudGVlVG9waWNzIjpbIkJyYW5kIG1hbmFnZW1lbnQiLCJCcmFuZCBtYW5hZ2VtZW50Il0sIm1lbnRvclRvcGljcyI6W10sInByb2ZpbGVQaWN0dXJlIjoiaHR0cHM6Ly9tZWRpYS1leHAxLmxpY2RuLmNvbS9kbXMvaW1hZ2UvQzU2MDNBUUdqTVpyNWlJV28wUS9wcm9maWxlLWRpc3BsYXlwaG90by1zaHJpbmtfMjAwXzIwMC8wLzE2NTM2NTg3Mjc2OTI_ZT0xNjcyODc2ODAwJnY9YmV0YSZ0PTBQNUdZX2t2N0szdnYycWpBY1pGdnZkOXRfbmJuWTQ1VXVMMDRkc1BwZnciLCJzZXNzaW9uIjpbIjYzOTA3ZTQ4NzUzNGIwNGVkMDdlYmIxNCIsIjYzOTE3NWEyYmMxZTBkY2U2YjZkYzYyYyIsIjYzOTE3NjQ5ZWY3NWZmMWY5NDRkZTdlMSIsIjYzOTE3N2YzM2JjNGU4OGY4NjJlNjU0YyIsIjYzOTFlNWJjYjBhNjMwZmRmMjE5MzExYSIsIjYzOTFlNmNlMjM4MTk2YjkyODQ0YmY0NyJdLCJza2lsbHMiOlsiNjM5MDU0YzAzMzJhMDdjYTJjMjQ2MGNlIl0sInVzZXJFeHBlcmllbmNlIjpbIjYzOGFkMGExMWI3MDM4NTJjN2IzNjU4YiJdLCJ1c2VyRWR1Y2F0aW9uIjpbXSwidXNlckNlcnRpZmljYXRpb24iOlsiNjM2Yzk0YTc2ZTFkZWNiYmRjNWI5YTM1Il0sInVzZXJMYW5ndWFnZSI6WyI2MzY0YTNmODQzNzBmZTZjNzFmNTExYTQiLCI2MzY1ZjJlNzFkM2E3YjQ2NzcxYzAzNDUiLCI2MzY2M2VlMDk3MjcwYjc5NDJhZTRkZDQiLCI2MzY2M2YyMjk3MjcwYjc5NDJhZTRkZTAiLCI2MzZiNjhlOTA3MGMxM2ViZWUxYjVhMTQiLCI2MzZiYTk2NjQ4M2ZiYjNjZGIwZjVmMjQiLCI2MzZjYTRkMTRlMzdlMWExNTc5MTkwYzEiLCI2MzcxZTRiM2IwNDUzNjAyOGYwOWUxODAiLCI2MzczMWE4ODQ0MjVkYWNiNjY5YmVhN2UiLCI2Mzc1ZjhkZjI0YmI4MzU5MDhmZWU0Y2QiLCI2MzkxYTQ3YmQyMzEwYzE3MDk2NGU0NjMiXSwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wM1QxMjo1MDoyNS44NjhaIiwidXBkYXRlZEF0IjoiMjAyMi0xMi0xM1QwODozNTozMi42MzNaIiwiX192IjoxODksImNvdW50cnkiOiJJbmRpYSIsImxvY2F0aW9uIjoiTm9pZGEiLCJ6aXBDb2RlIjoyMDEzMDQsImN1cnJlbnRKb2JUaXRsZSI6IlNvZnR3YXJlIERldmFsb3BlciIsImZhdm9yaXRlcyI6WyI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiLCI2Mzg0N2FhOGQzNTRiZTJjYjhkYTBiZGUiXSwiaXNEZWxldGVkIjpmYWxzZSwiY3VycmVudENvbXBhbnkiOiJBY29tcHdvcmxkIHB2dCBsdGQiLCJ1c2VyT1RQcyI6bnVsbCwidG90YWxDb25uZWN0aW9ucyI6MCwidG90YWxQb3N0IjowLCJ0b3RhbEZvbGxvd2VyIjowLCJ0b3RhbEZvbGxvd2luZyI6MCwiYmlvIjoiSSBhbSBhIHNvZnR3YXJlIEVuZ2luZWVyLiIsInNlc3Npb25UaW1lIjoyLCJpYXQiOjE2NzA5OTkwNjcsImV4cCI6MTY3MzU5MTA2N30.XQAdZw_-TljYShILKghVsopbn4mwfnPduGgn_iHmiZc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"6363b9115425c9a86d0d9d3a\",\r\n    \"session\": \"639c3f0da5de4826d70d4301\",\r\n    \"amount\": \"300\",\r\n    \"transaction_mode\":\" paypal\",\r\n    \"transaction_status\":\"Success\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url1}}transactions/639c632bd395b414dd7a392a",
+							"host": [
+								"{{base_url1}}transactions"
+							],
+							"path": [
+								"639c632bd395b414dd7a392a"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "paymentmethod",
+			"item": [
+				{
+					"name": "get paymentmethod",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{base_url}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}SfXGb9SNJ7/get-paymentmethod",
+							"host": [
+								"{{base_url}}SfXGb9SNJ7"
+							],
+							"path": [
+								"get-paymentmethod"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add paymentmethod",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"paypal\":\"paypal\",\r\n     \"velmo\": \"velmo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}5WqCltfk5R/add-paymentmethod",
+							"host": [
+								"{{base_url}}5WqCltfk5R"
+							],
+							"path": [
+								"add-paymentmethod"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update paymentmethod",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"paypal\":\"phonepay\",\r\n     \"velmo\": \"bizza\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}update-paymentmethod/637884f674cde96814591fc4",
+							"host": [
+								"{{base_url}}update-paymentmethod"
+							],
+							"path": [
+								"637884f674cde96814591fc4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete paymentmethod",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}delete-paymentmethod/637884f674cde96814591fc4",
+							"host": [
+								"{{base_url}}delete-paymentmethod"
+							],
+							"path": [
+								"637884f674cde96814591fc4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "favorites",
+			"item": [
+				{
+					"name": "get Favorites",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}get/favorites",
+							"host": [
+								"{{base_url}}get"
+							],
+							"path": [
+								"favorites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add favorites",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"postId\":\"63847aa8d354be2cb8da0bde\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}favorites",
+							"host": [
+								"{{base_url}}favorites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove favorites",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"postId\":\"63847aa8d354be2cb8da0bde\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}delete/favorites/63847aa8d354be2cb8da0bde",
+							"host": [
+								"{{base_url}}delete"
+							],
+							"path": [
+								"favorites",
+								"63847aa8d354be2cb8da0bde"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comments, like unlike, reply and share",
+			"item": [
+				{
+					"name": "get all comments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}all/comments",
+							"host": [
+								"{{base_url}}all"
+							],
+							"path": [
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "like",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Proxy-Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}postLike/6385cd7eca057498e7a0d744",
+							"host": [
+								"{{base_url}}postLike"
+							],
+							"path": [
+								"6385cd7eca057498e7a0d744"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "share",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Proxy-Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}share/63847aa8d354be2cb8da0bde",
+							"host": [
+								"{{base_url}}share"
+							],
+							"path": [
+								"63847aa8d354be2cb8da0bde"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get post comments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}getpost-coment/633c177761eb793ba14c8f29",
+							"host": [
+								"{{base_url}}getpost-coment"
+							],
+							"path": [
+								"633c177761eb793ba14c8f29"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add new comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"postId\": \"6385cd7eca057498e7a0d744\",\r\n    \"parentComment\": null,\r\n    \"comment\": \"Hello world\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}s51k-LY8hn/post/new-comment",
+							"host": [
+								"{{base_url}}s51k-LY8hn"
+							],
+							"path": [
+								"post",
+								"new-comment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add new reply",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"postId\": \"6385cd7eca057498e7a0d744\",\r\n    \"parentComment\": \"6385d69d38d210bf7a8bd4e3\",\r\n    \"reply\": \"Hello World Reply\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/add-reply/s51k-LY8hn",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"add-reply",
+								"s51k-LY8hn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete comment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"body\": \"Hello World!\",\r\n    \"photo\": [\"firstfeed.jpg\", \"feed.jpeg\"],\r\n    \"file\": [\"helloworld.cpp\", \"firstprogram.pdf\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/user/84512165/delete-feed/63205650c97e5e954d96919d",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"user",
+								"84512165",
+								"delete-feed",
+								"63205650c97e5e954d96919d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pricing",
+			"item": [
+				{
+					"name": "getpricing",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCJsaW5rZWRpbklkIjoiU2ZYR2I5U05KNyIsImVtYWlsIjoiUHJhbmp1bEBhY29tcHdvcmxkLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjM1LCJjb25uZWN0aW9ucyI6WyI2MzYzYjhhYzU0MjVjOWE4NmQwZDlkMjQiLCI2MzJhY2FmNjcxMTViYWI2MzQxOWUxOTEiLCI2MzJhY2FmNjcxMTViYWI2MzQxOWUxOTEiLCI2MzJhY2FmNjcxMTViYWI2MzQxOWUxOTEiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiXSwiZmlyc3ROYW1lIjoiU21pdGgiLCJwb3N0cyI6WyI2MzczNTQyM2YxOWUzZGFkMzE4NWZlMGQiLCI2Mzc0NjYxOTRkZTk3ZGUzNGU2ODVlZGEiLCI2Mzc0NjY0MDRkZTk3ZGUzNGU2ODVlZGYiLCI2Mzc0NjkwYTRkZTk3ZGUzNGU2ODVlZjAiLCI2Mzc0NjlhZTRkZTk3ZGUzNGU2ODVlZmQiLCI2Mzc1Yzg5NDI0YmI4MzU5MDhmZWRlZjAiXSwiaXNWZXJpZmllZCI6dHJ1ZSwiaXNBY3RpdmUiOnRydWUsImxhc3ROYW1lIjoiU3R1ZGVudCIsIm1lbnRlZVRvcGljcyI6WyJBY2NvdW50aW5nIFNvZnR3YXJlIiwiVGlnZXIiLCJEb2N0b3IiLCJDaGVldGFoIiwiRG9jdG9yIiwiQ2hlZXRhaCIsIkRvY3RvciIsIkNoZWV0YWgiLCJEb2N0b3IiXSwibWVudG9yVG9waWNzIjpbIkFjY3VyYWN5Il0sInByb2ZpbGVQaWN0dXJlIjpudWxsLCJzZXNzaW9uIjpbXSwic2tpbGxzIjpbIjYzNmM4OGRiMmViOTE0ODk0OWY2MTdiMSIsIjYzNmM5N2U3MmViOTE0ODk0OWY2MWE1YSIsIjYzNzMxZTE2NDM4NmE1YzM3NmQyNTViMyIsIjYzNzMxZTQ2NDM4NmE1YzM3NmQyNTViOCIsIjYzNzMzMGRlZTJlZDg5ZWI0NDhjNTY5MCIsIjYzNzMzOTNiZjE5ZTNkYWQzMTg1ZmMxZiIsIjYzNzMzOTU4ZjE5ZTNkYWQzMTg1ZmMyYiIsIjYzNzQ4MDc4NTg1MDU1YWVhMzY5YjBlMiIsIjYzNzRhOGEzMjJhOTVmNGM0ZDEzZjQ5ZiIsIjYzNzRiNGMwMjJhOTVmNGM0ZDEzZjkzNyIsIjYzNzRjMTY0MjJhOTVmNGM0ZDEzZmJiZiIsIjYzNzVmMGU3MjRiYjgzNTkwOGZlZTJiNyJdLCJ1c2VyRXhwZXJpZW5jZSI6WyI2MzY2NTgwZTczYzQ2MDk3YmExZDBkOTAiLCI2MzZjOWM4MjJlYjkxNDg5NDlmNjFhYzMiLCI2Mzc0ODBkZjU4NTA1NWFlYTM2OWIwZjciLCI2Mzc0YWJhNDIyYTk1ZjRjNGQxM2Y1NDYiLCI2Mzc0YjJhYzIyYTk1ZjRjNGQxM2Y3NGQiLCI2Mzc0YjM5MzIyYTk1ZjRjNGQxM2Y3YzIiLCI2Mzc0YjNlNDIyYTk1ZjRjNGQxM2Y3ZmIiLCI2Mzc0YjQ3ZTIyYTk1ZjRjNGQxM2Y4ZGMiLCI2Mzc1ZjI1NjI0YmI4MzU5MDhmZWUzMjgiLCI2Mzc1ZjJkODI0YmI4MzU5MDhmZWUzYmMiXSwidXNlckVkdWNhdGlvbiI6WyI2MzZjODkyNzJlYjkxNDg5NDlmNjE3ZTciLCI2MzczMzU2ZGEwOGUwMzA2NGRiZWRmNWMiLCI2Mzc0ODE1ODU4NTA1NWFlYTM2OWIxMGMiXSwidXNlckNlcnRpZmljYXRpb24iOlsiNjM2Yzg5NTkyZWI5MTQ4OTQ5ZjYxN2Y4IiwiNjM2Yzk4M2UyZWI5MTQ4OTQ5ZjYxYTZjIiwiNjM2ZjMyM2FlOWViMzdjYTE4NjgxNjliIl0sInVzZXJMYW5ndWFnZSI6WyI2MzY2NTllMTczYzQ2MDk3YmExZDBlNDIiLCI2MzY2NTllNDczYzQ2MDk3YmExZDBlNGEiLCI2MzY2NTllNzczYzQ2MDk3YmExZDBlNGYiLCI2MzY2NTllNzczYzQ2MDk3YmExZDBlNTEiLCI2MzY2NTlmMjczYzQ2MDk3YmExZDBlNTYiLCI2MzY2NTlmNTczYzQ2MDk3YmExZDBlNWEiLCI2MzZjOTg2MzJlYjkxNDg5NDlmNjFhN2UiLCI2MzZjOTg5OTJlYjkxNDg5NDlmNjFhOWEiLCI2MzZjOThhMjJlYjkxNDg5NDlmNjFhOWUiLCI2MzZjOThiOTJlYjkxNDg5NDlmNjFhYjAiLCI2MzZjZjAwMGNjY2IxMzlhOWVkYTdkMWEiLCI2MzZmMzI1OWU5ZWIzN2NhMTg2ODE2YjQiLCI2MzZmMzI2ZGU5ZWIzN2NhMTg2ODE2YjgiLCI2MzZmNDk0N2U5ZWIzN2NhMTg2ODE4MzMiLCI2MzZmNDk0OGU5ZWIzN2NhMTg2ODE4MzciLCI2Mzc1ZjhmNDI0YmI4MzU5MDhmZWU0ZDQiLCI2Mzc1ZjkwNTI0YmI4MzU5MDhmZWU0ZDgiXSwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wNVQwNDo1MDo0OS41OTRaIiwidXBkYXRlZEF0IjoiMjAyMi0xMS0xN1QwOTowNDowNS4zMTJaIiwiX192Ijo1MSwiY291bnRyeSI6IkluZGlhIiwibG9jYXRpb24iOiJHZW9zdGF0aW9uYXJ5IE9yYml0XG4iLCJ6aXBDb2RlIjowLCJjdXJyZW50Q29tcGFueSI6Ikp5b3RpIiwiY3VycmVudEpvYlRpdGxlIjoiU2NpZW5jZSBTdHVkZW50LiBTY2llbmNlIGJlYXRzLiIsInVzZXJPVFBzIjpudWxsLCJiaW8iOiJzZ2dzZ3MiLCJpYXQiOjE2Njg4MzM3MjYsImV4cCI6MTY3MTQyNTcyNn0.yKvrR1EFlbfmKSpTBlv6wkHk7RQE3eIpJE-pi5MXGnA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/SfXGb9SNJ7/pricing",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"SfXGb9SNJ7",
+								"pricing"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addpricing",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCJsaW5rZWRpbklkIjoiU2ZYR2I5U05KNyIsImVtYWlsIjoiUHJhbmp1bEBhY29tcHdvcmxkLmNvbSIsImNvbXBsZXRlZFN0ZXAiOjM1LCJjb25uZWN0aW9ucyI6WyI2MzYzYjhhYzU0MjVjOWE4NmQwZDlkMjQiLCI2MzJhY2FmNjcxMTViYWI2MzQxOWUxOTEiLCI2MzJhY2FmNjcxMTViYWI2MzQxOWUxOTEiLCI2MzJhY2FmNjcxMTViYWI2MzQxOWUxOTEiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiLCI2MzY1ZWJhOTFkM2E3YjQ2NzcxYzAyZjUiXSwiZmlyc3ROYW1lIjoiU21pdGgiLCJwb3N0cyI6WyI2MzczNTQyM2YxOWUzZGFkMzE4NWZlMGQiLCI2Mzc0NjYxOTRkZTk3ZGUzNGU2ODVlZGEiLCI2Mzc0NjY0MDRkZTk3ZGUzNGU2ODVlZGYiLCI2Mzc0NjkwYTRkZTk3ZGUzNGU2ODVlZjAiLCI2Mzc0NjlhZTRkZTk3ZGUzNGU2ODVlZmQiLCI2Mzc1Yzg5NDI0YmI4MzU5MDhmZWRlZjAiXSwiaXNWZXJpZmllZCI6dHJ1ZSwiaXNBY3RpdmUiOnRydWUsImxhc3ROYW1lIjoiU3R1ZGVudCIsIm1lbnRlZVRvcGljcyI6WyJBY2NvdW50aW5nIFNvZnR3YXJlIiwiVGlnZXIiLCJEb2N0b3IiLCJDaGVldGFoIiwiRG9jdG9yIiwiQ2hlZXRhaCIsIkRvY3RvciIsIkNoZWV0YWgiLCJEb2N0b3IiXSwibWVudG9yVG9waWNzIjpbIkFjY3VyYWN5Il0sInByb2ZpbGVQaWN0dXJlIjpudWxsLCJzZXNzaW9uIjpbXSwic2tpbGxzIjpbIjYzNmM4OGRiMmViOTE0ODk0OWY2MTdiMSIsIjYzNmM5N2U3MmViOTE0ODk0OWY2MWE1YSIsIjYzNzMxZTE2NDM4NmE1YzM3NmQyNTViMyIsIjYzNzMxZTQ2NDM4NmE1YzM3NmQyNTViOCIsIjYzNzMzMGRlZTJlZDg5ZWI0NDhjNTY5MCIsIjYzNzMzOTNiZjE5ZTNkYWQzMTg1ZmMxZiIsIjYzNzMzOTU4ZjE5ZTNkYWQzMTg1ZmMyYiIsIjYzNzQ4MDc4NTg1MDU1YWVhMzY5YjBlMiIsIjYzNzRhOGEzMjJhOTVmNGM0ZDEzZjQ5ZiIsIjYzNzRiNGMwMjJhOTVmNGM0ZDEzZjkzNyIsIjYzNzRjMTY0MjJhOTVmNGM0ZDEzZmJiZiIsIjYzNzVmMGU3MjRiYjgzNTkwOGZlZTJiNyJdLCJ1c2VyRXhwZXJpZW5jZSI6WyI2MzY2NTgwZTczYzQ2MDk3YmExZDBkOTAiLCI2MzZjOWM4MjJlYjkxNDg5NDlmNjFhYzMiLCI2Mzc0ODBkZjU4NTA1NWFlYTM2OWIwZjciLCI2Mzc0YWJhNDIyYTk1ZjRjNGQxM2Y1NDYiLCI2Mzc0YjJhYzIyYTk1ZjRjNGQxM2Y3NGQiLCI2Mzc0YjM5MzIyYTk1ZjRjNGQxM2Y3YzIiLCI2Mzc0YjNlNDIyYTk1ZjRjNGQxM2Y3ZmIiLCI2Mzc0YjQ3ZTIyYTk1ZjRjNGQxM2Y4ZGMiLCI2Mzc1ZjI1NjI0YmI4MzU5MDhmZWUzMjgiLCI2Mzc1ZjJkODI0YmI4MzU5MDhmZWUzYmMiXSwidXNlckVkdWNhdGlvbiI6WyI2MzZjODkyNzJlYjkxNDg5NDlmNjE3ZTciLCI2MzczMzU2ZGEwOGUwMzA2NGRiZWRmNWMiLCI2Mzc0ODE1ODU4NTA1NWFlYTM2OWIxMGMiXSwidXNlckNlcnRpZmljYXRpb24iOlsiNjM2Yzg5NTkyZWI5MTQ4OTQ5ZjYxN2Y4IiwiNjM2Yzk4M2UyZWI5MTQ4OTQ5ZjYxYTZjIiwiNjM2ZjMyM2FlOWViMzdjYTE4NjgxNjliIl0sInVzZXJMYW5ndWFnZSI6WyI2MzY2NTllMTczYzQ2MDk3YmExZDBlNDIiLCI2MzY2NTllNDczYzQ2MDk3YmExZDBlNGEiLCI2MzY2NTllNzczYzQ2MDk3YmExZDBlNGYiLCI2MzY2NTllNzczYzQ2MDk3YmExZDBlNTEiLCI2MzY2NTlmMjczYzQ2MDk3YmExZDBlNTYiLCI2MzY2NTlmNTczYzQ2MDk3YmExZDBlNWEiLCI2MzZjOTg2MzJlYjkxNDg5NDlmNjFhN2UiLCI2MzZjOTg5OTJlYjkxNDg5NDlmNjFhOWEiLCI2MzZjOThhMjJlYjkxNDg5NDlmNjFhOWUiLCI2MzZjOThiOTJlYjkxNDg5NDlmNjFhYjAiLCI2MzZjZjAwMGNjY2IxMzlhOWVkYTdkMWEiLCI2MzZmMzI1OWU5ZWIzN2NhMTg2ODE2YjQiLCI2MzZmMzI2ZGU5ZWIzN2NhMTg2ODE2YjgiLCI2MzZmNDk0N2U5ZWIzN2NhMTg2ODE4MzMiLCI2MzZmNDk0OGU5ZWIzN2NhMTg2ODE4MzciLCI2Mzc1ZjhmNDI0YmI4MzU5MDhmZWU0ZDQiLCI2Mzc1ZjkwNTI0YmI4MzU5MDhmZWU0ZDgiXSwiY3JlYXRlZEF0IjoiMjAyMi0xMS0wNVQwNDo1MDo0OS41OTRaIiwidXBkYXRlZEF0IjoiMjAyMi0xMS0xN1QwOTowNDowNS4zMTJaIiwiX192Ijo1MSwiY291bnRyeSI6IkluZGlhIiwibG9jYXRpb24iOiJHZW9zdGF0aW9uYXJ5IE9yYml0XG4iLCJ6aXBDb2RlIjowLCJjdXJyZW50Q29tcGFueSI6Ikp5b3RpIiwiY3VycmVudEpvYlRpdGxlIjoiU2NpZW5jZSBTdHVkZW50LiBTY2llbmNlIGJlYXRzLiIsInVzZXJPVFBzIjpudWxsLCJiaW8iOiJzZ2dzZ3MiLCJpYXQiOjE2Njg4MzM3MjYsImV4cCI6MTY3MTQyNTcyNn0.yKvrR1EFlbfmKSpTBlv6wkHk7RQE3eIpJE-pi5MXGnA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \r\n                \"user\":\"6365eba91d3a7b46771c02f5\",\r\n                \"skill\": \"React\",\r\n                \"price\": \"3000\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/SfXGb9SNJ7/pricing/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"SfXGb9SNJ7",
+								"pricing",
+								""
+							],
+							"query": [
+								{
+									"key": "authorization",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzRmZGZlZGExNjUwMDdkMGZhY2ZjMTQiLCJsaW5rZWRpbklkIjoiOEM1UEQxSUJRRiIsImVtYWlsIjoiYXRlZWtzYXJAZ21haWwuY29tIiwiY29tcGxldGVkU3RlcCI6NywiY29ubmVjdGlvbnMiOltdLCJmaXJzdE5hbWUiOiJBdGVlayIsInBvc3RzIjpbXSwiaXNWZXJpZmllZCI6dHJ1ZSwiaXNBY3RpdmUiOnRydWUsImxhc3ROYW1lIjoiU2FydmFyIiwibWVudGVlVG9waWNzIjpbIkNsb3VkIG5ldHdvcmtpbmcgYW5kIGZpbGUgc2hhcmluZyAiLCJTb2NpYWwgbWVkaWEvZGlnaXRhbCBjb21tdW5pY2F0aW9uIl0sIm1lbnRvclRvcGljcyI6WyJSZXNlYXJjaCBhbmQgZGF0YSBhbmFseXNpcyJdLCJwcm9maWxlUGljdHVyZSI6Imh0dHBzOi8vbWVkaWEtZXhwMS5saWNkbi5jb20vZG1zL2ltYWdlL0M0RDAzQVFHSzl2Q3FISTNPdEEvcHJvZmlsZS1kaXNwbGF5cGhvdG8tc2hyaW5rXzIwMF8yMDAvMC8xNjYxOTQ2MjI2NDIwP2U9MTY3MTY2NzIwMCZ2PWJldGEmdD1GTzg5S05hVUZ6MFZ1c3luMDVaTGlNUHlDWXZEUVpaNEZkZ0xENGdPY0pZIiwic2Vzc2lvbiI6W10sInNraWxscyI6W10sInVzZXJFeHBlcmllbmNlIjpbIjYzNTExOTFhYzdiMGJkZTE0NGUzMWE5OSJdLCJ1c2VyRWR1Y2F0aW9uIjpbXSwidXNlckNlcnRpZmljYXRpb24iOltdLCJ1c2VyTGFuZ3VhZ2UiOltdLCJjcmVhdGVkQXQiOiIyMDIyLTEwLTE5VDExOjMwOjUzLjE2NVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTEwLTIwVDA5OjQ5OjAzLjM3MVoiLCJfX3YiOjEsImNvdW50cnkiOiJJbmRpYSIsImxvY2F0aW9uIjoiQmhvcGFsIiwiemlwQ29kZSI6NDYyMDIyLCJjdXJyZW50Q29tcGFueSI6IkFjb21wd29ybGQgVGVjaG5vc29mdCBQdnQuIEx0ZC4iLCJjdXJyZW50Sm9iVGl0bGUiOiJUZWFtIExlYWRlciIsInVzZXJPVFBzIjpudWxsLCJpYXQiOjE2NjcyMTYyMjAsImV4cCI6MTY2OTgwODIyMH0.PsPe4P1V-otNUD4cHWo_45bQZVgu6LqkF67o2yxXO0E",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatepricing",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorize",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\":\"632aeebdc02ae8a4a0a48eb3\",\r\n    \"skill\": \"Java\",\r\n    \"price\": \"4025000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}pricing/637895083ae8dcf482913ce1",
+							"host": [
+								"{{base_url}}pricing"
+							],
+							"path": [
+								"637895083ae8dcf482913ce1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletepricing",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jobTitle\": \"Freelance\",\r\n    \"companyName\": \"Rahul Freelancer\",\r\n    \"startDate\": \"2022-06-01\",\r\n    \"endDate\": \"2022-08-15\",\r\n    \"present\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/pricing/637895083ae8dcf482913ce1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"pricing",
+								"637895083ae8dcf482913ce1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "mentor",
+			"item": [
+				{
+					"name": "Get all sessions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}new-user/mentor-list",
+							"host": [
+								"{{base_url}}new-user"
+							],
+							"path": [
+								"mentor-list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Uploads",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "https://learnet.acolabz.com/backend/v1/uploads?for=Post",
+					"protocol": "https",
+					"host": [
+						"learnet",
+						"acolabz",
+						"com"
+					],
+					"path": [
+						"backend",
+						"v1",
+						"uploads"
+					],
+					"query": [
+						{
+							"key": "for",
+							"value": "Post"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
